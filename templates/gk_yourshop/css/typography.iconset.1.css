@@ -1,0 +1,60 @@
+/*
+#------------------------------------------------------------------------
+# yourshop.com - June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+.gkAudio { background:transparent url('../images/icons/audio.gif') no-repeat left top }
+.gkCreditcard { background:transparent url('../images/icons/credit.gif') no-repeat left top }
+.gkFeed { background:transparent url('../images/icons/feed.gif') no-repeat left top }
+.gkHelp { background:transparent url('../images/icons/help.gif') no-repeat left top }
+.gkWebcam { background:transparent url('../images/icons/webcam.gif') no-repeat left top }
+.gkImages { background:transparent url('../images/icons/images.png') no-repeat left top }
+.gkLock { background:transparent url('../images/icons/lock.png') no-repeat left top }
+.gkPrinter { background:transparent url('../images/icons/printer.png') no-repeat left top }
+.gkReport { background:transparent url('../images/icons/report.png') no-repeat left top }
+.gkScript { background:transparent url('../images/icons/script.png') no-repeat left top }
+.gkTime { background:transparent url('../images/icons/time.png') no-repeat left top }
+.gkUser { background:transparent url('../images/icons/user.png') no-repeat left top }
+.gkWorld { background:transparent url('../images/icons/world.png') no-repeat left top }
+.gkCart { background:transparent url('../images/icons/cart.png') no-repeat left top }
+.gkCd { background:transparent url('../images/icons/cd.png') no-repeat left top }
+.gkChartBar { background:transparent url('../images/icons/chart_bar.png') no-repeat left top }
+.gkChartLine { background:transparent url('../images/icons/chart_line.png') no-repeat left top }
+.gkChartPie { background:transparent url('../images/icons/chart_pie.png') no-repeat left top }
+.gkClock { background:transparent url('../images/icons/clock.png') no-repeat left top }
+.gkCog { background:transparent url('../images/icons/cog.png') no-repeat left top }
+.gkCoins { background:transparent url('../images/icons/coins.png') no-repeat left top }
+.gkCompress { background:transparent url('../images/icons/compress.png') no-repeat left top }
+.gkComputer { background:transparent url('../images/icons/computer.png') no-repeat left top }
+.gkCross { background:transparent url('../images/icons/cross.png') no-repeat left top }
+.gkDisk { background:transparent url('../images/icons/disk.png') no-repeat left top }
+.gkError { background:transparent url('../images/icons/error.png') no-repeat left top }
+.gkEmail { background:transparent url('../images/icons/email.gif') no-repeat left top }
+.gkExclamation { background:transparent url('../images/icons/exclamation.png') no-repeat left top }
+.gkFilm { background:transparent url('../images/icons/film.png') no-repeat left top }
+.gkFolder { background:transparent url('../images/icons/folder.png') no-repeat left top }
+.gkGroup { background:transparent url('../images/icons/group.png') no-repeat left top }
+.gkHeart { background:transparent url('../images/icons/heart.png') no-repeat left top }
+.gkHouse { background:transparent url('../images/icons/house.png') no-repeat left top }
+.gkImage { background:transparent url('../images/icons/image.png') no-repeat left top }
+.gkInformation { background:transparent url('../images/icons/information.png') no-repeat left top }
+.gkMagnifier { background:transparent url('../images/icons/magnifier.png') no-repeat left top }
+.gkMoney { background:transparent url('../images/icons/money.png') no-repeat left top }
+.gkNew { background:transparent url('../images/icons/new.png') no-repeat left top }
+.gkNote { background:transparent url('../images/icons/note.png') no-repeat left top }
+.gkPage { background:transparent url('../images/icons/page.png') no-repeat left top }
+.gkPage_white { background:transparent url('../images/icons/page_white.png') no-repeat left top }
+.gkPlugin { background:transparent url('../images/icons/plugin.png') no-repeat left top }
+.gkAccept { background:transparent url('../images/icons/accept.png') no-repeat left top }
+.gkAdd { background:transparent url('../images/icons/add.png') no-repeat left top }
+.gkCamera { background:transparent url('../images/icons/camera.png') no-repeat left top }
+.gkBrick { background:transparent url('../images/icons/brick.png') no-repeat left top }
+.gkBox { background:transparent url('../images/icons/box.png') no-repeat left top }
+.gkCalendar { background:transparent url('../images/icons/calendar.png') no-repeat left top }
+.gkInfo1, .gkInfo2, .gkInfo3{ background:transparent url('../images/icons/info.gif') no-repeat left center }
+.gkWarning1, .gkWarning2,.gkWarning3{ background:transparent url('../images/icons/warning.gif') no-repeat left center }
+.gkTips1, .gkTips2, .gkTips3{ background:transparent url('../images/icons/tips.gif') no-repeat left center }

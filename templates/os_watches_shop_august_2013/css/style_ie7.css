@@ -1,0 +1,103 @@
+label.order_number {
+  display: block;
+}
+
+.globalMenu ul.menu {
+    background: #FFF2F5;
+    border: 1px solid #dedede;
+    float: left;
+    margin: 10px 0 10px 10px;
+	padding: 23px 0 2px 0;
+}
+
+.globalMenu ul.menu li {
+    float: left;
+    padding: 0 0 14px 0;
+    position: relative;
+	list-style: none;
+}
+
+.globalMenu ul.menu > li > a {
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+	border-top: 3px solid transparent;
+    margin: 0 10px;
+    padding: 22px 12px 2px 12px;
+}
+
+.globalMenu ul.menu > li > a:hover {
+	border-top: 3px solid #ff7200;
+}
+
+.globalMenu ul.menu > li.active > a {
+	border-top: 3px solid #12abff;
+}
+
+.globalMenu ul.menu > li > a:hover,
+.globalMenu ul.menu > li.active > a {
+    background: #000;
+}
+
+.globalMenu ul.menu > li.parent span.arrow {
+    background: url("../img/arrow.png") no-repeat scroll 0 10px transparent;
+    height: 20px;
+    left: 38%;
+    position: absolute;
+    top: 32px;
+    width: 20px;
+}
+
+.globalMenu ul.menu li ul li.parent span.arrow {
+    background: url("../img/arrow.png") no-repeat scroll 0 bottom transparent;
+    height: 15px;
+    left: 84%;
+    position: absolute;
+    top: 9px;
+    width: 20px;
+}
+
+.globalMenu ul.menu li.parent ul,
+.globalMenu ul.menu li ul li.parent ul {
+     background: #000;
+	 border-left: 1px solid #fff;
+     list-style: none;
+     position: absolute; 
+     opacity: 0.95;
+	 filter: alpha(opacity=95);	
+     float: left;
+     width: 170px;
+     z-index: 9999;
+}
+
+.globalMenu ul.menu li.parent ul {
+    left: 9px; 
+    top: 34px;
+}
+
+.globalMenu ul.menu li ul li.parent ul {
+    left: 170px; 
+    top: 0;
+}
+
+.globalMenu ul.menu li.parent ul li {
+    margin: 0; 
+    padding: 0;
+    border-bottom: 1px solid #121212; 
+    clear: both;
+    width: 170px;
+}
+
+.globalMenu ul.menu li.parent ul li:last-child {
+    border-bottom: none; 
+}
+
+.globalMenu ul.menu li.parent ul li a {
+    float: left;
+    padding: 7px 3px 7px 10px;
+	width: 90%;
+}
+
+.globalMenu ul.menu li.parent ul li a:hover {
+    padding: 7px 3px 7px 15px;
+}

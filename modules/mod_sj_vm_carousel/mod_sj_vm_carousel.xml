@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>Sj Carousel for Virtuemart</name>
+    <creationDate>September 2013</creationDate>
+	<author>YouTech Company</author>
+	<copyright>Copyright (c) 2013 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>2.0.0</version>
+	<description>TPL_YTFRAMEWORK_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_sj_vm_carousel">mod_sj_vm_carousel.php</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+        <folder>core</folder>
+        <folder>language</folder>
+    </files>
+	<languages />
+    <config>
+        <fields name="params" addfieldpath="/modules/mod_sj_vm_carousel/core/fields">
+            <fieldset name="basic">
+                <field name="item_link_target" type="list" class="btn-group" default="_self" label="Open Link" description="The Type shows when you click on the link">
+                    <option value="_blank">New Window</option>
+                    <option value="_self">Same Window</option>
+                    <option value="_windowopen">Popup window</option>
+                </field>
+            </fieldset>
+
+            <fieldset name="SOURCE_OPTIONS_LABEL" label="SOURCE_OPTIONS_LABEL" >
+                <field name="catid"  type="sjvmcategories"  multiple="true" size="10" label="Category" description="Category" />
+                <field name="show_child_category_articles" type="radio"
+                       default="0"
+                       label="Child Category Products"
+                       description="Include or Exclude Products form Child Categories"
+                        >
+                    <option value="1">Include
+                    </option>
+                    <option value="0">Exclude
+                    </option>
+                </field>
+
+                <field name="levels" type="text" default="1"
+                       label="Category Depth"
+                       description="The number of child category levels to return." />
+                <field name="show_front" type="radio" default="show" class="btn-group" label="FEATURED_ARTICLES_LABEL" description="FEATURED_ARTICLES_DESC">
+                    <option value="show">Show</option>
+                    <option value="hide">Hide</option>
+                    <option value="only">Only</option>
+                </field>
+                <field name="source_order" type="list" default="product_name" label="Product Order By" description="Sort product by one of these.">
+                    <option value="product_name">Product Name</option>
+                    <option value="id">ID</option>
+                    <option value="topten">Best sales</option>
+                    <option value="latest">Latest</option>
+                    <option value="ordering">Ordering</option>
+                    <option value="product_price">Product Price</option>
+                    <option value="random">Random</option>
+                </field>
+                <field name="article_ordering_direction" type="list" default="ASC" label="ORDERING_DIRECTION_LABEl" description="ORDERING_DIRECTION_DESC">
+                    <option value="DESC">Descending</option>
+                    <option value="ASC">Ascending</option>
+                </field>
+                <field name="source_limit" type="text" default="20" label="Limitation" description="Maximum number of products to display. Enter 0 for unlimited selection." />
+            </fieldset>
+
+            <fieldset name="ITEM_OPTIONS_LABEL" label="ITEM_OPTIONS_LABEL">
+                <field name="item_title_display" type="radio" class="btn-group" default="1" label="DISPLAY_TITLE_LABEL" description="DISPLAY_TITLE_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="item_title_max_characs" type="text" default="20" label="TITLE_MAXLENGTH_LABEL" description="TITLE_MAXLENGTH_DESC" />
+                <field name="item_desc_display" type="radio" class="btn-group" default="1" label="DISPLAY_DESCRIPTION_LABEL" description="DISPLAY_DESCRIPTION_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="item_desc_max_characs" type="text" default="50" label="DESCRIPTION_MAXLENGTH_LABEL" description="DESCRIPTION_MAXLENGTH_DESC" />
+                <field name="item_price_display" type="radio" class="btn-group" default="1" label="Display Price" description="Allow to show/hide price of product">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="item_readmore_display" type="radio" default="1" class="btn-group" label="DISPLAY_READMORE_LABEL" description="DISPLAY_READMORE_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="item_readmore_text" type="text" default="Read more" label="READMORE_TEXT_LABEL" description="READMORE_TEXT_DESC" />
+            </fieldset>
+
+            <fieldset name="IMAGE_OPTIONS_LABEL" label="IMAGE_OPTIONS_LABEL">
+                <field  type="sjheading" label="Get Images From Product Image" />
+                <field name="imgcfg_from_image_product" class="btn-group"  label="Product Image"  description="Product Image" type="radio" default="1">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field type="sjheading" label="Get Images From Product Description" />
+                <field name="imgcfg_from_description" label="Description" class="btn-group" description="Get Images From Product Description" type="radio" default="1">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field type="sjheading" label="Get images From Extend Folder" />
+                <field name="imgcfg_from_external" label="EXTEND_FOLDER_LABEL" class="btn-group" description="EXTEND_FOLDER_DESC" type="radio" default="1">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="imgcfg_external_url" type="text" default="images/vm/{id}.jpg" label="EXTEND_FOLDER_LABEL" description="EXTEND_FOLDER_DESC"/>
+                <field name="imgcfg_order" type="text" default="image_product, description, external" label="ORDER_GET_LABEL" description="ORDER_GET_DESC" />
+                <field name="imgcfg_function" default="resize_stretch" type="list" label="RESIZE_MODE_LABEL" description="RESIZE_MODE_DESC">
+                    <option value="none">None</option>
+                    <option value="resize_center">Center</option>
+                    <option value="resize_fill">Fill</option>
+                    <option value="resize_fit">Fit</option>
+                    <option value="resize_stretch">Stretch</option>
+                </field>
+                <field name="imgcfg_type" type="list" default="" label="IMAGE_TYPE_LABEL" description="IMAGE_TYPE_DESC">
+                    <option value="">Default</option>
+                    <option value="1">GIF</option>
+                    <option value="2">JPEG</option>
+                    <option value="3">PNG</option>
+                </field>
+                <field name="imgcfg_transparency" label="KEEP_TRANSPARENCY_LABEL" class="btn-group" description="KEEP_TRANSPARENCY_DESC" type="radio" default="1">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="imgcfg_width" type="text" default="180" label="IMAGE_WIDTH_LABEL" description="IMAGE_WIDTH_DESC" />
+                <field name="imgcfg_height" type="text" default="180" label="IMAGE_HEIGHT_LABEL" description="IMAGE_HEIGHT_DESC" />
+                <field name="imgcfg_background" type="color" default="#FFFFFF" label="BACKGROUND_LABEL" description="BACKGROUND_DESC" />
+                <field name="imgcfg_placeholder_path" type="text" default="modules/mod_sj_vm_carousel/assets/images/nophoto.png" label="PLACE_HOLDER_PATH_LABEL" description="PLACE_HOLDER_PATH_DESC"/>
+            </fieldset>
+            <fieldset name="Effect Options" label="Effect Options">
+                <field name="start" type="text" default="1" label="Product Start" description="Product Start" />
+                <field name="play" type="radio" default="0" class="btn-group"  label="Auto Play" description="Auto Play">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="interval" type="text" default="3000" label="INTERVAL_LABEL" description="INTERVAL_DESC" />
+                <field name="pause_hover" type="radio" class="btn-group"  default="hover" label="Stop when hover" description="Stop when hover">
+                    <option value="hover">Yes</option>
+                    <option value="0">No</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="moduleclass_sfx" type="text"
+                       label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                       description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field name="layout" type="modulelayout"
+                       label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field name="include_jquery" class="btn-group" type="radio" default="1"
+                       label="INCLUDE_JQUERY_LABEL" description="INCLUDE_JQUERY_DESC">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="pretext" type="textarea" default="" label="PRE_TEXT_LABEL"
+                       description="PRE_TEXT_DESC" cols="40" rows="4" filter="raw" />
+                <field name="posttext" type="textarea" default="" label="POST_TEXT_LABEL"
+                       description="POST_TEXT_DESC" cols="40" rows="4" filter="raw" />
+                <field name="owncache" type="list" default="1"
+                       label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

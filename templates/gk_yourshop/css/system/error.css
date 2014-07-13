@@ -1,0 +1,69 @@
+/*
+#------------------------------------------------------------------------
+# yourShop - December 2010 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+/*body {height:100%}
+body{min-height: 100%; margin: 0 auto; font: normal 12px/1.9  Arial, Verdana, sans-serif; background:url("../../images/bg_image.jpg") no-repeat scroll center top #F0F0F0; color: #383838}
+
+a { color: #456004; text-decoration:none; }
+a:hover, a:active, a:focus { color: #456004; text-decoration:underline; }
+
+h1,
+h2 { line-height: 100px; font-size: 100px; margin: 20px auto; border-bottom: none; text-align:center; }
+h2 { font-size: 30px; margin: 0 0 20px; line-height: 40px; }
+p.admincontact { border: none!important; }
+ul { list-style-type: square; padding: 0 0 0 36px; }
+ol { padding: 0; list-style-position: inside; }
+ol li,
+ol li strong { font-size: 13px !important; line-height: 120%; font-weight: normal }
+#bgWrap { background: transparent url('../../images/stripes.png') repeat-x 0 0; }
+.top { min-height:90px; margin:0 auto; width:1002px; }
+#frame { width: 1002px; margin: 0 auto; padding-bottom:175px; }
+#errorboxbody { width:400px; margin:0 auto; }
+/* Logo */
+/*h1#gkLogo {margin:0px;}
+h1#gkLogo { float: left;height: 90px;padding: 0;width: 225px; }
+h1#gkLogo.text {height:90px; width:auto; float:left;}
+h1#gkLogo.text span  {font-size:27px; line-height:32px; font-family:Arial, sans-serif; font-weight:bold;line-height:32px;float:left; }
+#gkLogo.text .gkLogoSlogan { font-size:10px; font-family:Verdana, sans-serif; line-height:20px; color:#000;font-weight:normal;float:left;width:100%}
+h1#gkLogo a.cssLogo { background: url("../../images/style1/logo.png") no-repeat scroll 0 0 transparent;display: block;height: 90px;margin: 0;text-indent: -999em;width: 225px; }
+#gkLogo.text a { text-indent:0!important; background:none!important;height:69px;line-height:16px; margin:10px 10px 4px 10px; float:left; }
+#gkLogo.text a:hover {text-decoration:none;}
+#techinfo { text-align:center; }
+----------------*/
+/* Basic elements */
+::selection { background: #da4d00; color: #fff; }
+::-moz-selection { background: #da4d00; color: #fff; }
+::-webkit-selection { background: #da4d00; color: #fff; }
+body, html { margin: 0; padding: 0; }
+body {min-height: 100%; margin: 0 auto; font: normal 12px/1.9  Arial, Verdana, sans-serif; background:url("../../images/bg_image.jpg") no-repeat scroll center top #F0F0F0; color: #383838 }
+a { color: #456004; text-decoration:none; }
+a:hover, a:active, a:focus { color: #456004; text-decoration:underline; }
+
+/* containers */
+#gkPage { width: 800px; margin: 50px auto 0 auto; }
+#gkPageWrap {padding: 0 30px 30px 30px; }
+#frame { margin: 0; overflow: hidden; padding: 80px 0 10px 0; clear: both; }
+#errorboxbody { width: 390px; font-size: 11px; padding: 0 0 12px 0; margin: 0 auto; }
+#errorNumber { float: left; padding: 31px 0 0; width: 39%; }
+
+/* Logo  */
+
+h1#gkLogo { float: left;height: 90px;padding: 0;width: 225px; }
+h1.gkLogo.text {height:90px; width:auto; float:left;}
+h1.gkLogo.text span  {font-size:27px; line-height:32px; font-family:Arial, sans-serif; font-weight:bold;line-height:32px;float:left; }
+.gkLogo.text .gkLogoSlogan { font-size:10px; font-family:Verdana, sans-serif; line-height:20px; color:#000;font-weight:normal;float:left;width:100%}
+h1#gkLogo a.cssLogo { background: url("../../images/style1/logo.png") no-repeat scroll 0 0 transparent;display: block;height: 90px;margin: 0;text-indent: -999em;width: 225px; }
+.gkLogo.text a { text-indent:0!important; background:none!important;height:69px;line-height:16px; margin:10px 10px 4px 10px; float:left; }
+.gkLogo.text a:hover {text-decoration:none;}
+
+/* Other elements */
+h2 { font: normal 55px/60px Arial, sans-serif; text-align: center; color: #333; margin: 0 0 20px; padding: 0 }
+strong {  color: #456004; }
+h3 { font-size: 16px; font-weight: normal; text-align: center}
+#errorboxbody { text-align: center; margin: 160px auto -10px; }

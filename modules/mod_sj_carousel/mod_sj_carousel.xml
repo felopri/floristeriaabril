@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>Sj Carousel</name>
+	<creationDate>May 2013</creationDate>
+	<author>YouTech Company</author>
+	<copyright>Copyright (c) 2013 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@ytcvn.com</authorEmail>
+	<authorUrl>http://www.smartaddons.com</authorUrl>
+	<version>2.5</version>
+	<description>TPL_YTFRAMEWORK_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_sj_carousel">mod_sj_carousel.php</filename>
+		<filename>index.html</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+        <folder>language</folder>
+        <folder>core</folder>
+        <filename>index.html</filename>
+        <filename>mod_sj_carousel.xml</filename>		
+	</files>
+	<languages />
+	<config>
+		<fields name="params">
+            <fieldset name="source" label="Source Options">
+                <field name="catid" type="category" extension="com_content" multiple="true" size="10" default="" label="Data Source" description="Select category" />
+                <field name="show_child_category_articles" type="radio" class="btn-group" default="0" label="Child Category Articles" description="Include or Exclude Articles from Child Categories.">
+                    <option value="1">Include</option>
+                    <option value="0">Exclude
+                    </option>
+                </field>  
+                <field name="levels" type="text" default="1" label="Category Depth" description="The number of child category levels to return." />                              
+                <field name="show_front" type="radio" default="show" class="btn-group" label="Featured Articles" description="Select to Show, Hide, or Only display Featured Articles.">
+                    <option value="show">Show</option>
+                    <option value="hide">Hide</option>
+                    <option value="only">Onlly</option>
+                </field>
+                <field name="article_ordering" type="list" default="a.title" label="Article Field to Order By" description="Select which field you would like Articles to be ordered by. Featured Ordering should only be used when Filtering Option for Featured Articles is set to 'Only'.">
+                    <option value="a.ordering">Article Manager Order</option>
+                    <option value="fp.ordering">Featured Articles Order</option>
+                    <option value="a.hits">Hits</option>
+                    <option value="a.title">Title</option>
+                    <option value="a.id">ID</option>
+                    <option value="a.alias">Alias</option>
+                    <option value="a.created">Created Date</option>
+                    <option value="modified">Modified Date</option>
+                    <option value="publish_up">Start Publishing Date</option>
+                    <option value="a.publish_down">Finish Publishing Date</option>
+                </field>
+                <field name="article_ordering_direction" type="list" default="ASC" label="Ordering Direction" description="Select the direction you would like Articles to be ordered by.">
+                    <option value="DESC">Descending</option>
+                    <option value="ASC">Ascending</option>
+                </field>
+                <field name="count" type="text" default="5" label="Count" description="The number of articles to display. The default value of 0 will display all articles." />
+            </fieldset>
+			
+			<fieldset name="item_options" label="Articles Options">
+                <field name="item_title_display" type="radio" class="btn-group" default="1" label="Show Title" description="Select Yes if you would like the title to be displayed.">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="item_title_max_characs" type="text" default="20" label="Title Limit" description="Please enter in a numeric character limit value. The title will be trimmed to the number of characters you enter." />
+                <field name="show_introtext" type="radio" class="btn-group" default="1" label="Show Introtext" description="Select Yes if you would like the introtext to be displayed.">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="introtext_limit" type="text" default="100" label="Introtext Limit" description="Please enter in a numeric character limit value. The introtext will be trimmed to the number of characters you enter." />
+<!-- 				<field name="item_readmore_display" type="radio" default="1" class="btn-group" label="Show Read More" description="Show Read More"> -->
+<!-- 					<option value="1">Yes</option> -->
+<!-- 					<option value="0">No</option> -->
+<!-- 				</field> -->
+<!-- 				<field name="item_readmore_text" type="text" default="Readmore" label="Read More text" description="Read More text" /> -->
+			</fieldset>
+			
+			<fieldset name="Effect_options" label="Effect Options">
+				<field name="pause_hover" type="radio" default="hover" class="btn-group" label="Stop when hover" description="Stop when hover">
+					<option value="hover">Yes</option>
+					<option value="0">No</option>
+				</field>
+                <field name="play" type="radio" default="1" class="btn-group" label="Auto Play" description="auto play">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>				
+				<field name="interval" type="text" default="5000" label="Interval" description="Speed of Timer. Larger = Slower" />
+			</fieldset>
+			
+            <fieldset name="image_options" label="Image Options">
+                <field name="imgcfg_from_image_intro" label="From Image Intro" class="btn-group" description="Get Images From Image Intro" type="radio" default="1">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="imgcfg_from_image_fulltext" label="From Image Fulltext" class="btn-group" description="Get Images From Image Fulltext" type="radio" default="1">
+                     <option value="1">Yes</option>
+                     <option value="0">No</option>
+                </field> 
+                <field name="imgcfg_from_inline_introtext" label="From Inline Introtext" class="btn-group" description="Get Images From Inline Introtext" type="radio" default="1">
+                     <option value="1">Yes</option>
+                     <option value="0">No</option>
+                </field>
+                <field name="imgcfg_from_inline_fulltext" label="From Inline Fulltext" class="btn-group" description="Get images From Inline Fulltext" type="radio" default="1">
+                     <option value="1">Yes</option>
+                     <option value="0">No</option>
+                </field>
+                <field name="imgcfg_from_external" label="From External" class="btn-group" description="Get Image from External" type="radio" default="1">
+                     <option value="1">Yes</option>
+                     <option value="0">No</option>
+                </field>
+                <field name="imgcfg_external_url" type="text" default="images/{id}.jpg" label="External Path (or Url)" description="External Path (URL)"/>
+                <field name="imgcfg_order" type="text" default="image_intro, image_fulltext, inline_introtext, inline_fulltext, external" label="Order to Get" description="Order to Get Image" />
+                <field name="imgcfg_function" type="list" label="Resize Mode" default="resize_stretch" description="Resize Mode">
+                     <option value="none">None</option>
+                     <option value="resize_center">Center</option>
+                     <option value="resize_fill">Fill</option>
+                     <option value="resize_fit">Fit</option>
+                     <option value="resize_stretch">Stretch</option>
+                </field>
+                <field name="imgcfg_type" type="list" default="" label="Output Format" description="Output Format after Resizing">
+                     <option value="">Default</option>
+                     <option value="1">GIF</option>
+                     <option value="2">JPEG</option>
+                     <option value="3">PNG</option>
+                </field>
+                <field name="imgcfg_transparency" label="Keep Transparency" class="btn-group" description="Keep Transparency. Applied for GIF/PNG format" type="radio" default="1">
+                     <option value="1">Yes</option>
+                     <option value="0">No</option>
+                </field>
+                <field name="imgcfg_width" type="text" default="500" label="Image Width" description="Image Width" />
+                <field name="imgcfg_height" type="text" default="400" label="Image Height" description="Image Height" />
+                <field name="imgcfg_background" type="color" default="" label="Background" description="Background" />
+                <field name="imgcfg_cache" type="text" default="cache/resized" label="Cache Path" description="Output Cache" />
+                <field name="imgcfg_cache_url" type="text" default="cache/resized/" label="Cache Url" description="Output Cache URL" />
+                <field name="imgcfg_placeholder" label="Placeholder" class="btn-group" description="The Default Image. Applied for article has no image" type="radio" default="1">
+                     <option value="1">Yes</option>
+                     <option value="0">No</option>
+                </field>
+                <field name="imgcfg_placeholder_path" type="text" default="modules/mod_sj_carousel/assets/images/nophoto.png" label="Placeholder Path (or Url)" description="The Path (or URL) of Default Image"/>                               
+            </fieldset> 			
+			
+			<fieldset name="advanced">
+			    <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="fieldMODULECLASSSUFFIX" />
+			    <field name="layout" type="modulelayout" default="basic" class="btn-group" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field name="item_link_target" type="list" class="btn-group" default="_self" label="Open Link" description="The Type shows when you click on the link">
+                    <option value="_blank">New Window</option>
+                    <option value="_self">Same Window</option>
+                    <option value="_windowopen">Popup window</option>
+                </field>                
+                <field name="include_jquery" type="radio" class="btn-group" default="0" label="Include Jquery" description="select Yes if you want use for joomla 2.5">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field> 
+				<field name="pretext" type="textarea" default="" label="Pre-text" description="Intro text of module" cols="40" rows="4" filter="raw" />
+				<field name="posttext" type="textarea" default="" label="Post-text" description="Footer text of module" cols="40" rows="4" filter="raw" />
+				<field name="owncache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

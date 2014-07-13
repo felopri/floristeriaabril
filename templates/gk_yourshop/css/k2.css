@@ -1,0 +1,560 @@
+/** yourshop.com - November 2010
+ * @version		$Id: k2.css 503 2010-06-24 21:11:53Z joomlaworks $
+ * @package		K2
+ * @author		JoomlaWorks http://www.joomlaworks.gr
+ * @copyright	Copyright (c) 2006 - 2010 JoomlaWorks, a business unit of Nuevvo Webware Ltd. All rights reserved.
+ * @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
+
+/*----------------------------------------------------------------------
+	Common Elements
+----------------------------------------------------------------------*/
+
+/* --- Global K2 container --- */
+#k2Container { padding:0; }
+body.contentpane #k2Container { padding:16px; } /* used in popups */
+/* --- General padding --- */
+.k2Padding { padding:4px; }
+/* --- Clearing --- */
+.clr { clear:both; height:0; line-height:0; display:block; float:none; }
+/* --- RSS feed icon --- */
+
+
+.k2FeedIcon { padding:4px 8px; }
+.k2FeedIcon a,
+ .k2FeedIcon a:hover { display:block; float:right; margin:0; padding:0; width:16px; height:16px; background:url(../images/fugue/feed.png) no-repeat 50% 50%; }
+.k2FeedIcon a span,
+ .k2FeedIcon a:hover span { display:none; }
+/* --- Rating --- */
+
+
+.itemRatingForm { display:block; vertical-align:middle; line-height:25px; float:left; }
+.itemRatingLog { margin:0; padding:0 0 0 4px; float:left; }
+.itemRatingForm .formLogLoading { background:url(../images/system/loading.gif) no-repeat left center; height:25px; padding:0 0 0 20px; }
+.itemRatingList,
+ .itemRatingList a:hover,
+ .itemRatingList .itemCurrentRating { background:url(../images/system/star.gif) left -1000px repeat-x; }
+.itemRatingList { position:relative; float:left; width:125px; height:25px; overflow:hidden; list-style:none; margin:0!important; padding:0; background-position:left top; }
+.itemRatingList li { display:inline; background:none; padding:0; }
+.itemRatingList a,
+ .itemRatingList .itemCurrentRating { position:absolute; top:0; left:0; text-indent:-1000px; height:25px; line-height:25px; outline:none; overflow:hidden; border:none; cursor:pointer; }
+.itemRatingList a:hover { background-position:left bottom; }
+.itemRatingList a.one-star { width:20%; z-index:6; }
+.itemRatingList a.two-stars { width:40%; z-index:5; }
+.itemRatingList a.three-stars { width:60%; z-index:4; }
+.itemRatingList a.four-stars { width:80%; z-index:3; }
+.itemRatingList a.five-stars { width:100%; z-index:2; }
+.itemRatingList .itemCurrentRating { z-index:1; background-position:0 center; margin:0; padding:0; }
+.siteRoot { display:none; }
+/* --- CSS added with Javascript --- */
+
+
+.smallerFontSize { font-size:100%; line-height:inherit; }
+.largerFontSize { font-size:150%; line-height:140%; }
+/* --- ReCaptcha --- */
+
+
+.recaptchatable .recaptcha_image_cell,
+ #recaptcha_table { background-color:#fff !important; }
+#recaptcha_table { border-color: #ccc !important; }
+#recaptcha_response_field { border-color: #ccc !important; background-color:#fff !important; }
+/* --- Primary lists in modules --- */
+
+
+.clearList { display:none; float:none; clear:both; } /* this class is used to clear all previous floating list elements */
+.lastItem { border:none; } /* class appended on last list item */
+/* --- Avatars --- */
+
+
+.k2Avatar img { display:block; float:left; border:1px solid #dadada; padding:4px; margin:2px 8px 4px 0; }
+/* --- Pagination --- */
+
+
+.k2Pagination { padding:8px; margin:24px 0 4px 0; text-align:center; color:#999; }
+.k2Pagination ul {margin: 10px 0 0;padding: 3px 0;text-align: center;width: auto;}
+.k2Pagination ul li {background:#FFF;border: 1px solid #D7D7D7;color: #999;cursor: pointer;display: inline-block;font-size: 85%;font-weight: bold;margin: 2px 5px;overflow: hidden;padding: 0;}
+.k2Pagination ul li span, 
+.k2Pagination ul li a {display: inline-block;height: 24px;line-height: 24px;padding: 0 10px;width: auto;}
+.k2Pagination ul li:hover,
+.k2Pagination ul li:hover a {color: #FFFFFF;text-decoration: none;}
+/* --- Featured flags: the classes are repeated further below to indicate placement in the CSS structure --- */
+
+
+.itemIsFeatured,
+ .catItemIsFeatured,
+ .userItemIsFeatured { background:none; }
+/*----------------------------------------------------------------------
+
+
+	Component: views
+
+
+----------------------------------------------------------------------*/
+
+
+.genericItemView { border-bottom:1px solid #e5e5e5; padding:8px 0; margin:0 0 16px 0; } /* this is the item container for this view */
+.userItemViewUnpublished { opacity:0.9; border:4px solid #dadada; background:#fffff2; padding:8px; }
+.itemView { padding:8px 0 24px 0; margin:0; } /* this is the item container for this view */
+.userItemEditLink,
+.catItemEditLink,
+.itemEditLink { display:block; text-align:right; padding:8px 36px; margin:0 0 24px 0; border:2px dashed #eae8cc; background: #fffef4; font-size: 20px; font-weight: normal; font-family: Georgia, "Times New Roman", Times, serif; font-style: italic }
+.userItemEditLink a,
+.catItemEditLink a,
+.itemEditLink a { color: #C03131}
+.latestItemDateCreated,
+.genericItemDateCreated,
+.userItemDateCreated,
+.catItemDateCreated,
+.itemDateCreated { font-size:11px; }
+.genericItemDateCreated { border-right:1px solid #dadada; margin:0 8px 0 0; padding:0 8px 0 0; }
+.itemHeader .itemTitle { color:#46660b; font-size:250%;  line-height:110%; margin:0; padding:12px 0 0; margin-top: 10px; border-top: 1px solid #e5e5e5 }
+.latestItemHeader .latestItemTitle,
+.genericItemHeader .genericItemTitle,
+.userItemHeader .userItemTitle,
+.catItemHeader .catItemTitle { font-size:28px; font-weight: normal; line-height:28px; margin:0; padding:10px 0 4px; }
+.latestItemHeader .latestItemTitle a,
+.genericItemHeader .genericItemTitle a,
+.userItemHeader .userItemTitle a,
+.catItemHeader .catItemTitle a { }
+.latestItemHeader .latestItemTitle a:hover,
+.genericItemHeader .genericItemTitle a:hover,
+.userItemHeader .userItemTitle a:hover,
+.catItemHeader .catItemTitle a:hover { }
+.userItemHeader .userItemTitle span sup,
+.catItemHeader .catItemTitle span sup,
+.itemHeader .itemTitle span sup { font-size:12px; color:#CF1919; text-decoration:none; } /* "Featured" presented in superscript */
+.catItemHeader .catItemAuthor,
+.itemHeader .itemAuthor { display:block; padding:0; margin:0; font-size: 11px;}
+.itemHeader .itemAuthor {display:inline;}
+.catItemHeader .catItemAuthor { float: left; margin: 0 12px 0 0;}
+.itemToolbar { margin:2px 0 25px; padding:4px 0 5px; border-bottom: 1px solid #e5e5e5;  }
+.itemToolbar ul { text-align:left; list-style:none; padding:0 0 4px!important; margin:0!important; font-size: 11px;  }
+.itemToolbar ul li { display:inline; list-style:none; padding:0 4px 0 8px; margin:0; border-left:1px solid #ccc; text-align:center; background:none; }
+.itemToolbar ul > li:first-child { border:none; padding-left:0!important; } /* remove the first CSS border from the left of the toolbar */
+.itemToolbar ul li a { font-weight:normal; }
+.itemToolbar ul li a img { vertical-align:middle; }
+.itemToolbar ul li a#fontDecrease { margin:0 0 0 2px; }
+.itemToolbar ul li a#fontDecrease img { width:13px; height:13px; background:url(../images/system/font_decrease.gif) no-repeat; }
+.itemToolbar ul li a#fontIncrease { margin:0 0 0 2px; }
+.itemToolbar ul li a#fontIncrease img { width:13px; height:13px; background:url(../images/system/font_increase.gif) no-repeat; }
+.itemToolbar ul li a#fontDecrease span,
+ .itemToolbar ul li a#fontIncrease span { display:none; }
+.itemToolbar .itemAuthor a { }
+.itemToolbar .itemAuthor a:hover { color: #000; }
+.catItemRatingBlock,
+.itemRatingBlock { padding:4px 0 4px; font-size: 11px; }
+.catItemRatingBlock {padding-top: 12px;}
+.itemRatingBlock { float: right;}
+.catItemRatingBlock span,
+.itemRatingBlock span { display:block; float:left; font-style:normal; padding:0 4px 0 0; margin:0; }
+.latestItemBody,
+.genericItemBody,
+.userItemBody,
+.catItemBody,
+.itemBody { padding:8px 0; margin:0; float:left;}
+.genericItemImageBlock { float:left; margin:10px 16px 0 0!important; padding:0; }
+.genericView .catItemBody {width:100%}
+.userItemImageBlock,
+.itemImageBlock { margin:0 0 16px; padding:0; text-align: center }
+.userItemImageBlock { float: left;margin:10px 16px 0 0 !important;}
+.userItemView { margin-bottom: 40px;}
+.latestItemImageBlock,
+.genericItemImageBlock,
+.catItemImageBlock { margin:0; padding:0; }
+.catItemImageBlock {float: left;margin: 10px 16px 0 0 !important;}
+.genericItemImageBlock { padding:0; border:none; }
+span.itemImage { display:block; text-align:center; margin:0; }
+span.latestItemImage,
+span.userItemImage,
+span.catItemImage { display:block; margin:0; text-align:center; }
+span.latestItemImage img,
+span.genericItemImage img,
+span.userItemImage img,
+span.catItemImage img,
+span.itemImage img { border:1px solid #d1d1d1; margin:0; padding:6px; }
+span.itemImageCaption, span.itemImageCredits { font-size:11px; }
+span.itemImageCredits { font-style:italic; border-left: 1px solid #ccc; padding-left: 5px; margin-left: 5px;}
+.latestItemIntroText,
+.genericItemIntroText,
+.userItemIntroText,
+.catItemIntroText,
+.itemIntroText { font-size:inherit; font-weight:normal; line-height:inherit; padding:4px 0 12px; }
+.latestItemIntroText img,
+.genericItemIntroText img,
+.userItemIntroText img,
+.catItemIntroText img,
+.itemIntroText img { padding:2px; margin:4px; background:#fff; border:1px solid #ccc; }
+.itemFullText h3 { margin:0; padding:16px 0 4px 0; }
+.itemFullText img { padding:2px; margin:4px; background:#fff; border:1px solid #ccc; }
+.catItemExtraFields,
+.genericItemExtraFields,
+.itemExtraFields { clear:both; margin:10px 0; padding:0; }
+.catItemExtraFields h4,
+.genericItemExtraFields h4,
+.itemExtraFields h3 { font-size:28px;font-weight:normal;height:auto;line-height:28px;margin:32px 0 22px;padding:0 0 6px; border-bottom: 3px solid #ddd}
+.catItemExtraFields ul,
+.genericItemExtraFields ul,
+.itemExtraFields ul { }
+.catItemExtraFields ul li,
+.genericItemExtraFields ul li,
+.itemExtraFields ul li { display:block;  padding:2px; overflow:hidden; }
+.catItemExtraFields ul li span.catItemExtraFieldsLabel,
+.genericItemExtraFields ul li span.genericItemExtraFieldsLabel,
+.itemExtraFields ul li span.itemExtraFieldsLabel { display:block; float:left; font-weight:bold; margin:0 4px 0 0; width:30%; }
+.catItemExtraFields ul li span.catItemExtraFieldsValue,
+.itemExtraFields ul li span.itemExtraFieldsValue { margin-left:30%; display:block; }
+span.itemDateModified { display:block; font-size:11px; font-style:italic; margin:16px 0 4px; padding:4px; text-align:right; }
+.latestItemLinks,
+.userItemLinks,
+.catItemLinks,
+.itemLinks { margin:0 0 4px; padding:0; font-size: 11px; }
+.catItemHitsBlock,
+.itemHitsTwitter, 
+.itemCategory, 
+.latestItemTagsBlock,
+.userItemTagsBlock,
+.catItemTagsBlock,
+.itemTagsBlock,
+.itemSocialLinksBlock { padding:4px; border-bottom: 1px solid #d1d1d1; } 
+span.itemHitsTwitterSep { padding:0 8px; color:#ccc; }
+span.itemTwitterLink a { background:url(../images/social/twitter_16.png) no-repeat 0 50%; padding:2px 0 0 20px; margin:8px 0; text-decoration:none; }
+span.itemTwitterLink a:hover { text-decoration:none; }
+
+.latestItemCategory,
+.genericItemCategory,
+.userItemCategory,
+.catItemCategory { font-size:11px; }
+.itemCategory span { font-weight:bold; padding:0 24px 0 0; }
+
+
+.latestItemTagsBlock span,
+.userItemTagsBlock span,
+.catItemTagsBlock span,
+.itemTagsBlock span { font-weight:bold; padding:0 24px 0 0; }
+.latestItemTagsBlock ul.latestItemTags,
+.userItemTagsBlock ul.userItemTags,
+.catItemTagsBlock ul.catItemTags,
+.itemTagsBlock ul.itemTags { list-style:none; padding:0; margin:0; display:inline; }
+.latestItemTagsBlock ul.latestItemTags li,
+.userItemTagsBlock ul.userItemTags li,
+.catItemTagsBlock ul.catItemTags li,
+.itemTagsBlock ul.itemTags li { display:inline; list-style:none; padding:0 14px 0 0; margin:0; text-align:center;  }
+.latestItemTagsBlock ul.latestItemTags li a,
+.userItemTagsBlock ul.userItemTags li a,
+.catItemTagsBlock ul.catItemTags li a,
+.itemTagsBlock ul.itemTags li a { }
+.latestItemTagsBlock ul.latestItemTags li a:hover,
+.userItemTagsBlock ul.userItemTags li a:hover,
+.catItemTagsBlock ul.catItemTags li a:hover,
+.itemTagsBlock ul.itemTags li a:hover { }
+
+.itemSocialLinksBlock span { font-weight:bold; padding:0 24px 0 0; float:left; display:block; }
+.itemSocialLinksBlock ul.itemSocialLinks { list-style:none; padding:0; margin:0; clear: none; float:left; }
+.itemSocialLinksBlock ul.itemSocialLinks li { float:left; list-style:none; padding:0 4px; margin:0; }
+.itemSocialLinksBlock ul.itemSocialLinks li a { float:left; display:block; width:16px; height:16px; background-position:0 0; background-repeat:no-repeat; }
+.itemSocialLinksBlock ul.itemSocialLinks li a:hover { }
+.itemSocialLinksBlock ul.itemSocialLinks li a span { display:none; }
+.itemSocialSharing { padding: 18px 0 0 }
+.itemSocialSharing div { float:left; display:inline; width:auto }
+.itemSocialSharing iframe { background:none !important; border:none !important }
+.catItemAttachmentsBlock,
+.itemAttachmentsBlock { padding:4px; border-bottom:1px solid #ccc; }
+.catItemAttachmentsBlock span,
+.itemAttachmentsBlock span { font-weight:bold; padding:0 4px 0 0; }
+.catItemAttachmentsBlock ul.catItemAttachments,
+.itemAttachmentsBlock ul.itemAttachments { list-style:none; padding:0; margin:0; display:inline; }
+.catItemAttachmentsBlock ul.catItemAttachments li,
+.itemAttachmentsBlock ul.itemAttachments li { display:inline; list-style:none; padding:0 4px; margin:0; text-align:center; }
+.catItemAttachmentsBlock ul.catItemAttachments li span,
+.itemAttachmentsBlock ul.itemAttachments li span { font-size:10px; color:#999; font-weight:normal; }
+.modulePretext { color:#858585; font-size: 11px; line-height: 15px; border-bottom: 1px dotted #d7d7d7; padding: 0 0 6px !important; }
+/* Author block & User block*/
+
+
+.itemAuthorBlock { margin:26px 0; padding:2px 0 0;  }
+.itemAuthorBlock img.itemAuthorAvatar, .latestItemsUser img, .userBlock img { border: 1px solid #d1d1d1; background: #fff; display:block; float:left; margin:12px 24px 12px 12px; padding:5px; }
+.latestItemsUser img, .userBlock img { margin: 0 24px 0 0;}
+.itemAuthorBlock .itemAuthorDetails, .latestItemsUser, .userBlock { margin:0; padding:12px; background:none; border: 1px solid #d1d1d1; }
+.itemAuthorBlock .itemAuthorDetails h3.itemAuthorName, .latestItemsUser h2, .userBlock h2 { margin:0 0 4px 0; padding:0; font-size: 150%; font-weight:normal; }
+.itemAuthorBlock .itemAuthorDetails p { margin:6px 0; font-size: 90%; }
+.latestItemsUser, .userBlock {font-size: 90%; margin-bottom: 32px;}
+.itemAuthorBlock .itemAuthorDetails span.itemAuthorUrl { border-right:1px solid #ccc; padding:0 8px 0 0; margin:0 4px 0 0; font-size: 11px;}
+.itemAuthorBlock .itemAuthorDetails span.itemAuthorEmail { font-weight:bold; }
+.itemAuthorBlock .itemAuthorDetails span.itemAuthorUrl a,
+.itemAuthorBlock .itemAuthorDetails span.itemAuthorEmail a { font-weight:normal; }
+.latestItemsUser p.ulatestItemsUserDescription,
+.userBlock p.userDescription { padding:0!important; margin:0!important; }
+.latestItemsUser p.latestItemsUserAdditionalInfo,
+.userBlock p.userAdditionalInfo { padding:8px 0 6px; margin:5px 12px 0;font-size: 11px; }
+.userBlock p.userAdditionalInfo span {margin-right: 16px; font-weight: bold}
+.userBlock p.userAdditionalInfo span a { font-weight: normal; margin: 0 6px; }
+/* Author latest  &  Related by tag */
+
+
+.itemRelated, .itemAuthorLatest { float:right; margin-bottom:10px; overflow:hidden; width:49%; border: 1px solid #D5D5D5; }
+.itemRelated h3, .itemAuthorLatest h3 {background: url('../images/moduletable_header.png') repeat-x 0 0;
+    border-bottom: 1px solid #D5D5D5;
+    color: #1F1F1F;
+    font-size: 12px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    text-transform: uppercase;}
+.itemAuthorLatest ul, .itemRelated ul  { padding:0; }
+.itemRelated ul li, .itemAuthorLatest ul li { }
+.itemRelated ul li:first-child, .itemAuthorLatest ul li:first-child {border: none}
+.itemRelated ul li a, .itemAuthorLatest ul li a {font-size: 12px; padding-left:32px; background:transparent url('../images/menu_item.png') no-repeat 10px 4px; }
+.itemAuthorLatest { float:left; }
+
+
+
+/* Video */
+
+
+.latestItemVideoBlock,
+.catItemVideoBlock,
+.itemVideoBlock { margin:0 0 16px 0; padding:16px; background:#010101 url(../images/system/videoplayer-bg.gif) repeat-x bottom; }
+.catItemVideoBlock .catItemVideoEmbedded,
+.itemVideoBlock .itemVideoEmbedded { text-align:center; } /* for embedded videos (not using AllVideos) */
+.latestItemVideoBlock span.latestItemVideo,
+.catItemVideoBlock span.catItemVideo,
+.itemVideoBlock span.itemVideo { display:block; overflow:hidden; }
+.itemVideoBlock span.itemVideoCaption { color:#eee; float:left; display:block; font-size:11px; font-weight:bold; width:60%; }
+.itemVideoBlock span.itemVideoCredits { color:#eee; float:right; display:block; font-style:italic; font-size:11px; width:35%; text-align:right; }
+/* Image Gallery */
+
+
+.catItemImageGallery,
+.itemImageGallery { margin:0 0 16px 0; padding:0; }
+/* Article navigation */
+
+
+.itemNavigation { font-size:12px; margin:12px 0 24px; }
+.itemNavigation span.itemNavigationTitle { color:#202020; }
+.itemNavigation a.itemPrevious { padding:0 12px; }
+.itemNavigation a.itemNext { padding:0 12px; }
+/* Comments */
+
+
+.itemComments {margin: 30px 0 0 }
+.itemComments ul.itemCommentsList { margin:0 0 16px; padding:0; list-style:none; }
+.itemComments ul.itemCommentsList li {  padding:12px; margin-bottom: 18px; border-bottom: 1px solid #e5e5e5;}
+
+.itemComments ul.itemCommentsList li.authorResponse { background:url(../images/system/stripes.png) repeat; }
+.itemComments ul.itemCommentsList li img {border:1px solid #dadada; float:left; margin:6px 20px 0 0; padding:4px; }
+.itemComments ul.itemCommentsList li span.commentDate { border-right:1px solid #e5e5e5; font-size: 11px; color: #333; margin:0 8px 0 0; padding:0 4px 0 0; }
+.itemComments ul.itemCommentsList li span.commentAuthorName { color:#46660b; }
+.itemComments ul.itemCommentsList li p { padding:4px 0; font-style: italic }
+.itemComments ul.itemCommentsList li span.commentAuthorEmail { display:none; }
+.itemComments ul.itemCommentsList li span.commentLink { float:right; }
+.itemComments ul.itemCommentsList li span.commentLink a { font-size:11px; }
+.itemComments ul.itemCommentsList li span.commentLink a:hover {  text-decoration:underline; }
+.itemCommentsPagination { padding:4px; margin:0 0 24px 0; }
+.itemCommentsPagination span.pagination { display:block; float:right; clear:both; }
+.itemComments h3 {  background:none; border:1px solid #D1D1D1; color:#46660B; font-size:24px; line-height:110%; margin:0 0 20px; padding:8px 12px; }
+.itemCommentsForm p.itemCommentsFormNotes { font-size:11px; margin-bottom: 18px;}
+.itemCommentsForm form {}
+.itemCommentsForm form label.formComment { display:block; margin:12px 0 0 2px; }
+.itemCommentsForm form label.formName { display:block; margin:12px 0 0 2px; }
+.itemCommentsForm form label.formEmail { display:block; margin:12px 0 0 2px; }
+.itemCommentsForm form label.formUrl { display:block; margin:12px 0 0 2px; }
+.itemCommentsForm form label.formRecaptcha { display:block; margin:12px 0 0 2px; }
+.itemCommentsForm form textarea.inputbox { display:block; width:98%; height:160px!important; margin:0; }
+.itemCommentsForm form input.inputbox { display:block; width:350px; margin:0; }
+.itemCommentsForm form input#submitCommentButton { margin:12px 0 0 0; }
+.itemCommentsForm form span#formLog { margin:0 0 0 20px; padding:0 0 0 20px; font-weight:bold; color:#CF1919; }
+.itemCommentsForm form .formLogLoading { background:url(../images/system/loading.gif) no-repeat left center; }
+/* Back to top link */
+.itemBackToTop { text-align:right; margin-bottom:20px; }
+.itemBackToTop a { }
+.itemBackToTop a:hover { }
+.latestItemsContainer { float:left; }
+/* --- Category block --- */
+.latestItemsCategory,
+.itemListCategory { margin:0 0 32px; padding:12px; border: 1px solid #d1d1d1; }
+span.catItemAddLink,
+span.userItemAddLink { clear:both; display:block; text-align:right; padding:4px; margin:0 0 4px 0; border-bottom:2px dashed #ddd; }
+.latestItemsCategoryImage { text-align:center; }
+.latestItemsCategoryImage img,
+.itemListCategory img { float:left; display:block; background:#fff; padding:4px; border:1px solid #ddd; margin:0 8px 0 0; }
+.latestItemsCategory h2,
+.itemListCategory h2 { font-size:125%; font-weight:normal; margin:0 0 4px; padding:0; }
+.latestItemsCategory p,
+.itemListCategory p { margin:2px 0!important; }
+/* --- Sub-category block --- */
+	.itemListSubCategories h3 { font-size:125%; margin:30px 0 12px 0; }
+.subCategoryContainer { float:left; }
+.subCategory { margin:4px 12px 4px 0; }
+.subCategory a.subCategoryImage,
+ .subCategory a.subCategoryImage:hover { text-align:center; display:block; }
+.subCategory a.subCategoryImage img { background:none repeat scroll 0 0 #FFF; border:1px solid #dadada; margin:0 8px 0 0; padding:6px; }
+.subCategory a.subCategoryImage:hover img { }
+.subCategory h2 { font-size:125%; font-weight:normal; margin:16px 0 0; }
+/* --- Item groups --- */
+#itemListLinks {border-top: 1px solid #e5e5e5; margin:8px 0; padding:8px; }
+.itemContainer { float:left; margin:0; }
+.genericView .itemContainer {float:none;}
+.catItemTitle { font-size: 12px;}
+.itemContainerLast {margin-bottom:35px;}
+/* --- Item block for each item group --- */
+.catItemView,
+ .latestItemView { padding:0 20px 0 0; } 
+ .catItemView {margin-bottom: 40px;}
+ /* this is the item container for this view - we add a generic padding so that items don't get stuck with each other */
+/* Additional class appended to the element above for further styling per group item */
+	.groupLinks { padding:0; margin:0; }
+/* Anchor link to comments */
+.latestItemCommentsLink,
+.catItemCommentsLink,
+.userItemCommentsLink,
+.catComments { font-size:100%; display:inline; margin:0 8px 0 4px; padding:0 8px 0 0; border-right:1px solid #ccc; }
+/* Read more link */
+.latestItemReadMore,
+.userItemReadMore,
+.catItemReadMore { font-size:100%; display:inline; }
+.latestItemReadMore a.k2ReadMore,
+.userItemReadMore a.k2ReadMore,
+.catItemReadMore a.k2ReadMore,
+.catItemBody a.k2ReadMore {float:none;background:none;display:inline; border:none;font-weight:normal;font-size:13px;}
+.latestItemReadMore a:hover.k2ReadMore,
+.userItemReadMore a:hover.k2ReadMore,
+.catItemReadMore a:hover.k2ReadMore { color: #000}
+.catItemBody a:hover.k2ReadMore {text-decoration:underline;}
+.genericItemReadMore { font-size:100%; }
+/* Modified date */
+span.catItemDateModified { display:block; text-align:right; padding:4px; margin:4px 0; color:#999; border-top:1px solid #ddd; }
+/* Items presented in a list */
+h2.latestItemTitleList { font-size:14px; padding:2px 0; margin:8px 0 2px 0; font-family:Arial, Helvetica, sans-serif; border-bottom:1px solid #ccc; line-height:normal; }
+/*----------------------------------------------------------------------
+	Component: Register & profile page views (register.php & profile.php)
+----------------------------------------------------------------------*/
+.k2AccountPage table tr td label { white-space:nowrap; }
+img.k2AccountPageImage { border:4px solid #ddd; margin:10px 0; padding:0; display:block; }
+.k2AccountPage .k2AccountPageNotice { padding:8px; }
+.k2AccountPage .k2AccountPageUpdate { margin:8px 0; padding:8px; text-align:right; }
+/*----------------------------------------------------------------------
+	Modules: mod_k2_comments
+----------------------------------------------------------------------*/
+/* Latest Comments */
+.k2LatestCommentsBlock ul li { background: #fff; padding:12px!important; font-style:italic; line-height:1.8!important; }
+.k2LatestCommentsBlock ul li a.lcAvatar img { border:1px solid #d1d1d1; display:block; float:right; margin:2px 0 2px 8px; padding:4px; }
+.k2LatestCommentsBlock ul li a { display: block; color: #000; margin-bottom: 12px; }
+.k2LatestCommentsBlock ul li a:hover {color: #000}
+.k2LatestCommentsBlock ul li span.lcUsername { color:#46660b; font-size:11px; }
+.k2LatestCommentsBlock ul li span.lcCommentDate { font-size:11px; color: #000}
+/* Top Commenters */
+.k2TopCommentersBlock ul li span.tcLatestCommentDate { color:#000; }
+/*----------------------------------------------------------------------
+	Modules: mod_k2_content
+----------------------------------------------------------------------*/
+.k2ItemsBlock ul li { margin:0; padding:12px 0!important; }
+.k2ItemsBlock ul li.odd { background: #fff}
+.k2ItemsBlock ul li.lastItem { }
+.k2ItemsBlock ul li a.moduleItemTitle { display:block;  font-weight: bold; line-height: 1.6 }
+.k2ItemsBlock ul li .moduleItemAuthor { color:#666; font-size:90%; }
+.k2ItemsBlock ul li a.moduleItemAuthorAvatar img { border:1px solid #dadada; display:block; float:right; height:auto; margin:0 4px 0 0; padding:2px; width:14px; }
+.k2ItemsBlock ul li .moduleItemIntrotext { display:block; line-height:1.6; }
+.k2ItemsBlock ul li .moduleItemIntrotext a.moduleItemImage img { border:1px solid #d1d1d1; float:left; margin:2px 8px 4px 0; padding:6px; }
+.k2ItemsBlock ul li .moduleItemIntrotext a:hover.moduleItemImage img { }
+.moduleItemExtraFields ul li span.moduleItemExtraFieldsLabel { display:block; float:left; font-weight:bold; margin:0 4px 0 0; width:30%; }
+.k2ItemsBlock ul li a.moduleItemCategory { font-size:90%; }
+.k2ItemsBlock ul li .moduleItemTags { font-size:90%; }
+.k2ItemsBlock ul li .moduleItemTags a { padding:0 2px; }
+.k2ItemsBlock ul li .moduleAttachments { font-size:90%; }
+.k2ItemsBlock ul li a.moduleItemComments { border-right:1px solid #dadada; padding:0 4px 0 0; margin:0 8px 0 0; }
+.k2ItemsBlock ul li span.moduleItemHits { font-size:90%; border-right:1px solid #dadada; padding:0 4px 0 0; margin:0 8px 0 0; }
+.k2ItemsBlock ul li a.moduleItemReadMore { }
+.k2ItemsBlock ul li a:hover.moduleItemReadMore { color: #000; }
+.k2ItemsBlock a.moduleCustomLink { font-size:90%; }
+/*----------------------------------------------------------------------
+	Modules: mod_k2_login
+----------------------------------------------------------------------*/
+.k2LoginBlock fieldset.input { margin:0; padding:0 0 8px 0; }
+.k2LoginBlock fieldset.input p { margin:0; padding:0 0 4px 0; }
+.k2LoginBlock fieldset.input p label { display:block; }
+.k2LoginBlock fieldset.input p input { display:block; }
+.k2LoginBlock fieldset.input p#form-login-remember label,
+.k2LoginBlock fieldset.input p#form-login-remember input { display:inline; }
+.k2UserBlock p.ubGreeting { border-bottom:1px solid #ccc; }
+.k2UserBlock .k2UserBlockDetails span.ubName { display:block; font-weight:bold; font-size:14px; }
+/*----------------------------------------------------------------------
+	Modules: mod_k2_tools
+----------------------------------------------------------------------*/
+/* --- Authors --- */
+.k2AuthorsListBlock ul li a.abAuthorLatestItem { display:block; clear:both; }
+/* --- Breadcrumbs --- */
+.k2BreadcrumbsBlock span.bcTitle { padding:0 4px 0 0; color:#999; }
+.k2BreadcrumbsBlock span.bcSeparator { padding:0 4px; font-size:14px; }
+/* --- Calendar --- */
+.k2CalendarBlock { margin-bottom:8px; } /* use this height value so that the calendar height won't change on Month change via ajax */
+.k2CalendarLoader { background:#fff }
+table.calendar { width:100%;margin:0 auto; background:#fff; border-collapse:collapse; }
+table.calendar tr td { text-align:center; vertical-align:middle; padding:3px; border:1px solid #eee; background:#fff; }
+table.calendar tr td.calendarNavMonthPrev, table.calendar tr td.calendarNavMonthNext { background: #fff; text-align: center; font-size: 15px !important; }
+table.calendar tr td.calendarNavMonthPrev a, table.calendar tr td.calendarNavMonthNext a { text-decoration:none; }
+table.calendar tr td.calendarNavMonthPrev a:hover, table.calendar tr td.calendarNavMonthNext a:hover { text-decoration:none; }
+table.calendar tr td.calendarCurrentMonth { background:#fff; font-size: 11px; text-transform: uppercase; color: #333 }
+table.calendar tr td.calendarDayName {background: #f5f5f5; font-size:11px; width:14.2%; color: #333; font-weight: 600 }
+table.calendar tr td.calendarDateEmpty { background:#fbfbfb; }
+table.calendar tr td.calendarDate {font-size: 11px;  }
+table.calendar tr td.calendarDateLinked { padding:0; }
+table.calendar tr td.calendarDateLinked a { display:block; padding:2px; text-decoration:none; background:#fff; }
+table.calendar tr td.calendarDateLinked a:hover { display:block; background:#222; color:#fff; padding:2px; text-decoration:none; }
+table.calendar tr td.calendarToday { background:#78A8D5; color:#fff;  }
+table.calendar tr td.calendarTodayLinked {background:#78A8D5; color:#333; padding:0;}
+table.calendar tr td.calendarTodayLinked a { display:block; padding:2px; color:#fff; text-decoration:none; }
+table.calendar tr td.calendarTodayLinked a:hover { display:block; background:#f8fcfe; color: #78A8D5; padding:2px; text-decoration:none;}
+/* --- Category Tree Select Box --- */
+.k2CategorySelectBlock form select { width:auto; }
+/* --- Category List/Menu --- */
+.k2CategoriesListBlock ul li a { }
+.k2CategoriesListBlock ul li.activeCategory a { }
+.k2CategoriesListBlock ul li ul { }
+/* --- Tag Cloud --- */
+.k2TagCloudBlock { padding:8px 0; }
+.k2TagCloudBlock a { margin: 2px 2px 0; padding:2px 4px; float:left; display:block; line-height: 1.6; color: #656565 }
+.k2TagCloudBlock a:hover { padding:2px 4px; float:left; display:block; background: #DDDABD; color:#fff; text-decoration:none; }
+/* --- Google Search --- */
+#k2Container .gsc-branding-text { text-align:right; }
+#k2Container .gsc-control { width:100%; }
+#k2Container .gs-visibleUrl { display:none; }
+/*----------------------------------------------------------------------
+	Modules: mod_k2_users
+----------------------------------------------------------------------*/
+	a.ubUserFeedIcon,
+ a.ubUserFeedIcon:hover { display:inline-block; margin:0 2px 0 0; padding:0; width:16px; height:16px; background:url(../images/fugue/feed.png) no-repeat 50% 50%; }
+a.ubUserFeedIcon span,
+ a.ubUserFeedIcon:hover span { display:none; }
+a.ubUserURL,
+ a.ubUserURL:hover { display:inline-block; margin:0 2px 0 0; padding:0; width:16px; height:16px; background:url(../images/fugue/globe.png) no-repeat 50% 50%; }
+a.ubUserURL span,
+ a.ubUserURL:hover span { display:none; }
+span.ubUserEmail { display:inline-block; margin:0 2px 0 0; padding:0; width:16px; height:16px; background:url(../images/fugue/mail.png) no-repeat 50% 50%; overflow:hidden; }
+span.ubUserEmail a { display:inline-block; margin:0; padding:0; width:16px; height:16px; text-indent:-9999px; }
+.k2UsersBlock ul li h3 { clear:both; margin:8px 0 0 0; padding:0; }
+
+/* CSS fixes for the template */
+.k2ItemsBlock > ul { margin:0!important; }
+.k2ItemsBlock .moduleItemTitle { padding:0!important; background:none!important; font-size:14px!important; color:#46660b!important; font-weight:bold!important; }
+.k2ItemsBlock .moduleItemTitle:hover { text-decoration:underline; }
+.k2ItemsBlock .k2store_item_price { font-size:12px; }
+.k2ItemsBlock .k2store_item_price .k2store_item_price_value { font-size:16px; }
+.k2ItemsBlock ul li { border-top:none!important; }
+a.k2Avatar { float:right; background:none!important; padding:0!important; }
+
+.k2CategoriesListBlock ul.level0 { margin:0; padding:0; }
+.k2CategoriesListBlock ul.level0 li { min-height:32px; border-top:1px solid #e7e7e7; }
+.k2CategoriesListBlock ul.level0 li:first-child { border-top: none; }
+.k2CategoriesListBlock ul.level0 li a { padding: 0 0 0 32px; line-height:32px; display:block; min-height:32px; background: transparent url('../images/menu_item.png') no-repeat 12px 11px; color:#000; font-weight:bold; font-size:11px; }
+.k2CategoriesListBlock ul.level0 li a:hover { text-decoration:none; }
+.k2CategoriesListBlock ul.level0>li.parent>a { background: transparent url('../images/menu_plus.png') no-repeat 12px 11px; }
+.k2CategoriesListBlock ul.level0>li:hover>a{ color:#46660b; }
+.k2CategoriesListBlock ul.level0>li.active { background:#46660b url('../images/style1/active_menu.png') repeat-x 0 top; border:1px solid #577b15; border-bottom:none; margin:0 -1px;}
+.k2CategoriesListBlock ul.level0>li.active>a { color:#fff; }
+.k2CategoriesListBlock ul.level0>li.active.parent>a { background: transparent url('../images/menu_minus.png') no-repeat 12px 11px; }
+.k2CategoriesListBlock ul.level0>li>ul li { background:#FDFCF1; border:1px solid #DDDABD ; border-bottom:none; margin:0 -1px; }
+.k2CategoriesListBlock ul.level0>li>ul li:first-child { border-top:none; }
+.k2CategoriesListBlock ul.level0>li>ul li a { color:#5d5d5d; font-weight:normal; }
+.k2CategoriesListBlock ul.level0>li>ul li a:hover { color:#000; }
+.k2CategoriesListBlock ul.level0>li.active + li { border-top:1px solid #b1b1b1; }

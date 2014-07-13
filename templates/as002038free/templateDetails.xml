@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/2.5/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>AS 002038 Free</name>
+	<creationDate>2012-06-11</creationDate>
+	<updateDate>2012-06-11</updateDate>
+	<version>1.0.0</version>
+	<author>AS Designing</author>
+    <authorUrl>http://www.asdesigning.com</authorUrl>
+    <copyright>AS Designing</copyright>
+    <license>Creative Commons</license>
+	<description>
+	
+	<![CDATA[
+
+			<img src="../templates/as002038free/template_thumbnail.png" align="left" style="margin: 0px 10px 10px 0px;" />
+			
+			<h1>AS Template 002038 - Free Version</h1>
+			
+			<span style="font-weight: bold; ">
+				This template is released under the Creative Commons Attribution 3.0 license. <br>
+				This means that it can be used for private and commercial purposes, <br>
+				edited freely or redistributed as long as you keep the link back to 
+				<a href="http://www.astemplates.com" target="_blank">AS Templates</a>.<br /> 
+				If you are not going to keep the link, you should purchase a license.<br /><br />
+				<a href="http://www.astemplates.com/itemdetails.php?id=134" target="_blank">See template details</a>
+				for more info.<br />
+				<a href="http://astemplates.com/itemdetails.php?id=134&page=howto" target="_blank">Click here</a>  
+				to see template documentation.<br />
+			</span> 							
+			<br />
+			<span style="color:red; font-weight: bold; font-size:18px ">
+			<br />Free Version is limited and not includes all features.<br />
+			</span>
+			<br />
+			<hr /><br />
+			<h3><b>Most popular AS Templates:</b></h3>
+			    <a href="http://www.astemplates.com/itemdetails.php?id=109" target="_blank"><b>AS Template 002032</b></a><br />
+			    <a href="http://www.astemplates.com/itemdetails.php?id=96" target="_blank"><b>AS Template 002031</b></a><br />
+			    <a href="http://www.astemplates.com/itemdetails.php?id=115" target="_blank"><b>AS Template 002035</b></a><br />
+			    <a href="http://www.astemplates.com/itemdetails.php?id=55" target="_blank"><b>AS Template 002022</b></a><br />
+			    <a href="http://www.astemplates.com/itemdetails.php?id=117" target="_blank"><b>AS Template 002036</b></a>
+			<br /><br />]]>	
+	</description>
+		
+		
+    <files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>lib</folder>		
+		<folder>scripts</folder>
+		
+		<filename>component.php</filename>
+        <filename>ie6warning.php</filename> 		
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.php</filename>
+		<filename>styles.php</filename>
+		<filename>template_thumbnail.png</filename>	
+		<filename>templateDetails.xml</filename>
+    </files>
+	
+	<positions>
+		<position>position-4</position>				<!-- header - row0 -->
+		<position>position-1</position>				<!-- header - topmenu - row1 -->
+		<position>slider</position>					<!-- header - row3 - slider -->
+		<position>position-0</position>				<!-- left column - custom -->
+		<position>position-40</position>			<!-- left column - custom -->
+		<position>position-41</position>			<!-- left column - custom -->
+		<position>position-42</position>			<!-- left column - custom -->
+		<position>position-5</position>				<!-- main column - banners -->
+		<position>position-2</position>				<!-- breadcrumbs -->
+	</positions>
+
+	<config>
+		<fields name="params" >
+		
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+			<!-- General Configuration Parameter ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+			
+			<fieldset name="basicparameters" addfieldpath="/templates/as002038free/lib/header" label="General Configuration Parameters">
+
+				<field type="spacer" label="&lt;script src='../templates/as002038free/scripts/jscolors/jscolor.js' type='text/javascript'&gt;&lt;/script&gt;" />
+
+				<field type="spacer" label="&lt;link rel='stylesheet' href='../templates/as002038free/css/tmpl.admin.css' type='text/css' /&gt;" />
+
+				<field name="body_bgcolor" 
+					class="color {required:false}" 
+					type="text" 
+					default="FEFCED" 
+					label="Background color" 
+					description="Background color">
+				</field>
+			
+				<field type="spacer" label=" " />
+				<field type="spacer" label=" " />
+				
+				<field name="body_hfontfamily" 
+					type="list" 
+					default="Arial, Helvetica, sans-serif" 
+					label="Heading / Main menu font family" 
+					description="Select your favorite font-family here for the heading, main menu, buttons, company name and slogan">
+						<option value="Tahoma, Geneva, sans-serif, Arial">Tahoma, Geneva, sans-serif, Arial</option>
+						<option value="Georgia, 'Times New Roman', Times, serif">Georgia, Times New Roman, Times, serif</option>
+						<option value="'Courier New', Courier, monospace">Courier New, Courier, monospace</option>
+						<option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+						<option value="'Trebuchet MS', Arial, Helvetica, sans-serif">Trebuchet MS, Arial, Helvetica, sans-serif</option>
+						<option value="'Verdana, Geneva, sans-serif">Verdana, Geneva, sans-serif</option>
+						<option value="'Times New Roman', Times, serif">Times New Roman, Times, serif</option>
+						<option value="'MS Serif', 'New York', serif">MS Serif, New York, serif</option>
+						<option value="'Comic Sans MS', cursive">Comic Sans MS, cursive</option>
+						<option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Lucida Sans Unicode, sans-serif</option>						
+						<option value="arial">Cufon - Arial</option>
+						<option value="aller">Cufon - Aller</option>
+						<option value="amerika-sans">Cufon - Amerika Sans</option>
+						<option value="anivers">Cufon - Anivers</option>
+						<option value="antipasto">Cufon - Antipasto</option>
+						<option value="caviar-dreams">Cufon - Caviar Dreams</option>
+						<option value="courier">Cufon - Courier New</option>						
+						<option value="dejaweb">Cufon - Dejaweb</option>
+						<option value="oregon">Cufon - Oregon</option>
+						<option value="ptsans">Cufon - Ptsans</option>
+						<option value="tahoma">Cufon - Tahoma</option>
+						<option value="tuffy">Cufon - Tuffy</option>
+						<option value="times">Cufon - Times New Roman</option>						
+						<option value="verdana">Cufon - Verdana</option>
+						<option value="waukegan">Cufon - Waukegan</option>													
+				</field>
+				<field name="body_fontfamily" 
+					type="list" 
+					default="Arial, Helvetica, sans-serif" 
+					label="Content font family" 
+					description="Select your favorite font-family here">
+						<option value="Tahoma, Geneva, sans-serif, Arial">Tahoma, Geneva, sans-serif, Arial</option>
+						<option value="Georgia, 'Times New Roman', Times, serif">Georgia, Times New Roman, Times, serif</option>
+						<option value="'Courier New', Courier, monospace">Courier New, Courier, monospace</option>
+						<option value="Arial, Helvetica, sans-serif">Arial, Helvetica, sans-serif</option>
+						<option value="'Trebuchet MS', Arial, Helvetica, sans-serif">Trebuchet MS, Arial, Helvetica, sans-serif</option>
+						<option value="'Verdana, Geneva, sans-serif">Verdana, Geneva, sans-serif</option>
+						<option value="'Times New Roman', Times, serif">Times New Roman, Times, serif</option>
+						<option value="'MS Serif', 'New York', serif">MS Serif, New York, serif</option>
+						<option value="'Comic Sans MS', cursive">Comic Sans MS, cursive</option>
+						<option value="'Lucida Sans Unicode', 'Lucida Grande', sans-serif">Lucida Sans Unicode, sans-serif</option>	
+				</field>
+				<field name="body_fontsize" 
+					type="list" 
+					default="12px" 
+					label="Content font size" 
+					description="Select a font size here">
+						<option value="10px">10px</option>
+						<option value="11px">11px</option>
+						<option value="12px">12px</option>
+						<option value="13px">13px</option>
+						<option value="14px">14px</option>
+						<option value="15px">15px</option>
+						<option value="16px">16px</option>
+						<option value="17px">17px</option>
+						<option value="18px">18px</option>
+						<option value="19px">19px</option>
+						<option value="20px">20px</option>
+						<option value="21px">21px</option>
+						<option value="22px">22px</option>
+						<option value="23px">23px</option>
+						<option value="24px">24px</option>
+				</field>
+				<field name="body_fontstyle" 
+					type="list" 
+					default="normal" 
+					label="Content font style" 
+					description="Select a font style here">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+				</field>
+				<field name="body_fontweight" 
+					type="list" 
+					default="normal" 
+					label="Content font weight" 
+					description="Select a font weight here">
+						<option value="normal">Normal</option>
+						<option value="bold">Bold</option>
+				</field>
+
+				<field type="spacer" label=" " />
+				<field type="spacer" label=" " />
+								
+
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+				<!-- Company Logo &amp; Slogan -->							
+				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+				
+
+				<field name="Header21" type="header" default="Company Logo &amp; Slogan" label="" description="" />
+
+				<field name="logo_type" 
+					type="radio" 
+					default="0" 
+					label="Logo type" 
+					description="Here you can choose if a Logo should be shown as Image or Text">
+						<option value="0">image</option>
+						<option value="1">text</option>
+				</field>			
+				<field name="logo_img" 
+					type="media" 
+					hide_none="true" 
+					hide_default="true" 
+					default="companylogo.png" 
+					label="Logo image home" 
+					directory="" 
+					description="Select a Logo for the home page from the media folder" >
+				</field>
+				<field type="spacer" label=" " />
+				<field type="spacer" label=" " />
+				
+				<!-- Logo Configuration-->
+				
+				<field name="logo_txt" 
+					type="text" 
+					default="Super Exterior" 
+					label="Logo text" 
+					description="Enter a Text that will be shown in the Company Logo place">
+				</field>
+				<field name="logo_txtfontsize" 
+					type="list" 
+					default="26px" 
+					label="Logo font size" 
+					description="Select a font size here">
+						<option value="12px">12px</option>
+						<option value="13px">13px</option>
+						<option value="14px">14px</option>
+						<option value="15px">15px</option>
+						<option value="16px">16px</option>
+						<option value="17px">17px</option>
+						<option value="18px">18px</option>
+						<option value="19px">19px</option>
+						<option value="20px">20px</option>
+						<option value="21px">21px</option>
+						<option value="22px">22px</option>
+						<option value="23px">23px</option>
+						<option value="24px">24px</option>
+						<option value="25px">25px</option>
+						<option value="26px">26px</option>
+						<option value="27px">27px</option>
+						<option value="28px">28px</option>
+						<option value="29px">29px</option>
+						<option value="30px">30px</option>
+						<option value="31px">31px</option>
+						<option value="32px">32px</option>
+						<option value="33px">33px</option>
+						<option value="34px">34px</option>
+						<option value="35px">35px</option>
+						<option value="36px">36px</option>
+						<option value="37px">37px</option>
+						<option value="38px">38px</option>
+						<option value="39px">39px</option>
+						<option value="40px">40px</option>
+						<option value="41px">41px</option>
+						<option value="42px">42px</option>
+						<option value="43px">43px</option>
+						<option value="44px">44px</option>
+						<option value="45px">45px</option>
+						<option value="46px">46px</option>
+						<option value="47px">47px</option>
+						<option value="48px">48px</option>
+						<option value="49px">49px</option>
+						<option value="50px">50px</option>
+				</field>
+				<field name="logo_txtfontstyle" 
+					type="list" 
+					default="normal" 
+					label="Logo font style" 
+					description="Select a font style here">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+				</field>
+				<field name="logo_txtfontweight" 
+					type="list" 
+					default="normal" 
+					label="Logo font weight" 
+					description="Select a font weight here">
+						<option value="normal">Normal</option>
+						<option value="bold">Bold</option>
+				</field>
+				<field name="logo_txtcolor" 
+					class="color {required:false}" 
+					type="text" 
+					default="FFFFFF" 
+					label="Logo font color" 
+					description="Logo font color">
+				</field>
+				<field type="spacer" label=" " />
+				<field type="spacer" label=" " />
+
+				<!-- Slogan Configuration-->
+				
+				<field name="slogan_txt" 
+					type="text" 
+					default="exterior quality works" 
+					label="Slogan text" 
+					description="Enter a Text that will be shown in the Company Slogan place">
+				</field>
+				<field name="slogan_txtfontsize" 
+					type="list" 
+					default="10px" 
+					label="Slogan font size" 
+					description="Select a font size here">
+						<option value="10px">10px</option>
+						<option value="11px">11px</option>
+						<option value="12px">12px</option>
+						<option value="13px">13px</option>
+						<option value="14px">14px</option>
+						<option value="15px">15px</option>
+						<option value="16px">16px</option>
+						<option value="17px">17px</option>
+						<option value="18px">18px</option>
+						<option value="19px">19px</option>
+						<option value="20px">20px</option>
+				</field>
+				<field name="slogan_txtfontstyle" 
+					type="list" 
+					default="normal" 
+					label="Slogan font style" 
+					description="Select a font style here">
+						<option value="normal">Normal</option>
+						<option value="italic">Italic</option>
+				</field>
+				<field name="slogan_txtfontweight" 
+					type="list" 
+					default="normal" 
+					label="Slogan font weight" 
+					description="Select a font weight here">
+						<option value="normal">Normal</option>
+						<option value="bold">Bold</option>
+				</field>
+				<field name="slogan_txtcolor" 
+					class="color {required:false}" 
+					type="text" 
+					default="FFFFFF" 
+					label="Slogan font color" 
+					description="Slogan font color">
+				</field>
+				<field type="spacer" label=" " />
+				<field type="spacer" label=" " />
+				
+				<field name="Header1" type="header" default="jQuery Library" label="" description="" />
+				<field name="jQuery_load" 
+					type="radio" 
+					default="1" 
+					label="jQuery load" 
+					description="Option to load jquery script into site">
+						<option value="0">no</option>
+						<option value="1">yes</option>
+				</field>
+
+				<field type="spacer" label=" " />
+			</fieldset>
+			
+		</fields>
+	</config>
+</extension>	

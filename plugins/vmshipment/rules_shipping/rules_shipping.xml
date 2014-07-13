@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmshipment" method="upgrade">
+    <name>VMSHIPMENT_RULES</name>
+    <creationDate>2014-01-15</creationDate>
+    <author>Reinhold Kainhofer</author>
+    <authorUrl>http://www.open-tools.net</authorUrl>
+    <copyright>Copyright (C) 2013-2014, Reinhold Kainhofer</copyright>
+    <license>GPL v3+</license>
+    <version>4.1</version>
+    <description>VMSHIPMENT_RULES_DESC</description>
+    <files>
+	<filename plugin="rules_shipping">rules_shipping.php</filename>
+	<filename>rules_shipping_base.php</filename>
+	<folder>language</folder>
+	<folder>elements</folder>
+    </files>
+    <languages folder="language">
+	<language tag="en-GB">en-GB/en-GB.plg_vmshipment_rules_shipping.ini</language>
+	<language tag="en-GB">en-GB/en-GB.plg_vmshipment_rules_shipping.sys.ini</language>
+    </languages>
+    <scriptfile>rules_shipping.script.php</scriptfile>
+
+
+
+    <params addpath="/administrator/components/com_virtuemart/elements" />
+    <params addpath="/plugins/vmshipment/rules_shipping/rules_shipping/elements" />
+    <params addpath="/plugins/vmshipment/rules_shipping/elements" />
+
+    <params>
+	<param type="vmjpluginwarning" />
+	<param type="spacer" default='VMSHIPMENT_RULES_PLUGIN' level="level1" />
+	<param	name="shipment_logos" type="vmfiles" label="VMSHIPMENT_RULES_LOGOS"
+             	description="VMSHIPMENT_RULES_LOGOS_DESC"
+             	directory="/images/stories/virtuemart/shipment"
+             	default="default" hide_default="1" hide_none="1"
+             	stripext="0"   exclude="^_" />
+	<param name="weight_unit" type="vmweightunit" size="10" default="" label="VMSHIPMENT_RULES_WEIGHT_UNIT" description="VMSHIPMENT_RULES_WEIGHT_UNIT_DESC"/>
+	<param name="length_unit" type="vmlengthunit" size="10" default="" label="VMSHIPMENT_RULES_LENGTH_UNIT" description="VMSHIPMENT_RULES_LENGTH_UNIT_DESC"/>
+
+	<param type="rklabel" default='VMSHIPMENT_RULES_HELP' />
+
+	<param type="rklabel" default='VMSHIPMENT_RULES_COUNTRIES1_LABEL' />
+	<param name="countries1" type="vmcountries"  scope="com_virtuemart" default="" label="VMSHIPMENT_RULES_COUNTRIES" description="VMSHIPMENT_RULES_COUNTRIES_DESC"/>
+	<param name="tax_id1" type="vmtaxes" scope="com_virtuemart"  label="VMSHIPMENT_RULES_TAX" description="VMSHIPMENT_RULES_TAX_DESC" />
+	<param name="rules1" type="textarea" rows="6" cols="80"  label="VMSHIPMENT_RULES_RULES" description="VMSHIPMENT_RULES_RULES_DESC" />
+
+	<param type="rklabel" default="VMSHIPMENT_RULES_COUNTRIES2_LABEL" />
+	<param name="countries2" type="vmcountries"  scope="com_virtuemart" default="" label="VMSHIPMENT_RULES_COUNTRIES" description="VMSHIPMENT_RULES_COUNTRIES_DESC"/>
+	<param name="tax_id2" type="vmtaxes" scope="com_virtuemart"  label="VMSHIPMENT_RULES_TAX" description="VMSHIPMENT_RULES_TAX_DESC" />
+	<param name="rules2" type="textarea" rows="6" cols="80"  label="VMSHIPMENT_RULES_RULES" description="VMSHIPMENT_RULES_RULES_DESC" />
+
+	<param type="rklabel" default="VMSHIPMENT_RULES_COUNTRIES3_LABEL" />
+	<param name="countries3" type="vmcountries"  scope="com_virtuemart" default="" label="VMSHIPMENT_RULES_COUNTRIES" description="VMSHIPMENT_RULES_COUNTRIES_DESC"/>
+	<param name="tax_id3" type="vmtaxes" scope="com_virtuemart"  label="VMSHIPMENT_RULES_TAX" description="VMSHIPMENT_RULES_TAX_DESC" />
+	<param name="rules3" type="textarea" rows="6" cols="80"  label="VMSHIPMENT_RULES_RULES" description="VMSHIPMENT_RULES_RULES_DESC" />
+
+	<param type="rklabel" default="VMSHIPMENT_RULES_COUNTRIES4_LABEL" />
+	<param name="countries4" type="vmcountries"  scope="com_virtuemart" default="" label="VMSHIPMENT_RULES_COUNTRIES" description="VMSHIPMENT_RULES_COUNTRIES_DESC"/>
+	<param name="tax_id4" type="vmtaxes" scope="com_virtuemart"  label="VMSHIPMENT_RULES_TAX" description="VMSHIPMENT_RULES_TAX_DESC" />
+	<param name="rules4" type="textarea" rows="6" cols="80"  label="VMSHIPMENT_RULES_RULES" description="VMSHIPMENT_RULES_RULES_DESC" />
+
+	<param type="rklabel" default="VMSHIPMENT_RULES_COUNTRIES5_LABEL" />
+	<param name="countries5" type="vmcountries"  scope="com_virtuemart" default="" label="VMSHIPMENT_RULES_COUNTRIES" description="VMSHIPMENT_RULES_COUNTRIES_DESC"/>
+	<param name="tax_id5" type="vmtaxes" scope="com_virtuemart"  label="VMSHIPMENT_RULES_TAX" description="VMSHIPMENT_RULES_TAX_DESC" />
+	<param name="rules5" type="textarea" rows="6" cols="80"  label="VMSHIPMENT_RULES_RULES" description="VMSHIPMENT_RULES_RULES_DESC" />
+
+	<param type="rklabel" default="VMSHIPMENT_RULES_COUNTRIES6_LABEL" />
+	<param name="countries6" type="vmcountries"  scope="com_virtuemart" default="" label="VMSHIPMENT_RULES_COUNTRIES" description="VMSHIPMENT_RULES_COUNTRIES_DESC"/>
+	<param name="tax_id6" type="vmtaxes" scope="com_virtuemart"  label="VMSHIPMENT_RULES_TAX" description="VMSHIPMENT_RULES_TAX_DESC" />
+	<param name="rules6" type="textarea" rows="6" cols="80"  label="VMSHIPMENT_RULES_RULES" description="VMSHIPMENT_RULES_RULES_DESC" />
+
+	<param type="rklabel" default="VMSHIPMENT_RULES_COUNTRIES7_LABEL" />
+	<param name="countries7" type="vmcountries"  scope="com_virtuemart" default="" label="VMSHIPMENT_RULES_COUNTRIES" description="VMSHIPMENT_RULES_COUNTRIES_DESC"/>
+	<param name="tax_id7" type="vmtaxes" scope="com_virtuemart"  label="VMSHIPMENT_RULES_TAX" description="VMSHIPMENT_RULES_TAX_DESC" />
+	<param name="rules7" type="textarea" rows="6" cols="80"  label="VMSHIPMENT_RULES_RULES" description="VMSHIPMENT_RULES_RULES_DESC" />
+
+	<param type="rklabel" default="VMSHIPMENT_RULES_COUNTRIES8_LABEL" />
+	<param name="countries8" type="vmcountries"  scope="com_virtuemart" default="" label="VMSHIPMENT_RULES_COUNTRIES" description="VMSHIPMENT_RULES_COUNTRIES_DESC"/>
+	<param name="tax_id8" type="vmtaxes" scope="com_virtuemart"  label="VMSHIPMENT_RULES_TAX" description="VMSHIPMENT_RULES_TAX_DESC" />
+	<param name="rules8" type="textarea" rows="6" cols="80"  label="VMSHIPMENT_RULES_RULES" description="VMSHIPMENT_RULES_RULES_DESC" />
+  </params>
+
+</install>

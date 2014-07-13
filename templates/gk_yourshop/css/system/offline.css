@@ -1,0 +1,84 @@
+/*
+#------------------------------------------------------------------------
+# yourshop - June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+* { font-family: Arial, Verdana, sans-serif; font-size: 12px; }
+body { height:100%; }
+body { line-height:1.9; background:url("../../images/bg_image.jpg") no-repeat scroll center top #F0F0F0; min-height:100%; margin:0; padding:0; color:#383838 }
+fieldset { width: 522px; border:none; padding:0; margin:0 auto; }
+
+input[type=text],
+input[type=password] { background:#fff; height: 26px; border:1px solid #9b9b9b!important; border-bottom:1px solid #d8d8d8!important; border-right:1px solid #d8d8d8!important; color:#383838; padding:0 5px; }
+input[type=radio],
+input[type=checkbox] { background:transparent!important; border: none!important; height: inherit; }
+input[type="submit"] { display:block; border: 1px solid #989898; float: left; height:26px !important; line-height: 26px; color:#383838; background:transparent url('../../images/style1/btn.png') repeat-x 0 bottom; padding:0 8px; margin: 0; font-size: 11px; font-weight: bold; }
+
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{ color: #000; border-color: #FADB7C }
+
+#form-login-remember { display:inline; }
+
+#form-login-username, 
+#form-login-password,
+#form-login-remember  { float: left;margin: 10px 0 0; } 
+
+#form-login-password {margin-left:20px;}
+#username,
+
+#passwd { display: block; width:235px; height:30px; border: 1px solid #EAE8CC; margin: 15px 0 0 0; padding-left: 8px; line-height: 30px;}
+
+#message {color: #383838; margin: 80px auto 50px;text-align: center; width: 70%;font-size: 320%;line-height: 100%;font-weight:bold;}
+.top { min-height:90px; margin:0 auto; width:1002px; }
+/*#logo { height:90px; width:225px;padding:0; background:transparent url('../../images/style1/logo.png') no-repeat 0 0; }*/
+/* Logo */
+
+h1#gkLogo { float: left;height: 90px;padding: 0;width: 225px; }
+h1#gkLogo.text {height:90px; width:auto; float:left;}
+h1#gkLogo.text span  {font-size:27px; line-height:32px; font-family:Arial, sans-serif; font-weight:bold;line-height:32px;float:left; }
+#gkLogo.text .gkLogoSlogan { font-size:10px; font-family:Verdana, sans-serif; line-height:20px; color:#000;font-weight:normal;float:left;width:100%}
+h1#gkLogo a.cssLogo { background: url("../../images/style1/logo.png") no-repeat scroll 0 0 transparent;display: block;height: 90px;margin: 0;text-indent: -999em;width: 225px; }
+#gkLogo.text a { text-indent:0!important; background:none!important;height:69px;line-height:16px; margin:10px 10px 4px 10px; float:left; }
+#gkLogo.text a:hover {text-decoration:none;}
+#content { margin: 0 auto;padding-bottom: 175px;width: 1002px;}
+div.buttons { float: right; margin: 10px 0 20px; }
+
+input[type="submit"]:hover,
+input[type="submit"]:focus { background-position: 0 top; color: #fff; border-color: #466a11; cursor:pointer; text-decoration: none }
+input[type=checkbox], .checkbox, input[type=radio], .radio { height:auto !important; }
+
+input[type=text],
+input[type=password] { border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; box-shadow:inset 0 0 4px #bbb; -moz-box-shadow:inset 0 0 4px #bbb; -webkit-box-shadow:inset 0 0 4px #bbb; }
+
+input[type="submit"],
+input[type="button"] { border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+
+.style2 input[type="submit"] { background:transparent url('../../images/style2/btn.png') repeat-x 0 bottom; }
+.style3 input[type="submit"] { background:transparent url('../../images/style3/btn.png') repeat-x 0 bottom; }
+
+.style2 input[type="submit"]:hover,
+.style2 input[type="submit"]:focus { border-color: #9b0e0e; }
+
+.style3 input[type="submit"]:hover,
+.style3 input[type="submit"]:focus { border-color: #03415d; }
+
+/* messages */
+
+#system-message { margin: 0 0 15px 0; }
+#system-message dd { padding:0!important; background:none!important; }
+#system-message dd.message ul,
+#system-message dd.error ul,
+#system-message dd.notice ul { background:#7db519; border:1px solid #577b15; margin: 0; padding: 0;  color: #fff; }
+#system-message dd.error ul { background:#cb1010; border:1px solid #9b0e0e; }
+#system-message dd.notice ul { background:#00a4da; border:1px solid #03415d; }
+#system-message dd.message ul li,
+#system-message dd.error ul li,
+#system-message dd.notice ul li { background: none; margin: 0; padding: 3px 16px; text-indent:0; text-align: center }
+#system-message dt.error,
+#system-message dt{display:none;}

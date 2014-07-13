@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>SP Simple Map</name>
+  <author>JoomShaper.com</author>
+  <creationDate>Sep 2011</creationDate>
+  <copyright>Copyright (C) 2010 - 2012 JoomShaper.com. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>support@joomshaper.com</authorEmail>
+  <authorUrl>www.joomshaper.com</authorUrl>
+  <version>1.2.0</version>
+  <description>Google Map module for Joomla 2.5 JoomShaper.com</description>
+  <languages>
+    <language tag="en-GB">language/en-GB.mod_sp_simple_map.ini</language>
+  </languages>
+  <files>
+    <filename module="mod_sp_simple_map">mod_sp_simple_map.php</filename>
+    <folder>tmpl</folder>
+    <filename>index.html</filename>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="Basic">
+        <field name="lat" type="text" default="-34.397" label="LAT" description="LAT_DESC"/>
+        <field name="lng" type="text" default="150.644" label="LNG" description="LNG_DESC"/>
+        <field name="height" type="text" default="300" label="HEIGHT" description="HEIGHT_DESC"/>
+        <field name="map_type" type="list" default="ROADMAP" label="MAP_TYPE" description="MAP_TYPE_DESC">
+			<option value="ROADMAP">ROADMAP</option>
+			<option value="SATELLITE">SATELLITE</option>
+			<option value="HYBRID">HYBRID</option>
+			<option value="TERRAIN">TERRAIN</option>
+		</field>
+        <field name="zoom" type="text" default="18" label="ZOOM" description="ZOOM_DESC"/>
+      </fieldset>
+      <fieldset name="advanced">
+        <field name="moduleclass_sfx" type="text" default="" label="MODSFX" description="MODSFX_DESC"/>
+        <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+          <option value="1">JGLOBAL_USE_GLOBAL</option>
+          <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+        </field>
+        <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC"/>
+        <field name="cachemode" type="hidden" default="itemid">
+          <option value="itemid"/>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

@@ -1,0 +1,326 @@
+
+/* ---------------------------------------------------------------------------------------------------------------------
+ * Bang2Joom Aquarius Product Zoom Lite for Joomla! 2.5+
+ * ---------------------------------------------------------------------------------------------------------------------
+ * Copyright (C) 2011-2012 Bang2Joom. All Rights Reserved.
+ * @license - GNU/GPL, http://www.gnu.org/licenses/gpl.html
+ * Author: Bang2Joom
+ * Website: http://www.bang2joom.com
+  ----------------------------------------------------------------------------------------------------------------------
+ */
+
+.zoom_overlay{
+    position:absolute;
+    z-index:1;
+    top:50%;
+    left:50%;
+}
+.b2jclearfix, .clear{
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	float:none !important;
+}
+.main-image{
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    width:100%;
+    padding:0 !important;
+}
+.main-image.loading, .fullscreen_layer.loading{
+    background: url('../images/loading') center center no-repeat #fff !important;
+}
+.main-image .image_container{
+    display: inline-block;
+    position: relative;
+    opacity: 0.99;
+    overflow:hidden;
+    width:100%;
+    height:100%;
+    text-align:left;
+}
+.main-image .image_container > img{
+    opacity:0;
+    position:relative;
+    z-index:2;
+    max-width:100%;
+    max-height:100%;
+}
+/*Slider Container*/
+.b2j_slider_horizontal_prev{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 16px;
+    margin-top:-8px;
+    margin-left:-5px;
+    background: transparent url(../images/prev_button.png) no-repeat 0 0;
+}
+.b2j_slider_horizontal_next{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 16px;
+    margin-top:-8px;
+    margin-left:-5px;
+    background: transparent url(../images/next_button.png) no-repeat 0 0;
+}
+.b2j_slider_vertical_prev{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 10px;
+    margin-top:-6px;
+    margin-left:-8px;
+    background: transparent url(../images/down_button.png) no-repeat 0 0;
+}
+.b2j_slider_vertical_next{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 10px;
+    margin-top:-5px;
+    margin-left:-8px;
+    background: transparent url(../images/up_button.png) no-repeat 0 0;
+}
+.b2j_slider_arrow_horizontal_left, .b2j_slider_arrow_vertical_left{
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    background: #333;
+    opacity: 0;
+}
+.b2j_slider_arrow_horizontal_left:hover, .b2j_slider_arrow_vertical_left:hover{
+    opacity: 0.5;
+}
+
+.b2j_slider_arrow_horizontal_right, .b2j_slider_arrow_vertical_right{
+    cursor: pointer;
+    position: absolute;
+    right:0px;
+    background: #333;
+    opacity: 0;
+    z-index:3;
+}
+.b2j_slider_arrow_horizontal_right:hover, .b2j_slider_arrow_vertical_right:hover{
+    opacity: 0.5;
+}
+.b2j_plg_galleryzoom_main_container{
+    position: relative;
+    z-index:5;
+}
+#b2j_plg_galleryzoom_main_container2 {
+    position:fixed;
+}
+.b2j_plg_galleryzoom_container{
+    padding: 0px;
+    margin: 0px;
+    position:relative;
+    overflow:hidden;
+    float: left;
+}
+
+.b2j_plg_galleryzoom_main{
+    list-style: none !important;
+    padding: 0px  !important;
+    margin: 0px  !important;
+    position:absolute;
+}
+
+.b2j_plg_galleryzoom_main li {
+    float: left;
+    cursor:pointer;
+}
+
+.b2j_plg_galleryzoom_container li img{
+    width:100% !important;
+}
+
+.zoom_container{
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    opacity:0;
+    display:none;
+}
+.zoom_box{
+    position:absolute;
+    overflow: hidden;
+    display: none;
+    cursor: crosshair;
+}
+.zoom_container img{
+    position: absolute;
+    max-width :none !important;
+}
+.fullscreen_image_container img {
+    max-width :none !important;
+}
+.nozoom:hover{
+    opacity: 1 !important;
+}
+.fullscreen_button {
+    display:none;
+    z-index:2;
+    cursor:pointer;
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    width:71px;
+    height:71px;
+    background: url('../images/fullscreen.png') center center no-repeat;
+}
+.fullscreen_layer_container {
+    display:none;
+    position:fixed;
+    bottom:0;
+    right:0;
+    top:0;
+    left:0;
+    opacity:0;
+}
+.fullscreen_layer {
+    position:absolute;
+    z-index:1;
+    bottom:0;
+    right:0;
+    top:0;
+    left:0;
+}
+.fullscreen_image_container {
+    position:absolute;
+    z-index:2;
+    bottom:0;
+    right:0;
+    top:0;
+    left:0;
+}
+.fullscreen_image_container > img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    cursor:crosshair;
+}
+.fullscreen_close_button {
+    z-index:3;
+    cursor:pointer;
+    position:absolute;
+    right:5px;
+    top:5px;
+    width:71px;
+    height:71px;
+    background: url('../images/close_button.png') center center no-repeat;
+}
+
+
+
+/*Ashot Button*/
+
+.prev_button{
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	z-index:1000;
+	opacity:0;
+}
+.prev_button:hover{
+	opacity:1;
+	cursor:pointer;
+}
+.next_button{
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	z-index:1000;
+	opacity:0;
+}
+.next_button:hover{
+	opacity:1;
+	cursor:pointer;
+}
+.prev_button:after{
+	content:" ";
+	position:absolute;
+	top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 16px;
+    margin-top:-8px;
+    margin-left:-5px;
+    background: transparent url(../images/prev_button.png) no-repeat 0 0;
+}
+
+.next_button{
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	z-index:1000;
+}
+
+.next_button:after{
+	content:" ";
+	position:absolute;
+	top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 16px;
+    margin-top:-8px;
+    margin-left:-5px;
+    background: transparent url(../images/next_button.png) no-repeat 0 0;
+}
+
+
+
+
+.top_button{
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	z-index:1000;
+	opacity:0;
+}
+.top_button:hover{
+	opacity:1;
+	cursor:pointer;
+}
+.bottom_button{
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	z-index:1000;
+	opacity:0;
+}
+.bottom_button:hover{
+	opacity:1;
+	cursor:pointer;
+}
+.top_button:after{
+	content:" ";
+	position:absolute;
+	top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 10px;
+    margin-top:-5px;
+    margin-left:-8px;
+    background: transparent url(../images/up_button.png) no-repeat 0 0;
+}
+
+.bottom_button{
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	z-index:1000;
+}
+
+.bottom_button:after{
+	content:" ";
+	position:absolute;
+	top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 10px;
+    margin-top:-5px;
+    margin-left:-8px;
+    background: transparent url(../images/down_button.png) no-repeat 0 0;
+}

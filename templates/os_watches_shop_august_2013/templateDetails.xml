@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>os_watches_shop_august_2013</name>
+	<creationDate>Creation Date</creationDate>
+	<author>Your name</author>
+	<authorEmail>Your email</authorEmail>
+	<authorUrl>Link to Your website</authorUrl>
+	<copyright>Your copyrights</copyright>
+	<license> </license>
+	<version>2.5.0</version>
+	<description> 
+	<![CDATA[
+	      <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
+	      <br>
+	      <h1>Template Watches Shop</h1>
+	      <p class="text_propery">Template Watches Shop, August 2013. This template has commercial direction, running CMS Joomla 2.5, the developers OrdaSoft. 
+	      template is created by a known framework "Twitter Bootstrap", and it looks great on the tablet and mobile phones, ideal for the sale of Watches. 
+	      In the assembly is a functional   component VirtueMart and slideshow bxSlider. 
+	      With this component and module, you can easily display and edit any graphic and text information.</p>
+	      <br>
+	      <div id="down_pictures"> 
+		    <a href="http://www.youtube.com/watch?v=KCfAXQ5S6iQ&feature=youtu.be" onclick="window.open('http://www.youtube.com/watch?v=KCfAXQ5S6iQ&feature=youtu.be','OrdaSoft Joomla Template Features','width=635,height=610,left='+(screen.availWidth/2-317.5)+',top='+(screen.availHeight/2-305)+'');return false;" target="_blank"><img style="width:400px; height:306px;" src="../templates/os_watches_shop_august_2013/template_preview.png"/></a>
+		    <div style="clear:both;"></div>
+		    <div class="sepp_div"></div>
+		    <a href="http://ordasoft.com/membership-page.html" target="_blank"><img src="../templates/os_watches_shop_august_2013/button_become_member.jpg"/></a> 
+	      </div>
+	]]>
+	</description>
+
+	<files>
+		<folder>admin</folder>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<folder>language</folder>
+		<folder>fonts</folder>
+                <folder>bootstrap</folder>
+
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>button_become_member.jpg</filename>
+		<filename>joomla_template_features_video.jpg</filename>
+		<filename>ordasoft_template_logo.png</filename>
+	</files>
+
+	<positions>
+	  <position>mod_sale_top</position>
+	  <position>breadcrumbs</position>
+	  <position>bxSlider</position>
+	  <position>category</position>
+	  <position>currencies_selector</position>
+	  <position>location_map</position>
+	  <position>login_form</position>
+	  <position>main_menu</position>
+	  <position>manufacturer</position>
+	  <position>products</position>
+	  <position>search_in_shop</position>
+	  <position>shopping_cart</position>
+	  <position>soc_comments</position>
+	  <position>stylechanger</position>
+	</positions>
+
+<config>
+
+	<fields name="params" addfieldpath="/templates/os_watches_shop_august_2013/elements">
+ 
+		<fieldset name="layot_settings" label="Layout Settings">
+		        <field name="btlabout" type="btlabout" description="" label="" />
+			<field name="wrapper_width" type="text" label="Wrapper Width:"  description="Example: 960px" default="auto"></field>
+			<field name="wrapper_position" type="radio" label="Wrapper Position:" default="0 auto" >
+			<option value="0">left</option>
+			<option value="0 auto">center</option>
+			</field> 
+		</fieldset>
+
+		<fieldset  name="body" type="upload_func" label="Body">
+			<field name="body_color" type="text" label="Body Color:" description="Example: #000000" default="#ffffff"></field>
+			<field name="body_background" type="list" label="Body pattern:">
+			<option value="">None</option>
+			<option value="01.png">Thick Diagonal Lines</option>
+			<option value="02.png">Thin Diagonal Lines2</option>
+			<option value="03.png">Rhombus</option>
+			<option value="04.png">Noise</option>
+			<option value="05.png">Stone</option>
+			<option value="06.jpg">Stone2</option>
+			</field>
+		</fieldset>
+		
+		<fieldset  name="logo" type="upload_func" label="Logo">
+			<field name="logo_file" type="media" label="Select your logo:"></field>
+			<field name="logo_link" type="text" label="Logo link:"  description="Example: http://www.ordasoft.com" default="index.php"></field>
+			<field name="logo_width" type="text" label="Logo width:" description="Example: 90" default="230"></field>
+			<field name="logo_height" type="text" label="Logo height:" description="Example: 90" default="65"></field>
+		</fieldset>
+		
+		<fieldset  name="Menu Link" type="upload_func" label="Menu Links">
+			<field name="menu_color" type="text" label="Menu links color:" description="Example: #000000" default="#3c3c3c"></field>
+			<field name="menu_hover_color" type="text" label="Menu links hover color:" description="Example: #000000" default="#12ABFF"></field>
+
+			<field name="menu_underline" type="radio" label="Menu links underline:" default="none">
+			<option value="underline">yes</option>
+			<option value="none">no</option>
+			</field> 
+			
+			<field name="menu_hover_underline" type="radio" label="Menu links hover underline:" default="none">
+			<option value="underline">yes</option>
+			<option value="none">no</option>
+			</field> 
+		</fieldset>
+
+		<fieldset  name="Links" type="upload_func" label="Body Links">
+			<field name="link_color" type="text" label="Body links color:" description="Example: #000000" default="#3c3c3c"></field>
+			<field name="link_hover_color" type="text" label="Body links hover color:" description="Example: #000000" default="#12ABFF"></field>
+
+			<field name="underline" type="radio" label="Body links underline:" default="none">
+			<option value="underline">yes</option>
+			<option value="none">no</option>
+			</field> 
+
+			<field name="hover_underline" type="radio" label="Body links hover underline:" default="none">
+			<option value="underline">yes</option>
+			<option value="none">no</option>
+			</field> 
+		</fieldset>
+
+		<fieldset  name="Footer Link" type="upload_func" label="Footer Links">
+			<field name="footer_color" type="text" label="Footer links color:" description="Example: #000000" default="#909090"></field>
+			<field name="footer_hover_color" type="text" label="Footer links hover color:" description="Example: #000000" default="#12ABFF"></field>
+
+			<field name="footer_underline" type="radio" label="Footer links underline:" default="none">
+			<option value="underline">yes</option>
+			<option value="none">no</option>
+			</field> 
+
+			<field name="footer_hover_underline" type="radio" label="Footer links hover underline:" default="none">
+			<option value="underline">yes</option>
+			<option value="none">no</option>
+			</field> 
+		</fieldset>
+
+		<fieldset name="typography" label="Typography">
+
+			<field name="body_font" type="list" label="Body Font:" default="Arial, sans-serif">
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif italic">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif italic">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans, italic">PT</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Roboto Condensed, sans-serif italic">Roboto Condensed</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif italic">Source Sans Pro</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif italic">Ubuntu</option>
+			</field>
+			
+			<field name="footer_font" type="list" label="Footer Font:" default="Arial, sans-serif">
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif italic">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif italic">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans, italic">PT</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Roboto Condensed, sans-serif italic">Roboto Condensed</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif italic">Source Sans Pro</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif italic">Ubuntu</option>
+			</field>
+			
+			<field name="menu_font" type="list" label="Menu Font:" default="Arial, sans-serif">
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif italic">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif italic">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans, italic">PT</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Roboto Condensed, sans-serif italic">Roboto Condensed</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif italic">Source Sans Pro</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif italic">Ubuntu</option>
+			</field>
+			
+			<field name="links_font" type="list" label="Links Font:" default="Arial, sans-serif">
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif italic">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif italic">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans, italic">PT</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Roboto Condensed, sans-serif italic">Roboto Condensed</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif italic">Source Sans Pro</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif italic">Ubuntu</option>
+			</field>
+			
+			<field name="h1_font" type="list" label="h1 Font:" default="Arial, sans-serif">
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif italic">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif italic">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans, italic">PT</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Roboto Condensed, sans-serif italic">Roboto Condensed</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif italic">Source Sans Pro</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif italic">Ubuntu</option>
+			</field>
+
+			<field name="h2_font" type="list" label="h2 Font:" default="Arial, sans-serif">
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif italic">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif italic">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans, italic">PT</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Roboto Condensed, sans-serif italic">Roboto Condensed</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif italic">Source Sans Pro</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif italic">Ubuntu</option>
+			</field>
+
+			<field name="h3_font" type="list" label="h3 Font:" default="Arial, sans-serif">
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif italic">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif italic">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans, italic">PT</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Roboto Condensed, sans-serif italic">Roboto Condensed</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif italic">Source Sans Pro</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif italic">Ubuntu</option>
+			</field>
+			
+			<field name="h4_font" type="list" label="h4 Font:" default="Arial, sans-serif">
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif italic">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif italic">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans, italic">PT</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Roboto Condensed, sans-serif italic">Roboto Condensed</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif italic">Source Sans Pro</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif italic">Ubuntu</option>
+			</field>
+			
+			<field name="h5_font" type="list" label="h5 Font:" default="Arial, sans-serif">
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif italic">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif italic">Open Sans</option>
+				<option value="Oswald, sans-serif">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans, italic">PT</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Roboto Condensed, sans-serif italic">Roboto Condensed</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif italic">Source Sans Pro</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif italic">Ubuntu</option>
+			</field>
+			
+			<field name="h6_font" type="list" label="h6 Font:" default="Arial, sans-serif">
+				<option value="Abel, sans-serif">Abel</option>
+				<option value="Comfortaa">Comfortaa</option>
+				<option value="Arial, sans-serif">Arial</option>
+				<option value="Dosis, sans-serif">Dosis</option>
+				<option value="Droid Sans, sans-serif">Droid Sans</option>
+				<option value="Francois One, sans-serif">Francois One</option>
+				<option value="Lato, sans-serif">Lato</option>
+				<option value="Lobster, sans-serif">Lobster</option>
+				<option value="Lora, sans-serif italic">Lora</option>
+				<option value="Open Sans Condensed, sans-serif">Open Sans Condensed</option>
+				<option value="Open Sans, sans-serif italic">Open Sans</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Oxygen, sans-serif">Oxygen</option>
+				<option value="PT Sans Narrow, sans-serif">PT Sans Narrow</option>
+				<option value="PT Sans, italic">PT</option>
+				<option value="Prosto One, cursive">Prosto One</option>
+				<option value="Quicksand, sans-serif">Quicksand</option>
+				<option value="Roboto Condensed, sans-serif italic">Roboto Condensed</option>
+				<option value="Share, cursive">Share</option>
+				<option value="Source Sans Pro, sans-serif italic">Source Sans Pro</option>
+				<option value="Ubuntu Condensed, sans-serif">Ubuntu Condensed</option>
+				<option value="Ubuntu, sans-serif italic">Ubuntu</option>
+			</field>
+		</fieldset>
+		
+		<fieldset name="social_icons" label="Social links">
+			<field name="twitter" type="text" label="Twitter" description="Insert URL here." default=""></field>
+			<field name="facebook" type="text" label="Facebook" description="Insert URL here." default=""></field>
+			<field name="flickr" type="text" label="Flickr" description="Insert URL here." default=""></field>
+			<field name="friendfeed" type="text" label="Friendfeed" description="Insert URL here." default=""></field>
+			<field name="delicious" type="text" label="Delicious" description="Insert URL here." default=""></field>
+			<field name="digg" type="text" label="Digg" description="Insert URL here." default=""></field>
+			<field name="lastfm" type="text" label="Last.fm" description="Insert URL here." default=""></field>
+			<field name="linkedin" type="text" label="Linked in" description="Insert URL here." default=""></field>
+			<field name="youtube" type="text" label="YouTube" description="Insert URL here." default=""></field>
+			<field name="feed" type="text" label="Feed" description="Insert URL here." default=""></field>
+			<field name="pinterest" type="text" label="Pinterest" description="Insert URL here." default=""></field>
+			<field name="google" type="text" label="Google+" description="Insert URL here." default=""></field>
+			<field name="dribbble" type="text" label="Dribbble" description="Insert URL here." default=""></field>
+			<field name="vimeo" type="text" label="Vimeo" description="Insert URL here." default=""></field>
+			<field name="blogger" type="text" label="Blogger" description="Insert URL here." default=""></field>
+			<field name="myspace" type="text" label="Myspace" description="Insert URL here." default=""></field>
+			<field name="yahoo" type="text" label="Yahoo" description="Insert URL here." default=""></field>
+		</fieldset>
+		
+		<fieldset name="copyright" label="Copyright">
+			<field name="copyrights_path" type="text" label="Copyright URL" description="Insert URL here." default=""></field>
+			<field name="copyrights" type="text" label="Copyright VALUE" description="Insert VALUE here." default=""></field>
+		</fieldset>
+
+		<fieldset name="tracking_code" label="Tracking Google Code">
+			<field name="tracking_code" type="textarea" label="Tracking Google Code:" description="Enter your Tracking Google Code in JavaScript tags"></field>
+		</fieldset>
+
+	</fields>
+
+</config>
+
+</extension>

@@ -1,0 +1,218 @@
+/*
+* Pixel Point Creative - Slick Login plus VirtueMart
+* License: GNU General Public License version 2 http://www.gnu.org/copyleft/gpl.html
+* Copyright (c) 2012 Pixel Point Creative LLC.
+* More info at http://www.pixelpointcreative.com
+* Review our terms/license here: http://pixelpointcreative.com/terms.html
+*/
+
+/* Horizontal */
+/* login */
+.horizontal .slick_login_vm .login {height: 40px;}
+.horizontal .slick_login_vm .login .username,
+.horizontal .slick_login_vm .login .password,
+.horizontal .slick_login_vm .login .login-button-text,
+.horizontal .slick_login_vm .login .login-button-icon,
+.horizontal .slick_login_vm .login .lostpassword,
+.horizontal .slick_login_vm .login .lostusername,
+.horizontal .slick_login_vm .login .registration,
+.horizontal .slick_login_vm .logout .greeting,
+.horizontal .slick_login_vm .logout .logout-button-text,
+.horizontal .slick_login_vm .logout .logout-button-icon {
+margin-right: 5px;
+float: left;
+overflow: hidden;
+}
+
+.horizontal .slick_login_vm .login .username,.horizontal .slick_login_vm .login .password {
+float:left;
+height:22px;
+overflow:hidden;
+width:122px;
+padding:5px 0 0 7px;
+margin-top:3px;
+}
+.horizontal .slick_login_vm .login .username {background: url(/modules/mod_slick_login_vm/images/inputbox.png) 0 0 no-repeat;}
+.horizontal .slick_login_vm .login .password {background: url(/modules/mod_slick_login_vm/images/inputbox.png) 0 0 no-repeat;}
+.horizontal .slick_login_vm .login .username:hover {background: url(/modules/mod_slick_login_vm/images/inputbox.png) 0 -25px no-repeat;}
+.horizontal .slick_login_vm .login .password:hover {background: url(/modules/mod_slick_login_vm/images/inputbox.png) 0 -25px no-repeat;}
+.horizontal .slick_login_vm .login .username input,
+.horizontal .slick_login_vm .login .password input {
+padding: 0px;
+width: 100%;
+background: none;
+border: none;
+outline: none;
+float: left;
+font-size: 13px;
+}
+.horizontal .slick_login_vm .login .username input:hover,.horizontal .slick_login_vm .login .password input:hover,
+.horizontal .slick_login_vm .login .username input:focus,.horizontal .slick_login_vm .login .password input:focus 
+{color: #555;}
+
+.horizontal .slick_login_vm .login .login-button-text button {
+cursor: pointer;
+}
+.horizontal .slick_login_vm .login .login-button-icon {width: 29px;height: 30px;background: url(/modules/mod_slick_login_vm/images/login.png) 0 0 no-repeat; }
+.horizontal .slick_login_vm .login .login-button-icon:hover {background: url(/modules/mod_slick_login_vm/images/login.png) -30px 0 no-repeat;}
+.horizontal .slick_login_vm .login .login-button-icon button {
+display: block;
+padding: 0px 0px 0px 0px;
+width: 100%;
+height: 30px;
+border: none;
+background: none;
+cursor: pointer;
+overflow: hidden;
+}
+.horizontal .slick_login_vm .login .login-button button:hover {color: #000000;}
+.horizontal .slick_login_vm .login .lostpassword,.horizontal .slick_login_vm .login .lostusername,.horizontal .slick_login_vm .login .registration {
+width: 40px;
+height:33px;
+}
+.horizontal .slick_login_vm .login .lostpassword {background: url(/modules/mod_slick_login_vm/images/lost_password.png) 0 0px no-repeat; /* ie6png:crop */}
+.horizontal .slick_login_vm .login .lostusername {background: url(/modules/mod_slick_login_vm/images/lost_username.png) 0 0px no-repeat;}
+.horizontal .slick_login_vm .login .registration {background: url(/modules/mod_slick_login_vm/images/register.png) 0 0px no-repeat; }
+.horizontal .slick_login_vm .login .lostpassword a,.horizontal .slick_login_vm .login .lostusername a,.horizontal .slick_login_vm .login .registration a {
+display: block;
+width: 100%;
+height: 40px;
+text-indent:-5000px;
+}
+
+/* account button*/
+.account {
+background: url(/modules/mod_slick_login_vm/images/button.png) 0 0px; 
+display: block;
+height: 20px;
+float:left;
+margin:4px 5px 0px 0px;
+padding: 4px 5px 1px;
+border:1px solid #888;
+}
+.account a {color:#333!important;text-decoration:none;}
+/* logout */
+.horizontal .slick_login_vm .logout {height:30px;}
+.horizontal .slick_login_vm .logout .greeting {line-height: 30px;}
+.horizontal .slick_login_vm .logout .logout-button-text button {cursor: pointer;}
+.horizontal .slick_login_vm .logout .logout-button-icon {width: 29px;height: 30px;background: url(/modules/mod_slick_login_vm/images/logout.png) 0 0 no-repeat; }
+.horizontal .slick_login_vm .logout .logout-button-icon:hover {background: url(/modules/mod_slick_login_vm/images/logout.png) -30px 0 no-repeat;}
+.horizontal .slick_login_vm .logout .logout-button-icon button {
+display: block;
+padding: 0px 0px 0px 0px;
+width: 100%;
+height: 33px;
+border: none;
+background: none;
+cursor: pointer;
+overflow: hidden;
+font-size: 11px;
+color: #646464;
+text-transform: lowercase;
+text-indent:-5000px;
+}
+.horizontal .slick_login_vm .logout .logout-button-icon button:hover {color: #000000;}
+
+/* Vertical */
+/* login */
+.vertical .slick_login_vm .login {width: 150px;}
+
+.vertical .slick_login_vm .login .username,
+.vertical .slick_login_vm .login .password {
+margin-bottom: 10px;
+width: 132px;
+height: 20px;
+padding: 5px 2px 0px 12px;
+overflow: hidden;
+float:left;
+}
+
+.vertical .slick_login_vm .login .username {background: url(/modules/mod_slick_login_vm/images/inputbox2.png) 0 0 no-repeat;float:left;width:100%;clear:both;}
+.vertical .slick_login_vm .login .password {background: url(/modules/mod_slick_login_vm/images/inputbox2.png) 0 0 no-repeat;float:left;width:100%;clear:both;}
+.vertical .slick_login_vm .login .username:hover{background: url(/modules/mod_slick_login_vm/images/inputbox2.png) 0 -25px no-repeat;float:left;}
+.vertical .slick_login_vm .login .password:hover {background: url(/modules/mod_slick_login_vm/images/inputbox2.png) 0 -25px no-repeat;float:left;}
+.vertical .slick_login_vm .login .username input,
+.vertical .slick_login_vm .login .password input {
+padding: 0px;
+background: none;
+border: none;
+outline: none;
+float: left;
+font-size: 12px;
+}
+.vertical .slick_login_vm .login .username input:hover,
+.vertical .slick_login_vm .login .password input:hover,
+.vertical .slick_login_vm .login .username input:focus,
+.vertical .slick_login_vm .login .password input:focus {
+color: #555;
+}
+.vertical .slick_login_vm .login .remember {margin-bottom: 4px;}
+.vertical .slick_login_vm .login .login-button-container {float:left;clear:both;}
+.vertical .slick_login_vm .login .login-button-container .button{
+background: url("/modules/mod_slick_login_vm/images/session-login.png") no-repeat scroll 5% 50% #DCDCDC;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 3px #333333;
+    color: #333333;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    overflow: hidden;
+    padding: 0 12px 4px 30px;
+    text-align: left;
+    width: 100%;
+    margin:3px 0px 7px;
+}
+
+.vertical .slick_login_vm .login .login-button-icon button:hover {color: #555;}
+.vertical .slick_login_vm .login .login-button-text button {float: right;cursor: pointer;}
+.vertical .slick_login_vm .login .lostpassword,
+.vertical .slick_login_vm .login .lostusername,
+.vertical .slick_login_vm .login .registration,
+.vertical .slick_login_vm .login .login {
+height: 20px;
+line-height: 20px;
+float:left;
+clear:both;
+width:100%;
+}
+/* logout */
+.vertical .slick_login_vm .logout {width: auto;margin: auto;float:left;}
+.vertical .slick_login_vm .logout .logout-button-icon {
+Clear:both;
+height: 35px;
+float:left;
+margin-top:5px;
+cursor: pointer;
+display:inline;
+}
+.vertical .slick_login_vm .logout .logout-button-icon .button {
+background: url("/modules/mod_slick_login_vm/images/session-logout.png") no-repeat scroll 5% 50% #DCDCDC;
+     border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 3px #333333;
+    color: #333333;
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    overflow: hidden;
+    padding: 0 12px 4px 30px;
+    text-align: left;
+    width: 100%;
+
+}
+
+.vertical .slick_login_vm .logout .logout-button-icon button:hover {color: #000000;}
+.vertical .slick_login_vm .logout .logout-button-text button {margin: auto;display: block;cursor: pointer;}
+/* account button*/
+.account2 {
+background:  url(/modules/mod_slick_login_vm/images/gear.png) no-repeat left center; 
+display: block;
+padding: 5px 12px 9px 22px;
+height: 16px;
+border-top:1px solid;
+border-bottom:1px solid;
+margin:7px 0px;
+float:left;
+clear:both;
+}
+.account2 a {text-decoration:none;}
+.greeting{float:left;}

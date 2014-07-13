@@ -1,0 +1,119 @@
+/*
+#------------------------------------------------------------------------
+# yourshop.com - June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+/* fonts */
+
+body { font: normal 13px/1.9 Arial, sans-serif; }
+/*#gkButtonLogin { font: bold 11px/25px Arial, Helvetica, sans-serif; }
+div.gk-menu > ul.level0 > li,
+div#gkDropMain > ul > li { font: bold 13px "Trebuchet MS", Arial, Helvetica, sans-serif; }
+div.gk-menu > ul.level0 > li > .childcontent { font: bold 12px Arial, Helvetica, sans-serif; }
+div.gk-menu > ul.level0 > li > .childcontent .childcontent { font-size:100%; }
+div.gk-menu > ul.level0 > li .childcontent ul li a span.menu-desc { font-size: 9px; font-family: Arial, Helvetica, sans-serif; }
+/* main layout */
+
+html { height:100%; min-height:100%; border-bottom:1px solid transparent; }
+.gkMain {  }
+#gkRight .gkMain:first-child,
+#gkLeft .gkMain:first-child,
+.gkMain:first-child,
+#gkHeader { }
+#gkHeader { overflow: hidden!important;margin: 0 0 10px 0; }
+#gkRight .gkMain,
+#gkLeft .gkMain { }
+#gkMain {  }
+#gkComponent { }
+#gkContentMainbody { padding: 0!important;margin:0!important }
+#gkComponentWrap { padding:0 !important }
+#bgWrapLeft,
+#bgWrapRight,
+#gkWrap1,
+#gkWrap2,
+#gkTop { margin: 0 auto; clear:both;}
+#gkTop1,
+#gkTop2,
+#gkUser1,
+#gkUser2,
+#gkBottom1,
+#gkBottom2,
+#gkMainBlock,
+#gkLeftMiddle,
+#gkRightMiddle,
+#gkHeader {  border-collapse: collapse; display: table; width: 100%;}
+#gkUser1,
+#gkUser2 { margin-top: 0!important; margin-bottom: 10px!important; }
+.gkCol { display: table-cell; vertical-align:top; width:100% }
+#gkTop1,
+#gkTop2 { margin-bottom:10px!important; }
+#gkInset1,
+#gkInset2,
+#gkBanner1,
+#gkBanner2,
+#gkBottom2 {margin-bottom:10px;}
+/* gk_style box-model */
+
+div.box { }
+div.box > h3.header { }
+div.box > div.content {}
+/*#gkBottom1 .box,
+#gkBottom2 .box { padding: 0!important; }
+/* USER/TOP/BOTTOM columns */
+
+.gkColLeft > .box { margin-right:5px !important; }
+.gkColCenter > .box { margin-left: 5px !important;margin-right: 5px !important; }
+.gkColRight > .box { margin-left: 5px !important; }
+.gkColFull > .box { }
+.gkColFull > .box,
+.gkColLeft > .box,
+.gkColCenter > .box,
+.gkColRight > .box {  }
+.gkColLeft > .box {  }
+.gkColRight > .box {  }
+.gkColFull > .box {  }
+#gkBottom1 .gkColFull > .box,
+#gkBottom2 .gkColFull > .box,
+#gkBottom1 .gkColLeft > .box,
+#gkBottom2 .gkColLeft > .box,
+#gkBottom1 .gkColCenter > .box,
+#gkBottom2 .gkColCenter > .box,
+#gkBottom1 .gkColRight > .box,
+#gkBottom2 .gkColRight > .box { margin-left: 0; margin-right: 0; }
+/* TBLR */
+.gkPaddingT { padding-top: 0!important; }
+.gkPaddingB { padding-bottom: 10px!important; }
+.gkPaddingL { padding-left: 10px!important; }
+.gkPaddingR { padding-right:10px!important; }
+.gkPaddingTB { padding-top: 10px!important; padding-bottom: 10px!important; }
+.gkPaddingTL { padding-top: 0!important; padding-left: 5px!important; }
+.gkPaddingTR { padding-top: 0!important; padding-right: 5px!important; }
+.gkPaddingBL { padding-bottom: 0!important; padding-left: 0!important; }
+.gkPaddingBR { padding-bottom: 0!important; padding-right: 0!important; }
+.gkPaddingLR { padding-left: 0!important; padding-right: 0!important; }
+.gkPaddingTBL { padding-top: 0!important; padding-bottom: 0!important; padding-left: 0!important; }
+.gkPaddingTBR { padding-top: 0!important; padding-bottom: 0!important; padding-right: 0!important; }
+.gkPaddingTLR { padding-top: 0!important; padding-left: 0!important; padding-right: 0!important; }
+.gkPaddingBLR { padding-bottom: 0!important; padding-left: 0!important; padding-right: 0!important; }
+.gkPaddingTBLR { padding: 0!important; }
+/* Joomla columns */
+
+.cols-1 { display: block; float: none !important; margin: 0 !important; }
+.cols-2 .column-1 { width:47%; float:left; }
+.cols-2 .column-2 { width:47%; float:right; margin:0 }
+.cols-3 .column-1 { float:left; width:29%; padding:0px 5px; margin-right:4% }
+.cols-3 .column-2 { float:left; width:29%; margin-left:0; padding:0px 5px }
+.cols-3 .column-3 { float:right; width:29%; padding:0px 5px }
+.items-row { overflow:hidden; margin-bottom:10px !important; }
+.column-1,
+.column-2,
+.column-3 { padding:10px 5px }
+.column-2 { width:55%; margin-left:40%; }
+.column-3 { width:30% }
+
+/*.blog-more { padding:10px 5px }

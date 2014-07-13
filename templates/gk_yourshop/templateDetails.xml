@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.6" type="template" client="site" method="update">
+	<name>gk_yourshop</name>
+	<creationDate>27 Jan 2012</creationDate>
+	<author>GavickPro</author>
+	<authorEmail>support@gavick.com</authorEmail>
+	<authorUrl>http://gavick.com</authorUrl>
+	<copyright>Copyright (C) 2010 - 2011 GavickPro. All rights reserved.</copyright>
+	<license></license>
+    <version>2.6</version>
+	<description><![CDATA[ 
+	      <style type="text/css" media="all">
+	      <!--
+	      #wrap1 {padding:0px 0px 4px 0px; font-weight:normal; }
+	      h1 {clear:both;font-family: Georgia, sans-serif;font-size:38px;margin:30px 20px 12px ;padding:0px 0px 24px 10px;color:#333; border-bottom: 1px solid #ccc; font-weight: normal;}
+	      sup { font-style: italic; font-size: }
+	      .wrap2 {background:#fff;padding: 20px; font-family: Arial; font-size:13px; text-align: justify; color: #4d4d4d; line-height: 24px;}
+	      .leftart {margin: 16px 0 0 176px}
+	      .livedemo { margin-top: 28px;}
+	      -->
+	      </style>	
+	      <div id="wrap1">    
+	      <h1>yourShop</h1>
+	      <div class="wrap2">                        
+	      <a title="Visit the official website!" href="http://demo.gavick.com/index.php?year=2010&month=Dec" target="_blank"> <img style="padding-left: 10px;float: left; background-color: #fff;" src="../templates/gk_yourshop/images/template_image.jpg" border="0" alt="Logo" /></a>       
+	      <div class="leftart">            
+	      <p><em>Make sensible buying simple</em></p> 
+		  <p>Engage presenting new and the best products for best customers in this online store passionately. Your store balance between smooth design and what you do best, providing the ideal environment for a wide variety of products to a wide range of customers.</p> 
+          <p>On the way to success, building strong relationships and demanding the best quality products and services, are essential to achieve a distinct level of entrepreneurial achievement. </p> 
+          <p>Be simple, be sucessfull.<br />
+             Be all that you can be, because success is terrible thing to waste.</p> 
+	      <p class="livedemo"><strong>View yourShop in action <a href="http://demo.gavick.com/index.php?year=2010&month=Dec&joomla=16" target="_blank">here...</a></strong></p></div>
+	      </div>
+	      </div>]]></description>
+	<files>
+		<filename>ajax.php</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>admin</folder>
+        <folder>css</folder>
+		<folder>config</folder>
+        <folder>fonts</folder>
+        <folder>html</folder> 
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>layouts</folder>
+        <folder>lib</folder>
+        <folder>typography</folder>
+	</files>
+	<positions>
+		<!-- Template specific Module Positions -->
+		<position>search</position>
+		<position>breadcrumb</position>
+		<position>footer_nav</position>
+		<position>banner1</position>
+		<position>banner2</position>
+		<position>login</position>
+		<position>header1</position>
+		<position>header2</position>
+		<position>cart</position>
+		<!-- STANDARD Module Positions -->
+		<position>left</position>
+		<position>left_top</position>
+        <position>left_left</position>
+        <position>left_right</position>
+        <position>left_bottom</position>
+		<position>right</position>
+		<position>right_top</position>
+        <position>right_left</position>
+		<position>right_right</position>
+		<position>right_bottom</position>
+        <position>inset1</position>
+		<position>inset2</position>
+		<position>top</position>
+		<position>bottom</position>
+        <position>mainbody</position>
+        <position>mainbody_top</position>
+		<position>mainbody_bottom</position>
+        <!-- HEADER Module Positions -->
+		<position>header</position>
+		<!-- USER Module Positions -->
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+		<position>user8</position>
+		<position>user9</position>
+		<position>user10</position>
+		<position>user11</position>
+		<position>user12</position>
+		<!-- TOP Module Positions -->
+		<position>top1</position>
+		<position>top2</position>
+		<position>top3</position>
+		<position>top4</position>
+		<position>top5</position>
+		<position>top6</position>
+		<position>top7</position>
+		<position>top8</position>
+		<position>top9</position>
+		<position>top10</position>
+		<position>top11</position>
+		<position>top12</position>
+		<!-- BOTTOM Module Positions -->
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom3</position>
+		<position>bottom4</position>
+		<position>bottom5</position>
+		<position>bottom6</position>
+		<position>bottom7</position>
+		<position>bottom8</position>
+		<position>bottom9</position>
+		<position>bottom10</position>
+		<position>bottom11</position>
+		<position>bottom12</position>
+		<!-- MOBILE Module Positions -->
+		<position>mobile_top</position>
+		<position>mobile_bottom</position>
+		<!-- MENU Module Positions -->
+		<position>menu1</position>
+		<position>menu2</position>
+		<position>menu3</position>
+		<position>menu4</position>
+		<position>menu5</position>
+		<position>menu6</position>
+		<position>menu7</position>
+		<position>menu8</position>
+		<position>menu9</position>
+		<position>menu10</position>
+		<!-- TAB Module Positions -->
+		<position>tab1</position>
+		<position>tab2</position>
+		<position>tab3</position>
+		<position>tab4</position>
+		<position>tab5</position>
+		<position>tab6</position>
+		<position>tab7</position>
+		<position>tab8</position>
+		<position>tab9</position>
+		<position>tab10</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.TPL_GK_LANG.ini</language>
+	</languages>
+	<config>		
+		<fields name="params">
+			<!-- Basic settings -->
+			<fieldset name="BASIC_SETTINGS" addfieldpath="/templates/gk_yourshop/admin/elements">
+				<field name="js_translations" type="translations" />
+				<field name="asset_css" type="asset" extension="css" path="templates/gk_yourshop/admin/style.css" />
+				<field name="asset_js" type="asset" extension="js" path="templates/gk_yourshop/admin/scripts.js" />
+                <field name="config_manager" type="configmanager" directory="templates/gk_yourshop/config/" />
+				<field name="template_color" type="list" default="1" label="TPL_GK_LANG_TEMPLATE_COLOR" description="TPL_GK_LANG_TEMPLATE_COLOR_DESC">
+					<option value="1">TPL_GK_LANG_COLOR_1</option>
+					<option value="2">TPL_GK_LANG_COLOR_2</option>
+					<option value="3">TPL_GK_LANG_COLOR_3</option>
+				</field>
+				<field name="mainbody_frontpage" type="list" default="only_component" label="TPL_GK_LANG_MAINBODY_FRONTPAGE" description="TPL_GK_LANG_MAINBODY_FRONTPAGE_DESC">
+					<option value="only_component">TPL_GK_LANG_ONLY_COMPONENT</option>
+					<option value="only_mainbody">TPL_GK_LANG_ONLY_MAINBODY</option>
+					<option value="mainbody_before_component">TPL_GK_LANG_MAINBODY_BEFORE_COMPONENT</option>
+					<option value="mainbody_after_component">TPL_GK_LANG_MAINBODY_AFTER_COMPONENT</option>
+				</field>
+				<field name="mainbody_subpage" type="list" default="mainbody_or_component" label="TPL_GK_LANG_MAINBODY_SUBPAGE" description="TPL_GK_LANG_MAINBODY_SUBPAGE_DESC">
+					<option value="only_component">TPL_GK_LANG_ONLY_COMPONENT</option>
+					<option value="mainbody_before_component">TPL_GK_LANG_MAINBODY_BEFORE_COMPONENT</option>
+					<option value="mainbody_after_component">TPL_GK_LANG_MAINBODY_AFTER_COMPONENT</option>
+				</field>
+				<field name="messages_position" type="list" default="message-position-1" label="TPL_GK_LANG_MESSAGE_POSITION" description="TPL_GK_LANG_MESSAGE_POSITION_DESC">
+					<option value="message-position-1">TPL_GK_LANG_MESSAGE_POSITION_1</option>
+					<option value="message-position-2">TPL_GK_LANG_MESSAGE_POSITION_2</option>
+					<option value="message-position-3">TPL_GK_LANG_MESSAGE_POSITION_3</option>
+				</field>
+				<field name="gk_line_1" type="line" text="" />
+				<field name="default_layout" type="filelist" default="default" directory="templates/gk_yourshop/layouts/" filter=".php" hide_none="1" hide_default="1" stripext="1"  label="TPL_GK_LANG_DEFAULT_LAYOUT" description="TPL_GK_LANG_DEFAULT_LAYOUT_DESC" />
+				<field name="facebook_layout" type="filelist" default="facebook" directory="templates/gk_yourshop/layouts/" filter=".php" hide_none="1" hide_default="1" stripext="1" label="TPL_GK_LANG_FACEBOOK_LAYOUT" description="TPL_GK_LANG_FACEBOOK_LAYOUT_DESC" />
+				<field name="iphone_layout" type="filelist" default="iphone" directory="templates/gk_yourshop/layouts/" filter=".php" hide_none="1" hide_default="1" stripext="1" label="TPL_GK_LANG_IPHONE_LAYOUT" description="TPL_GK_LANG_IPHONE_LAYOUT_DESC" />
+				<field name="android_layout" type="filelist" default="android" directory="templates/gk_yourshop/layouts/" filter=".php" hide_none="1" hide_default="1" stripext="1" label="TPL_GK_LANG_ANDROID_LAYOUT" description="TPL_GK_LANG_ANDROID_LAYOUT_DESC" />
+				<field name="handheld_layout" type="filelist" default="handheld" directory="templates/gk_yourshop/layouts/" filter=".php" hide_none="1" hide_default="1" stripext="1" label="TPL_GK_LANG_HANDHELD_LAYOUT" description="TPL_GK_LANG_HANDHELD_LAYOUT_DESC" />
+				<field name="gk_line_2" type="line" text="" />
+				<field name="layout_override" type="layoutoverride" directory="templates/gk_yourshop/layouts/" label="TPL_GK_LANG_LAYOUT_OVERRIDE" description="TPL_GK_LANG_LAYOUT_OVERRIDE_DESC" />	
+			</fieldset>
+			<!-- Layout settings -->
+			<fieldset name="LAYOUT_SETTINGS" addfieldpath="/templates/gk_yourshop/admin/elements">
+				<field name="template_width" type="text" class="small tright suffix-pxorpercents" default="980px" label="TPL_GK_LANG_TEMPLATE_WIDTH" description="TPL_GK_LANG_TEMPLATE_WIDTH_DESC" />
+				<field name="gk_line_18" type="line" text="TPL_GK_LANG_TEMPLATE_COLUMNS_TEXT" />
+				<field name="header_column_width" type="text" class="small tright suffix-percents" default="20" label="TPL_GK_LANG_HEADER1_WIDTH" description="TPL_GK_LANG_HEADER1_WIDTH_DESC" />
+				<field name="left_column_width" type="text" class="small tright suffix-percents" default="20" label="TPL_GK_LANG_LEFT_COLUMN_WIDTH" description="TPL_GK_LANG_LEFT_COLUMN_WIDTH_DESC" />
+				<field name="left2_column_width" type="text" class="small tright suffix-percents" default="50" label="TPL_GK_LANG_LEFT2_COLUMN_WIDTH" description="TPL_GK_LANG_LEFT2_COLUMN_WIDTH_DESC" />
+				<field name="right_column_width" type="text" class="small tright suffix-percents" default="20" label="TPL_GK_LANG_RIGHT_COLUMN_WIDTH" description="TPL_GK_LANG_RIGHT_COLUMN_WIDTH_DESC" />
+				<field name="right2_column_width" type="text" class="small tright suffix-percents" default="50" label="TPL_GK_LANG_RIGHT2_COLUMN_WIDTH" description="TPL_GK_LANG_RIGHT2_COLUMN_WIDTH_DESC" />
+				<field name="inset_column_width" type="text" class="small tright suffix-percents" default="20" label="TPL_GK_LANG_INSET_COLUMN_WIDTH" description="TPL_GK_LANG_INSET_COLUMN_WIDTH_DESC" />
+				<field name="inset2_column_width" type="text" class="small tright suffix-percents" default="20" label="TPL_GK_LANG_INSET2_COLUMN_WIDTH" description="TPL_GK_LANG_INSET2_COLUMN_WIDTH_DESC" />
+				<field name="gk_line_19" type="line" text="TPL_GK_LANG_TEMPLATE_MODULES_TEXT" />
+				<!-- user positions -->
+				<field name="user1_6_widest_value" type="text" class="small next-remove tright suffix-percents" default="0" label="TPL_GK_LANG_USER1_6_WIDEST_VALUE" description="TPL_GK_LANG_USER1_6_WIDEST_VALUE_DESC" />
+				<field name="user1_6_widest" type="list" default="user1" class="next-remove position" label="TPL_GK_LANG_USER1_6_WIDEST" description="TPL_GK_LANG_USER1_6_WIDEST_DESC">
+					<option value="user1">user1</option>
+					<option value="user2">user2</option>
+					<option value="user3">user3</option>
+					<option value="user4">user4</option>
+					<option value="user5">user5</option>
+					<option value="user6">user6</option>
+				</field>				
+				<field name="user7_12_widest_value" type="text" class="small next-remove tright suffix-percents" default="0" label="TPL_GK_LANG_USER7_12_WIDEST_VALUE" description="TPL_GK_LANG_USER7_12_WIDEST_VALUE_DESC" />
+				<field name="user7_12_widest" type="list" default="user7" class="next-remove position" label="TPL_GK_LANG_USER7_12_WIDEST" description="TPL_GK_LANG_USER7_12_WIDEST_DESC">
+					<option value="user7">user7</option>
+					<option value="user8">user8</option>
+					<option value="user9">user9</option>
+					<option value="user10">user10</option>
+					<option value="user11">user11</option>
+					<option value="user12">user12</option>
+				</field>				
+				<!-- top module positions -->
+				<field name="top1_6_widest_value" type="text" class="small next-remove tright suffix-percents" default="0" label="TPL_GK_LANG_TOP1_6_WIDEST_VALUE" description="TPL_GK_LANG_TOP1_6_WIDEST_VALUE_DESC" />
+				<field name="top1_6_widest" type="list" default="top1" class="next-remove position" label="TPL_GK_LANG_TOP1_6_WIDEST" description="TPL_GK_LANG_TOP1_6_WIDEST_DESC">
+					<option value="top1">top1</option>
+					<option value="top2">top2</option>
+					<option value="top3">top3</option>
+					<option value="top4">top4</option>
+					<option value="top5">top5</option>
+					<option value="top6">top6</option>
+				</field>				
+				<field name="top7_12_widest_value" type="text" class="small next-remove tright suffix-percents" default="0" label="TPL_GK_LANG_TOP7_12_WIDEST_VALUE" description="TPL_GK_LANG_TOP7_12_WIDEST_VALUE_DESC" />
+				<field name="top7_12_widest" type="list" default="top7" class="next-remove position" label="TPL_GK_LANG_TOP7_12_WIDEST" description="TPL_GK_LANG_TOP7_12_WIDEST_DESC">
+					<option value="top7">top7</option>
+					<option value="top8">top8</option>
+					<option value="top9">top9</option>
+					<option value="top10">top10</option>
+					<option value="top11">top11</option>
+					<option value="top12">top12</option>
+				</field>				
+				<!-- bottom positions -->
+				<field name="bottom1_6_widest_value" type="text" class="small next-remove tright suffix-percents" default="0" label="TPL_GK_LANG_BOTTOM1_6_WIDEST_VALUE" description="TPL_GK_LANG_BOTTOM1_6_WIDEST_VALUE_DESC" />
+				<field name="bottom1_6_widest" type="list" default="bottom1" class="next-remove position" label="TPL_GK_LANG_BOTTOM1_6_WIDEST" description="TPL_GK_LANG_BOTTOM1_6_WIDEST_DESC">
+					<option value="bottom1">bottom1</option>
+					<option value="bottom2">bottom2</option>
+					<option value="bottom3">bottom3</option>
+					<option value="bottom4">bottom4</option>
+					<option value="bottom5">bottom5</option>
+					<option value="bottom6">bottom6</option>
+				</field>				
+				<field name="bottom7_12_widest_value" type="text" class="small next-remove tright suffix-percents" default="0" label="TPL_GK_LANG_BOTTOM7_12_WIDEST_VALUE" description="TPL_GK_LANG_BOTTOM7_12_WIDEST_VALUE_DESC" />
+				<field name="bottom7_12_widest" type="list" default="bottom7" class="next-remove position" label="TPL_GK_LANG_BOTTOM7_12_WIDEST" description="TPL_GK_LANG_BOTTOM7_12_WIDEST_DESC">
+					<option value="bottom7">bottom7</option>
+					<option value="bottom8">bottom8</option>
+					<option value="bottom9">bottom9</option>
+					<option value="bottom10">bottom10</option>
+					<option value="bottom11">bottom11</option>
+					<option value="bottom12">bottom12</option>
+				</field>				
+			</fieldset>
+			<!-- Layout settings -->
+			<fieldset name="FONT_SETTINGS" addfieldpath="/templates/gk_yourshop/admin/elements">
+				<field name="font_link1" type="url" label="TPL_GK_LANG_GOOGLE_FONTS_URL" description="TPL_GK_LANG_GOOGLE_FONTS_URL_DESC" url="http://code.google.com/webfonts" text="TPL_GK_LANG_CLICK_HERE" />
+				<field name="font_link2" type="url" label="TPL_GK_LANG_SQUIRREL_FONTS_URL" description="TPL_GK_LANG_SQUIRREL_FONTS_URL_DESC" url="http://www.fontsquirrel.com/fontface" text="TPL_GK_LANG_CLICK_HERE" />
+				<field name="gk_line_20" type="line" text="" />
+				<field name="font_name_group1" type="gkfont" directory="templates/gk_yourshop/fonts/" label="TPL_GK_LANG_FONT_NAME_G1" description="TPL_GK_LANG_FONT_NAME_G1_DESC" />
+				<field name="font_rules_group1" type="textarea" rows="6" cols="40" label="TPL_GK_LANG_FONT_RULES_G1" description="TPL_GK_LANG_FONT_RULES_G1_DESC" />
+				<field name="font_name_group2" type="gkfont" directory="templates/gk_yourshop/fonts/" label="TPL_GK_LANG_FONT_NAME_G2" description="TPL_GK_LANG_FONT_NAME_G2_DESC" />
+				<field name="font_rules_group2" type="textarea" rows="6" cols="40" label="TPL_GK_LANG_FONT_RULES_G2" description="TPL_GK_LANG_FONT_RULES_G2_DESC" />
+				<field name="font_name_group3" type="gkfont" directory="templates/gk_yourshop/fonts/" label="TPL_GK_LANG_FONT_NAME_G3" description="TPL_GK_LANG_FONT_NAME_G3_DESC" />
+				<field name="font_rules_group3" type="textarea" rows="6" cols="40" label="TPL_GK_LANG_FONT_RULES_G3" description="TPL_GK_LANG_FONT_RULES_G3_DESC" />
+			</fieldset>
+			<!-- Features -->
+			<fieldset name="FEATURES_SETTINGS" addfieldpath="/templates/gk_yourshop/admin/elements">
+				<field name="gk_line_17" type="line" text="TPL_GK_LANG_LOGOTYPES_TEXT" />
+                <field name="logo_type" type="list" default="image" label="TPL_GK_LANG_LOGO_TYPE" description="TPL_GK_LANG_LOGO_TYPE_DESC">
+                    <option value="image">TPL_GK_LANG_LOGO_TYPE_IMAGE</option>
+                    <option value="text">TPL_GK_LANG_LOGO_TYPE_TEXT</option>
+                    <option value="css">TPL_GK_LANG_LOGO_TYPE_CSS</option>
+                    <option value="none">TPL_GK_LANG_LOGO_TYPE_NONE</option>
+                </field>
+                <field name="mobile_logo_type" type="list" default="image" label="TPL_GK_LANG_MOBILE_LOGO_TYPE" description="TPL_GK_LANG_MOBILE_LOGO_TYPE_DESC">
+                    <option value="image">TPL_GK_LANG_LOGO_TYPE_IMAGE</option>
+                    <option value="css">TPL_GK_LANG_LOGO_TYPE_CSS</option>
+                </field>
+                <field name="logo_image" type="media" default="" label="TPL_GK_LANG_LOGO_IMAGE" description="TPL_GK_LANG_LOGO_IMAGE_DESC" />
+                <field name="mobile_logo_image" type="media" default="" label="TPL_GK_LANG_MOBILE_LOGO_IMAGE" description="TPL_GK_LANG_MOBILE_LOGO_IMAGE_DESC" />
+                <field name="logo_text" type="text" default="" label="TPL_GK_LANG_LOGO_TEXT" description="TPL_GK_LANG_LOGO_TEXT_DESC" />
+                <field name="logo_slogan" type="text" default="" label="TPL_GK_LANG_LOGO_SLOGAN" description="TPL_GK_LANG_LOGO_SLOGAN_DESC" />
+                <field name="print_logo" type="media" default="" label="TPL_GK_LANG_PRINT_LOGO" description="TPL_GK_LANG_PRINT_LOGO_DESC" />
+                <field name="print_behaviour" type="list" default="1" label="TPL_GK_LANG_PRINT_BEHAVIOUR" description="TPL_GK_LANG_PRINT_BEHAOVIUR_DESC">
+                    <option value="nothing">TPL_GK_LANG_PRINT_DEFAULT</option>
+                    <option value="button">TPL_GK_LANG_PRINT_BUTTON</option>
+                    <option value="auto">TPL_GK_LANG_PRINT_AUTO</option>
+                </field>
+                <field name="favicon_image" type="media" default="" label="TPL_GK_LANG_FAVICON_IMAGE" description="TPL_GK_LANG_FAVICON_IMAGE_DESC" />
+				<field name="gk_line_16" type="line" class="hasText" text="TPL_GK_LANG_FOOTER_ELEMENTS_TEXT" />
+				<field name="stylearea" type="list" class="gk_switch" default="1" label="TPL_GK_LANG_STYLEAREA" description="TPL_GK_LANG_STYLEAREA_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="framework_logo" type="list" class="gk_switch" default="1" label="TPL_GK_LANG_FRAMEWORK_LOGO" description="TPL_GK_LANG_FRAMEWORK_LOGO_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="copyrights" type="textarea" rows="3" cols="40" label="TPL_GK_LANG_COPYRIGHTS" description="TPL_GK_LANG_COPYRIGHTS_DESC" />
+				  <field name="webmaster_contact" type="text" default="" label="TPL_GK_LANG_WEBMASTER_CONTACT" description="TPL_GK_LANG_WEBMASTER_CONTACT_DESC" />
+				<field name="gk_line_15" type="line" text="TPL_GK_LANG_GA_TEXT" />
+				<field name="google_analytics" type="googleanalytics" label="TPL_GK_LANG_GOOGLE_ANALYTICS" description="TPL_GK_LANG_GOOGLE_ANALYTICS_DESC" />
+				<field name="gk_line_14" type="line" text="TPL_GK_LANG_OVERRIDES_TEXT" />
+				<field name="tools" type="list" default="1" label="TPL_GK_LANG_TOOLS" description="TPL_GK_LANG_TOOLS_DESC">
+                    <option value="all">TPL_GK_LANG_TOOLS_ALL</option>
+                    <option value="none">TPL_GK_LANG_TOOLS_NONE</option>
+                    <option value="selected">TPL_GK_LANG_TOOLS_SELECTED</option>
+                    <option value="selected_disabled">TPL_GK_LANG_TOOLS_SELECTED_DISABLED</option>
+                </field>
+				<field name="tools_for_pages" type="toolsoverride" label="TPL_GK_LANG_TOOLS_FOR_PAGES" description="TPL_GK_LANG_TOOLS_FOR_PAGES_DESC" />
+				<field name="mootools_for_pages" type="mootoolsoverride" label="TPL_GK_LANG_MOOTOOLS_FOR_PAGES" description="TPL_GK_LANG_MOOTOOLS_FOR_PAGES_DESC" />
+                <field name="suffix_override" type="suffixoverride" label="TPL_GK_LANG_SUFFIXES_FOR_PAGES" description="TPL_GK_LANG_SUFFIXES_FOR_PAGES_DESC" />
+                <field name="module_override" type="moduleoverride" label="TPL_GK_LANG_MODULE_STYLES_OVERRIDE" description="TPL_GK_LANG_MODULE_STYLES_OVERRIDE_DESC" module_positions="search,breadcrumb,footer_nav,banner1,banner2,left,left_top,left_left,left_right,left_bottom,right,right_top,right_left,right_right,right_bottom,inset1,inset2,top,bottom,mainbody,mainbody_top,mainbody_bottom,header,user1,user2,user3,user4,user5,user6,user7,user8,user9,user10,user11,user12,top1,top2,top3,top4,top5,top6,top7,top8,top9,top10,top11,top12,bottom1,bottom2,bottom3,bottom4,bottom5,bottom6,bottom7,bottom8,bottom9,bottom10,bottom11,bottom12,mobile_top,mobile_bottom,menu1,menu2,menu3,menu4,menu5,menu6,menu7,menu8,menu9,menu10,tab1,tab2,tab3,tab4,tab5,tab6,tab7,tab8,tab9,tab10" module_styles="gk_style,xhtml,none,table,horz,rounded,outline" />	
+			</fieldset>
+			<!-- TYPO settings -->
+			<fieldset name="TYPO_SETTINGS" addfieldpath="/templates/gk_yourshop/admin/elements">
+				<field name="typography" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_TYPO" description="TPL_GK_LANG_TYPO_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="typo_iconset1" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_TYPO_ICONSET1" description="TPL_GK_LANG_TYPO_ICONSET1_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="typo_iconset2" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_TYPO_ICONSET2" description="TPL_GK_LANG_TYPO_ICONSET2_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="typo_iconset3" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_TYPO_ICONSET3" description="TPL_GK_LANG_TYPO_ICONSET3_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+			</fieldset>
+			<!-- Menu settings -->
+			<fieldset name="MENU_SETTINGS" addfieldpath="/templates/gk_yourshop/admin/elements">
+				<field name="menu_name" type="menu" label="TPL_GK_LANG_MENU_NAME" description="TPL_GK_LANG_MENU_NAME_DESC" />
+				<field name="menu_type" type="list" default="gk_menu" label="TPL_GK_LANG_MENU_TYPE" description="TPL_GK_LANG_MENU_TYPE_DESC">
+					<option value="gk_menu">TPL_GK_LANG_GK_MENU</option>
+					<option value="gk_dropline">TPL_GK_LANG_GK_DROPLINE</option>
+					<option value="gk_split">TPL_GK_LANG_GK_SPLIT</option>
+				</field>
+				<field name="startlevel" type="text" default="0" label="TPL_GK_LANG_START_ITEM" description="TPL_GK_LANG_START_ITEM_DESC" />
+				<field name="endlevel" type="text" default="-1" label="TPL_GK_LANG_END_ITEM" description="TPL_GK_LANG_END_ITEM_DESC" />
+				<field name="menu_height" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_MENU_H_ANIMATION" description="TPL_GK_LANG_MENU_H_ANIMATION_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="menu_width" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_MENU_W_ANIMATION" description="TPL_GK_LANG_MENU_W_ANIMATION_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="menu_duration" type="text" default="500" label="TPL_GK_LANG_MENU_DURATION" description="TPL_GK_LANG_MENU_DURATION_DESC" />
+				<field name="menu_override" type="menuoverride" label="TPL_GK_LANG_MENU_OVERRIDE" description="TPL_GK_LANG_MENU_OVERRIDE_DESC" />	
+			</fieldset>
+			<!-- Mobile settings -->
+			<fieldset name="MOBILE_SETTINGS" addfieldpath="/templates/gk_yourshop/admin/elements">	
+				<field name="mobile_menu_name" type="menu" label="TPL_GK_LANG_MOBILE_MENU_NAME" description="TPL_GK_LANG_MOBILE_MENU_NAME_DESC" />
+				<field name="mobile_login" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_MOBILE_LOGIN" description="TPL_GK_LANG_MOBILE_LOGIN_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="mobile_register" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_MOBILE_REGISTER" description="TPL_GK_LANG_MOBILE_REGISTER_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="mobile_desktop" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_MOBILE_DESKTOP" description="TPL_GK_LANG_MOBILE_DESKTOP_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="mobile_search" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_MOBILE_SEARCH" description="TPL_GK_LANG_MOBILE_SEARCH_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="mobile_collapsible" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_MOBILE_COLLAPSIBLE" description="TPL_GK_LANG_MOBILE_COLLAPSIBLE_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+			</fieldset>
+			<!-- Social API settings -->
+            <fieldset name="FACEBOOK_AND_TWITTER_SETTINGS" addfieldpath="/templates/gk_music/admin/elements">
+                <field name="gk_line_3" type="line" text="TPL_GK_LANG_TEXT_FB_LOGIN" desc="TPL_GK_LANG_TEXT_FB_LOGIN_DESC" />
+                <field name="fb_api_id" type="text" default="" label="TPL_GK_LANG_FB_API_ID" description="TPL_GK_LANG_FB_API_ID_DESC" />
+                <field name="fb_lang" type="text" default="en_US" label="TPL_GK_LANG_FB_LANG" description="TPL_GK_LANG_FB_LANG_DESC" />
+                <field name="fb_login" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_FB_LOGIN" description="TPL_GK_LANG_FB_LOGIN_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <!-- FB LIKE -->
+                <field name="gk_line_4" type="line" text="TPL_GK_LANG_TEXT_FB_LIKE" desc="TPL_GK_LANG_TEXT_FB_LIKE_DESC" />
+                <field name="fb_like" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_FB_LIKE" description="TPL_GK_LANG_FB_LIKE_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <field name="fb_like_send" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_FB_LIKE_SEND" description="TPL_GK_LANG_FB_LIKE_SEND_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <field name="fb_like_layout" type="list" default="standard" label="TPL_GK_LANG_FB_LIKE_LAYOUT" description="TPL_GK_LANG_FB_LIKE_LAYOUT_DESC">
+                    <option value="standard">standard</option>
+                    <option value="button_count">button_count</option>
+                    <option value="box_count">box_count</option>
+                </field>
+                <field name="fb_like_show_faces" type="list" default="true" label="TPL_GK_LANG_FB_LIKE_SHOW_FACES" description="TPL_GK_LANG_FB_LIKE_SHOW_FACES_DESC">
+                    <option value="true">TPL_GK_LANG_ENABLED</option>
+                    <option value="false">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <field name="fb_like_width" type="text" default="500" label="TPL_GK_LANG_FB_LIKE_WIDTH" description="TPL_GK_LANG_FB_LIKE_WIDTH_DESC" />
+                <field name="fb_like_action" type="list" default="like" label="TPL_GK_LANG_FB_LIKE_ACTION" description="TPL_GK_LANG_FB_LIKE_ACTION_DESC">
+                    <option value="like">like</option>
+                    <option value="recommend">recommend</option>
+                </field>
+                <field name="fb_like_font" type="list" default="arial" label="TPL_GK_LANG_FB_LIKE_FONT" description="TPL_GK_LANG_FB_LIKE_FONT_DESC">
+                    <option value="arial">arial</option>
+                    <option value="lucida grande">lucida grande</option>
+                    <option value="segoe ui">segoe ui</option>
+                    <option value="tahoma">tahoma</option>
+                    <option value="trebuchet ms">trebuchet ms</option>
+                    <option value="verdana">verdana</option>
+                </field>
+                <field name="fb_like_colorscheme" type="list" default="light" label="TPL_GK_LANG_FB_LIKE_COLORSCHEME" description="TPL_GK_LANG_FB_LIKE_COLORSCHEME_DESC">
+                    <option value="light">light</option>
+                    <option value="dark">dark</option>
+                </field>
+                <!-- G+ -->
+                <field name="gk_line_14" type="line" text="TPL_GK_LANG_TEXT_GOOGLE_PLUS" desc="TPL_GK_LANG_TEXT_GOOGLE_PLUS_DESC" />
+                <field name="google_plus" type="list" class="gk_switch" default="1" label="TPL_GK_LANG_GOOGLE_PLUS" description="TPL_GK_LANG_GOOGLE_PLUS_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <field name="google_plus_count" type="list" class="gk_switch" default="1" label="TPL_GK_LANG_GOOGLE_PLUS_COUNT" description="TPL_GK_LANG_GOOGLE_PLUS_COUNT_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <field name="google_plus_size" type="list" default="medium" label="TPL_GK_LANG_GOOGLE_PLUS_SIZE" description="TPL_GK_LANG_GOOGLE_PLUS_SIZE_DESC">
+                    <option value="standard">standard</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="tall">tall</option>
+                </field>
+                <field name="google_plus_lang" type="text" default="en-GB" label="TPL_GK_LANG_GOOGLE_PLUS_LANG" description="TPL_GK_LANG_GOOGLE_PLUS_LANG_DESC" />
+                <!-- TWEET BTN -->
+                <field name="gk_line_6" type="line" text="TPL_GK_LANG_TEXT_TWITTER" desc="TPL_GK_LANG_TEXT_TWITTER_DESC" />
+                <field name="tweet_btn" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_TWEET_BTN" description="TPL_GK_LANG_TWEET_BTN_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <field name="tweet_btn_data_count" type="list" default="vertical" label="TPL_GK_LANG_TWEET_BTN_DATA_COUNT" description="TPL_GK_LANG_TWEET_BTN_DATA_COUNT_DESC">
+                    <option value="vertical">vertical count</option>
+                    <option value="horizontal">horizontal count</option>
+                    <option value="none">no count</option>
+                </field>
+                <field name="tweet_btn_data_via" type="text" default="" label="TPL_GK_LANG_TWEET_BTN_DATA_VIA" description="TPL_GK_LANG_TWEET_BTN_DATA_VIA_DESC" />
+                <field name="tweet_btn_data_lang" type="list" default="en" label="TPL_GK_LANG_TWEET_BTN_DATA_LANG" description="TPL_GK_LANG_TWEET_BTN_DATA_LANG_DESC">
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="es">Spanish</option>
+                    <option value="ja">Japanese</option>
+                    <option value="nl">Dutch</option>
+                    <option value="id">Indonesian</option>
+                    <option value="it">Italian</option>
+                    <option value="ko">Korean</option>
+                    <option value="pt">Portuguese</option>
+                    <option value="ru">Russian</option>
+                    <option value="tr">Turkish</option>
+                </field>
+                <!-- DIGG BTN -->
+                <field name="gk_line_7" type="line" text="TPL_GK_LANG_TEXT_DIGG" desc="TPL_GK_LANG_TEXT_DIGG_DESC" />
+                <field name="digg_btn" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_DIGG_BTN" description="TPL_GK_LANG_DIGG_BTN_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <field name="digg_btn_style" type="list" default="0" label="TPL_GK_LANG_DIGG_BTN_STYLE" description="TPL_GK_LANG_DIGG_BTN_STYLE_DESC">
+                    <option value="DiggWide">TPL_GK_LANG_DIGG_WIDE</option>
+                    <option value="DiggMedium">TPL_GK_LANG_DIGG_MEDIUM</option>
+                    <option value="DiggCompact">TPL_GK_LANG_DIGG_COMPACT</option>
+                    <option value="DiggIcon">TPL_GK_LANG_DIGG_ICON</option>
+                </field>
+                <!-- Delicious BTN -->
+                <field name="gk_line_9" type="line" text="TPL_GK_LANG_TEXT_DELICIOUS" desc="TPL_GK_LANG_TEXT_DELICIOUS_DESC" />
+                <field name="delicious_btn" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_DELICIOUS_BTN" description="TPL_GK_LANG_DELICIOUS_BTN_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <!-- Instapaper BTN -->
+                <field name="gk_line_10" type="line" text="TPL_GK_LANG_TEXT_INSTAPAPER" desc="TPL_GK_LANG_TEXT_INSTAPAPER_DESC" />
+                <field name="instapaper_btn" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_INSTAPAPER_BTN" description="TPL_GK_LANG_INSTAPAPER_BTN_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <!-- Excluded -->
+                <field name="gk_line_26" type="line" text="" />
+                <field name="excluded_arts" type="text" label="TPL_GK_LANG_EXCLUDED_ARTS" description="TPL_GK_LANG_EXCLUDED_ARTS_DESC" />
+                <field name="excluded_cats" type="category" extension="com_content" default="" multiple="multiple"  label="TPL_GK_LANG_EXCLUDED_CATS" description="TPL_GK_LANG_EXCLUDED_CATS_DESC" />
+            </fieldset>
+			<!-- Dev settings -->
+			<fieldset name="DEV_SETTINGS" addfieldpath="/templates/gk_yourshop/admin/elements">
+				<field name="font_link3" type="url" label="TPL_GK_LANG_SELECTIVIZR_URL" description="TPL_GK_LANG_SELECTIVIZR_URL_DESC" url="http://selectivizr.com/" text="TPL_GK_LANG_CLICK_HERE" />
+				<field name="selectivizr" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_SELECTIVIZR" description="TPL_GK_LANG_SELECTIVIZR_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="gk_line_11" type="line" text="" />
+				<field name="font_link4" type="url" label="TPL_GK_LANG_CSS_RESET_URL" description="TPL_GK_LANG_CSS_RESET_URL_DESC" url="http://cssresetr.com/" text="TPL_GK_LANG_CLICK_HERE" />
+				<field name="reset_css" type="list" default="meyer" label="TPL_GK_LANG_CSS_RESET" description="TPL_GK_LANG_CSS_RESET_DESC">
+					<option value="meyer">Eric Meyer' CSS Reset</option>
+					<option value="yahoo2">Yahoo! CSS Reset (YUI 2)</option>
+					<option value="yahoo3">Yahoo! CSS Reset (YUI 3)</option>
+					<option value="inman">Shaun Inman's CSS Reset</option>
+					<option value="tantek">Tantek's CSS Reset</option>
+					<option value="universal">Universal CSS Reset</option>
+					<option value="minimalist1">Minimalist Reset 1</option>
+					<option value="minimalist2">Minimalist Reset 2</option>
+					<option value="minimalist3">Minimalist Reset 3</option>
+					<option value="poorman">Poor Man's CSS Reset</option>
+					<option value="siolon">Siolon's CSS Reset</option>
+					<option value="tripoli">Tripoli CSS Reset</option>
+					<option value="html5">HTML5 Doctor Reset</option>
+					<option value="simpler">a simpler reset</option>
+					<option value="vanilla">Vanilla CSS Reset</option>
+					<option value="mini">Mini CSS Reset</option>
+				</field>
+				<field name="gk_line_12" type="line" text="" />
+               <field name="use_gk_cache" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_USE_GK_CACHE" description="TPL_GK_LANG_USE_GK_CACHE_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <field name="css_cache" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_CSS_CACHE" description="TPL_GK_LANG_CSS_CACHE_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <field name="css_compression" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_CSS_COMPRESSION" description="TPL_GK_LANG_CSS_COMPRESSION_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <field name="css_override" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_CSS_OVERRIDE" description="TPL_GK_LANG_CSS_OVERRIDE_DESC">
+                    <option value="1">TPL_GK_LANG_ENABLED</option>
+                    <option value="0">TPL_GK_LANG_DISABLED</option>
+                </field>
+                <field name="css_custom" type="textarea" rows="6" cols="40" label="TPL_GK_LANG_CSS_CUSTOM" description="TPL_GK_LANG_CSS_CUSTOM_DESC" />
+				<field name="gk_line_13" type="line" text="" />
+				<field name="chrome_frame_support" class="gk_switch" type="list" default="0" label="TPL_GK_LANG_CHROME_FRAME_SUPPORT" description="TPL_GK_LANG_CHROME_FRAME_SUPPORT_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="ie6bar" type="list" class="gk_switch" default="0" label="TPL_GK_LANG_IE6BAR" description="TPL_GK_LANG_IE6BAR_DESC">
+					<option value="1">TPL_GK_LANG_ENABLED</option>
+					<option value="0">TPL_GK_LANG_DISABLED</option>
+				</field>
+				<field name="cwidth_position" type="list" default="head" label="TPL_GK_LANG_COLUMNS_WIDTH_POSITION" description="TPL_GK_LANG_COLUMNS_WIDTH_POSITION_DESC">
+                         <option value="head">TPL_GK_LANG_HEAD</option>
+                         <option value="style">TPL_GK_LANG_STYLE</option>
+                </field>
+			</fieldset>
+			<!-- Updates -->
+			<fieldset name="UPDATES" addfieldpath="/templates/gk_yourshop/admin/elements">
+				<field name="template_updates" type="update" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

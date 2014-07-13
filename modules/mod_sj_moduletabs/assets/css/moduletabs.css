@@ -1,0 +1,298 @@
+
+/* Common style
+*****************************************/
+div.moduletabs {
+	padding: 0;
+	margin: 20px 0;
+	display: block;
+	width: 100%;
+}
+
+/* Tabs on top
+*****************************************/
+div.moduletabs div.tabs-container {
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	/* float: left; */
+}
+
+div.moduletabs div.tabs-container ul.tabs {
+	padding: 0;
+	margin: 0;
+}
+
+div.moduletabs div.tabs-container ul.tabs li {
+	list-style: none ;
+	background: none ;
+	line-height: 18px;
+	padding: 0;
+}
+
+div.moduletabs div.tabs-container ul.tabs li .tab {
+	cursor: pointer;
+	display: block;
+	font-size: 11px;
+	color: #666666;
+	font-weight: bold;
+	border-bottom: 1px solid #D4D4D4;
+}
+
+div.moduletabs div.tabs-container ul.tabs li .tab:hover {
+	color: #333;
+}
+
+div.moduletabs div.tabs-container ul.tabs li .tab.selected {
+	color: #135ACE;
+	background: #fff;
+}
+
+/* Content
+*****************************************/
+div.moduletabs div.tabs-content-wrap {
+	clear: both;
+}
+
+div.moduletabs div.tabs-content {
+	position: relative ;
+	z-index: 1;
+	padding: 20px;
+	margin: 0;
+	border: 1px solid #D4D4D4;
+	background-color: #fff;
+	overflow: auto;
+}
+
+div.moduletabs div.tabs-content div.tabs-content-inner {
+	position: relative;
+	overflow: hidden;
+}
+
+div.moduletabs div.tabs-content div.tabs-content-inner div.tab-content {
+	display: none;
+}
+
+div.moduletabs div.tabs-content div.tabs-content-inner div.tab-content.selected
+	{
+	display: block;
+}
+
+div.tab-content div.ajax_loading {
+	background: url(../images/loader_a.gif) no-repeat;
+	display: none;
+}
+
+div.tab-content.selected div.ajax_loading {
+	display: block;
+	height: 64px;
+	width: 64px;
+	margin: 0 auto;
+}
+
+/* END Common style
+/*****************************************************/
+/* Start For Position of Tabs
+/*****************************************************/
+/* Tabs on top
+*****************************************/
+div.moduletabs.top-position div.tabs-container {
+	margin-bottom: -1px;
+	height: 40px; /* tab height */
+}
+
+div.moduletabs.top-position div.tabs-container ul.tabs {
+	height: 40px; /* tab height */
+}
+
+div.moduletabs.top-position div.tabs-container ul.tabs li {
+	float: left;
+}
+
+div.moduletabs.top-position div.tabs-container ul.tabs li .tab {
+	padding: 10px 20px;
+	border-top: 1px solid #D4D4D4;
+	border-right: 1px solid #D4D4D4;
+	border-left: 1px solid #D4D4D4;
+	background: #f1f1f1;
+}
+
+div.moduletabs.top-position div.tabs-container ul.tabs li .tab:hover {
+	
+}
+
+div.moduletabs.top-position div.tabs-container ul.tabs li .tab.selected
+	{ /* border-bottom-color: #fff; */
+	padding-bottom: 11px;
+	background: #fff;
+}
+
+/* Content
+*****************************************/
+div.moduletabs.top-position div.tabs-content div.tabs-content-inner {
+	
+}
+
+div.moduletabs.top-position div.tabs-content div.tabs-content-inner div.tab-content
+	{
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+/* Tabs on top
+*****************************************/
+div.moduletabs.right-position div.tabs-container {
+	margin-left: -1px;
+	border-top: 1px solid #D4D4D4;
+	width: 169px; /* +1px for the negative right margin */
+	height: 337px;
+}
+
+div.moduletabs.right-position div.tabs-container ul.tabs {
+	width: 168px; /* Set to an arbitrary high value */
+	float: right;
+}
+
+div.moduletabs.right-position div.tabs-container ul.tabs li {
+	float: right;
+	clear: both;
+}
+
+div.moduletabs.right-position div.tabs-container ul.tabs li .tab {
+	width: 147px;
+	padding: 14px 0 14px 20px;
+	border-right: 1px solid #D4D4D4;
+	background: #f1f1f1;
+}
+
+div.moduletabs.right-position div.tabs-container ul.tabs li .tab:hover {
+	
+}
+
+div.moduletabs.right-position div.tabs-container ul.tabs li .tab.selected
+	{
+	padding-left: 21px;
+	background: #fff;
+}
+
+/* Content
+*****************************************/
+div.moduletabs.right-position div.tabs-content {
+	width: 565px; /* module width - 2x padding */
+	height: 296px; /* content height */
+}
+
+div.moduletabs.right-position div.tabs-content div.tabs-content-inner {
+	height: 296px; /* content height */
+}
+
+div.moduletabs.right-position div.tabs-content div.tabs-content-inner div.tab-content
+	{
+	width: 567px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	background-color: #fff;
+}
+
+/* Tabs on top
+*****************************************/
+div.moduletabs.bottom-position div.tabs-container {
+	margin-top: -1px;
+	border-left: 1px solid #D4D4D4;
+	height: 40px; /* tab height */
+}
+
+div.moduletabs.bottom-position div.tabs-container ul.tabs {
+	height: 40px; /* tab height */
+}
+
+div.moduletabs.bottom-position div.tabs-container ul.tabs li {
+	float: left;
+}
+
+div.moduletabs.bottom-position div.tabs-container ul.tabs li .tab {
+	padding: 10px 20px;
+	border-top: 1px solid #D4D4D4;
+	border-right: 1px solid #D4D4D4;
+	background: #f1f1f1;
+}
+
+div.moduletabs.bottom-position div.tabs-container ul.tabs li .tab:hover
+	{
+	
+}
+
+div.moduletabs.bottom-position div.tabs-container ul.tabs li .tab.selected
+	{
+	border-top-color: #fff;
+	background: #fff;
+}
+
+/* Content
+*****************************************/
+div.moduletabs.bottom-position div.tabs-content {
+	
+}
+
+div.moduletabs.bottom-position div.tabs-content div.tabs-content-inner {
+	
+}
+
+div.moduletabs.bottom-position div.tabs-content div.tabs-content-inner div.tab-content
+	{
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+
+/* Tabs on top
+*****************************************/
+div.moduletabs.left-position div.tabs-container {
+	margin-right: -1px;
+	border-top: 1px solid #D4D4D4;
+	width: 169px; /* +1px for the negative right margin */
+	height: 337px;
+}
+
+div.moduletabs.left-position div.tabs-container ul.tabs {
+	width: 168px; /* Set to an arbitrary high value */
+}
+
+div.moduletabs.left-position div.tabs-container ul.tabs li {
+	float: none;
+	clear: both;
+}
+
+div.moduletabs.left-position div.tabs-container ul.tabs li .tab {
+	width: 147px;
+	padding: 14px 0 14px 20px;
+	border-left: 1px solid #D4D4D4;
+	background: #f1f1f1;
+}
+
+div.moduletabs.left-position div.tabs-container ul.tabs li .tab:hover {
+	
+}
+
+div.moduletabs.left-position div.tabs-container ul.tabs li .tab.selected
+	{
+	padding-right: 1px;
+	background: #fff;
+}
+
+/* Content
+*****************************************/
+div.moduletabs.left-position div.tabs-content {
+	width: 565px; /* module width - 2x padding */
+	height: 320px; /* content height */
+}
+
+div.moduletabs.left-position div.tabs-content div.tabs-content-inner {
+	height: 320px; /* content height */
+}
+
+div.moduletabs.left-position div.tabs-content div.tabs-content-inner div.tab-content
+	{
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	background-color: #fff;
+}

@@ -1,0 +1,27 @@
+/* 
+Tantek Celik's CSS Reset
+(CC) 2004 Tantek Celik. Some Rights Reserved.
+http://creativecommons.org/licenses/by/2.0
+This style sheet is licensed under a Creative Commons License.
+CSSresetr.com
+*/
+:link, :visited {
+	text-decoration: none;
+	}
+ul, ol {
+	list-style: none;
+	}
+h1, h2, h3, h4, h5, h6, pre, code, p {
+	font-size: 1em;
+	}
+ul, ol, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, pre, 
+form, body, html, p, blockquote, fieldset, input {
+	padding: 0;
+	margin: 0;
+	}
+a img, :link img, :visited img {
+	border: none;
+	}
+address {
+	font-style: normal;
+	}

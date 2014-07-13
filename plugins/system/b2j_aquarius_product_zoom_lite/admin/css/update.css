@@ -1,0 +1,81 @@
+#b2j-update-container {
+    display: none;
+    height: 150px;
+    margin: 3px 0 0 0;
+}
+
+#b2j-update-container a.update {
+    background: url("http://repos.bang2joom.com/update-icon.png") center no-repeat #E0E0E0;
+    width: 70px;
+    height: 154px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0px 3px 0 0;
+    display: inline-block;
+    float: left;
+}
+
+#b2j-update-container div.info-box {
+    background: #E0E0E0;
+    float: left;
+    margin: 0px 3px 0 0px;
+    padding: 0 15px 4px 15px;
+    height: 150px;
+    width: 170px;
+    overflow: hidden;
+}
+
+#b2j-update-container div.info-box h3 {
+    color: #FE8359;
+    margin: 0;
+    padding: 50px 0 0 0;
+    font-size: 15px;
+}
+
+#b2j-update-container div.info-box span.version {
+    font-size: 11px;
+    display: block;
+    padding: 3px 0 0 0;
+}
+
+#b2j-update-container div.changelog {
+    background: #E0E0E0;
+    width: auto;
+    padding: 10px 20px;
+    height: 134px;
+    position: relative;
+    margin: 0 0 0 276px;
+    min-width: 300px;
+}
+
+#b2j-update-container div.changelog .scrollbar {
+    background: transparent url(../images/scrollbar.png) no-repeat 0 0;
+    position: relative;
+    background-position: 0 0;
+    float: right;
+    width: 15px;
+}
+
+#b2j-update-container div.changelog .viewport {
+    width: auto;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+    overflow-y: auto;
+}
+
+#b2j-update-container div.changelog span.change {
+    font-size: 11px;
+    display: block;
+    margin: 10px 0;
+}
+
+#b2j-description {
+    width: auto;
+    background: #E0E0E0;
+    text-align: left;
+    clear: both;
+    margin: 3px 0 0 0;
+    display: block;
+    padding: 10px;
+}

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<extension type="file" version="2.5" method="upgrade">
+	<name>TinyMCE es-ES</name>
+	<author>Comunidad Joomla!</author>
+	<authorEmail>info@comunidadjoomla.org</authorEmail>
+	<authorUrl>http://www.comunidadjoomla.org</authorUrl>
+	<copyright>(C) 2010-2012 spanish Translation Team</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>3.5.2</version>
+	<creationDate>2012-6-18</creationDate>
+	<description><![CDATA[
+		<h2>Successfully installed spanish language pack for TinyMCE 3.5.2 in Joomla 2.5</h2>
+		If you use other languages than English and spanish, Please make sure that you also installed all other language packs for TinyMCE before you enabling "Automatic Language Selection" through the following steps:<br/>
+		<ol>
+		<li>Extensions</li>
+		<li>Plugin Manager</li>
+		<li><a href="index.php?option=com_plugins&view=plugins&filter_search=Editor - TinyMCE">Editor - TinyMCE</a></li>
+		<li>Basic Options</li>
+		<li>Automatic Language Selection :: Yes</li>
+		<li>Functionality :: Extended (Optional -- If you want to use full functions of TinyMCE)</li>
+		</ol>
+		<p></p>
+		<p>Please report any bugs or issues at the Comunidad Joomla! <a href="http://foro.comunidadjoomla.org/traduccion-ext/" target="_blank">Translation forum</a></p>
+		<p></p>
+		<p>Translated by: <a href="http://www.comunidadjoomla.org" target="_blank" title="">The spanish translation team of Comunidad Joomla!</a></p>
+		<h2>El paquete en español para el editor TinyMCE 3.5.2 se ha instalado con éxito sobre Joomla 2.5</h2>
+		Si usted usa otros idiomas además del inglés y el español, por favor, asegúrese de que también instala los demás idiomas para el TinyMCE antes de habilitar la opción "Selección automática del idioma" por medio de los siguientes pasos:<br/>
+		<ol>
+		<li>Extensiones</li>
+		<li>Gestor de plugins</li>
+		<li><a href="index.php?option=com_plugins&view=plugins&filter_search=Editor - TinyMCE">Editor - TinyMCE</a></li>
+		<li>Opciones básicas</li>
+		<li>Selección automática del idioma :: Sí</li>
+		<li>Funcionalidad :: Extendida (opcional -- Si usted desea usar las funcionalidades al completo del editor TinyMCE)</li>
+		</ol>
+		<p></p>
+		<p>Por favor, reporte cualquier bug o asunto relacionado a nuestro <a href="http://foro.comunidadjoomla.org/traduccion-ext/" target="_blank">Foro de traducciones</a></p>
+		<p></p>
+		<p>Traducción: <a href="http://www.comunidadjoomla.org" target="_blank" title="">El equipo de traducción de Comunidad Joomla!</a></p>
+		]]>
+	</description>
+
+	<!-- Fileset definition -->
+	<fileset>
+		<files target="media/editors">
+					<filename>tinymce/jscripts/tiny_mce/langs/es.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/advhr/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/advimage/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/advlink/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/autosave/langs/es.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/emotions/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/fullpage/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/media/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/paste/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/searchreplace/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/style/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/table/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/template/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/themes/advanced/langs/es.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/themes/advanced/langs/es_dlg.js</filename>
+					<filename>tinymce/jscripts/tiny_mce/themes/simple/langs/es.js</filename>
+		</files>
+	</fileset>
+</extension>

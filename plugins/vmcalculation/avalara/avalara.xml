@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmcalculation" method="upgrade">
+    <name>VM - Calculation Avalara Tax</name>
+    <creationDate>April 2012</creationDate>
+    <author>Max Milbers</author>
+    <authorUrl>http://virtuemart.net</authorUrl>
+    <copyright>Copyright (C) 2012 iStraxx UG. All rights reserved</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>2.0.10</version>
+    <description>On demand tax calculation for whole U.S.A.</description>
+    <languages>
+		<language tag="en-GB">en-GB.plg_vmcalculation_avalara.ini</language>
+    </languages>
+    <files>
+        <filename plugin="avalara">avalara.php</filename>
+        <filename plugin="avalara">AvaTax.php</filename>
+        <folder>classes</folder>
+    </files>
+</install>

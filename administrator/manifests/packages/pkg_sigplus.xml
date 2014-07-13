@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="package" method="upgrade">
+	<packagename>sigplus</packagename>
+	<packager>Levente Hunyadi</packager>
+	<name>sigplus</name>
+	<author>Levente Hunyadi</author>
+	<creationDate>Dec 06, 2013</creationDate>
+	<copyright>© 2009-2011 Levente Hunyadi. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorUrl>http://hunyadi.info.hu/projects/sigplus</authorUrl>
+	<version>1.4.2.17</version>
+	<downloadUrl>http://joomlacode.org/gf/project/sigplus/frs/</downloadUrl>
+	<files>
+		<file id="sigplus" type="plugin" group="content">plg_sigplus.ar.zip</file>
+		<file id="mod_sigplus" type="module" client="site">mod_sigplus.ar.zip</file>
+	</files>
+</extension>

@@ -1,0 +1,825 @@
+ /****************************************************
+#####################################################
+##-------------------------------------------------##
+##         SEDMINIA  TEMPLATE                      ##
+##-------------------------------------------------##
+## Copyright = globbersthemes.com- 2012            ##
+## Date      = 	JUIN 2012                          ##
+## Author    = globbers                            ##
+## Websites  = http://www.globbersthemes.com       ##
+##                                                 ##
+#####################################################
+****************************************************/
+
+
+html {
+height: 100%;
+
+}
+
+ body{
+margin:0;
+padding:0;
+text-align:center;
+background:#fdfdfd url(../images/bg.jpg) 0 0 repeat;
+font-size:13px;
+color:#27262c;
+font-family:  Helvetica, verdana, tahoma, arial, sans-serif;
+font-weight:normal;
+
+}
+
+/*texte*/
+
+p {
+font-size: 100%;
+
+}
+
+h1 {
+ font-size: 200%;
+
+}
+
+h2 {
+font-size: 150%;
+
+}
+
+h3 {
+font-size: 125%;
+
+}
+
+h4, h5, h6 {
+font-size: 100%;
+
+}
+
+/* liens hypertextes*/ 
+a:link, a:visited {
+text-decoration:none;
+font-weight:normal;
+color:#27262c;
+
+}
+
+a:hover {
+color:#000;
+
+}
+
+ul {
+margin:0;
+padding-left:15px;
+
+}
+
+li {
+list-style-type:square;
+background: none;
+margin:4px;
+
+}
+
+ img {
+ border:none;
+ margin:  0px;
+ padding:5px; 
+
+ }
+
+img .caption {
+text-align: left;
+
+}
+
+ .highlight{
+ background:#262626;
+ padding: 0px 2px 0px 2px;
+ color:#fff;
+
+ }
+
+.button {
+background:#262626;
+border:none;
+color:#fff;
+font-weight:bold;
+padding:4px;
+
+} 
+
+.inputbox {
+color:#fff;
+background:#262626;
+border:none;
+padding:4px;
+font-weight:normal;
+
+} 
+
+.pagewidth{
+width:661px;
+text-align:center;
+background:transparent;
+margin-left:auto;
+margin-right:auto;
+margin-top:0px;
+margin-bottom:0px;
+
+ }
+
+label {
+text-align:left;
+
+}
+
+fieldset {
+margin:0px 5px 5px 5px;
+padding:10px;
+border:none;
+
+}
+
+
+.clr {
+clear:both;
+
+}
+
+#sitename {
+ margin-top:25px;
+ 
+}
+
+#topmenu {
+width:661px;
+height:117px;
+background: url(../images/topmenu.png) 0 0 no-repeat;
+ 
+}
+
+.navigation { 
+float:left;
+width: 661px; 
+margin-top:40px;
+background:transparent;
+ 
+}
+
+.navigation ul {
+list-style: none;
+margin:0; 
+padding:0;
+float: left;
+
+}
+
+.navigation ul ul {
+margin: 0; /* all lists */
+padding: 0;
+ 
+}
+
+.navigation ul li {
+margin:0 6px;
+padding: 0;
+float: left;
+list-style: none;
+background: none;display: block;	
+
+}
+
+.navigation ul li ul {
+width: 200px;
+position: absolute; 
+/* second-level lists */
+z-index: 99;left: -999em; 
+/* using left instead of display to hide menus because display: none isn't read by screen readers */
+height: auto;w\idth: 200px;
+ 
+}
+ 
+.navigation ul li ul ul {
+margin: 0; /* third-and-above-level lists */
+ 
+}
+
+.navigation ul li li {
+padding: 0;
+margin: 0;
+width: 100%;
+ 
+}
+
+.navigation ul ul a {
+width: 100%;
+ 
+}
+
+.navigation ul li:hover ul ul,
+.navigation ul li:hover ul ul ul,
+.navigation ul li.sfhover ul ul,
+.navigation ul li.havechildsfhover ul ul,
+.navigation ul li.havechild-activesfhover ul ul,
+.navigation ul li.activesfhover ul ul,
+.navigation ul li.sfhover ul ul ul,
+.navigation ul li.havechildsfhover ul ul ul,
+.navigation ul li.havechild-activesfhover ul ul ul,
+.navigation ul li.activesfhover ul ul ul {
+ left: -999em;	
+ 
+}
+
+ /* This "unhides" the sub-menus (left: -999em is what hides them) */
+ .navigation ul li:hover ul,
+ .navigation ul li li:hover ul,
+ .navigation ul li li li:hover ul,
+ .navigation ul li.sfhover ul,
+ .navigation ul li.havechildsfhover ul,
+ .navigation ul li.havechild-activesfhover ul,
+ .navigation ul li.activesfhover ul,
+ .navigation ul li li.sfhover ul,
+ .navigation ul li li.havesubchildsfhover ul,
+ .navigation ul li li.havesubchild-activesfhover ul,
+ .navigation ul li li.activesfhover ul,
+ .navigation ul li li li.sfhover ul,
+ .navigation ul li li li.havesubchildsfhover ul,
+ .navigation ul li li li.havesubchild-activesfhover ul,
+ .navigation ul li li li.activesfhover ul {
+ left: auto;	
+ 
+ }
+ 
+ /* STYLING THE MENU-----------------------------------*//* 1st level */
+ 
+.navigation ul li a {
+padding: 11px 11px 0 13px ;
+margin:0;
+display: block;
+font-weight: bold;
+font-size:16px;
+text-transform:capitalize;
+height:40px;
+background:transparent;
+color:#262626;
+margin-left:-6px;
+ 
+}
+
+.navigation ul li {
+background:transparent;
+height:40px;
+
+}
+
+.navigation ul li span {
+background:transparent;
+height:40px;
+padding:0px ;
+margin:0 ; 
+ 
+}
+
+.navigation li.active {
+height:40px ;
+background:transparent url(../images/menu_02.png) no-repeat 100% 0px ;
+ 
+}
+ 
+.navigation li.active span {
+height:40px ;
+background:transparent url(../images/menu_01.png) no-repeat 0 0px ;
+
+}
+
+.navigation li.active a {
+color:#fff ;
+height:40px ;
+background:transparent url(../images/menu_01.png) no-repeat 0 0px ;
+margin-left:-6px;
+color:#4d535a;
+
+}
+
+.navigation li:hover {
+height:40px ;
+background:transparent url(../images/menu_02.png) no-repeat 100% 0px ;
+ 
+}
+
+.navigation li:hover span {
+height:40px ;
+background:transparent url(../images/menu_01.png) no-repeat 0 0px ;
+ 
+}
+
+.navigation li:hover a {
+height:40px ;
+color:#fff ;
+background:transparent url(../images/menu_01.png) no-repeat 0 0px ;
+margin-left:-6px; 
+color:#4d535a;
+
+}
+
+ /* 2nd level and above */ 
+.navigation ul li ul {
+background: url(../images/bg-ul.png) repeat 0 100%;
+margin-top: -5px;
+padding-bottom: 15px;
+padding-top: 5px;
+text-align:left !important;
+ 
+}
+
+.navigation ul li ul li{
+height:41px !important;
+ 
+} 
+
+.navigation ul li ul li a:hover,
+.navigation ul li ul li.active a  {
+color:#000 !important;
+height:41px !important;
+
+} 
+ 
+.navigation ul li ul li a{
+color:#2d2d2d !important;
+height:41px !important;
+padding-left:31px;
+background:none !important;
+ 
+} 
+  
+.navigation ul li ul li a:hover {
+height:41px ;
+background: transparent !important;
+color:#fff !important;
+ 
+} 
+
+.navigation ul li ul li.active {
+height:41px ;
+background:none ;
+
+}
+
+.navigation ul li ul li.active span {
+height:41px ;background:none;
+ 
+}
+
+.navigation ul li ul li.active a {
+height:41px ;
+background:none;
+color:#2d2d2d;
+ 
+} 
+
+.navigation ul li ul li ul {
+margin-left:210px;
+margin-top: -30px;
+padding-bottom: 3px;
+padding-top: 0px;
+text-align:left !important;
+padding-bottom: 15px;
+
+} 
+
+ #slide {
+ float:left;
+ width:661px;
+ height:285px !important;
+ background:#fff;
+ border:1px solid #ebebeb;
+ padding:0px;
+ text-align:left;
+ margin-top:30px;
+ 
+ 
+ }
+ 
+ #s3slider {
+   width: 631px; /* important to be same as image width */
+   height: 245px; /* important to be same as image height */
+   position: relative; /* important */
+   overflow: hidden; /* important */
+  text-align:left;
+  margin-left:5px;
+   margin-top:15px;
+    text-align:left;
+}
+
+#s3sliderContent {
+   width: 631px; /* important to be same as image width or wider */
+   position: absolute; /* important */
+   top: 0; /* important */
+   margin-left: 0; /* important */
+    text-align:left;
+}
+
+ .s3sliderImage {   
+ float: left; /* important */   
+ position: relative; /* important */   
+ display: none; /* important */
+ margin:0  !important;
+ padding:0;
+  text-align:left;
+ } 
+
+.s3sliderImage span {   
+ position: absolute; /* important */   
+ left: 5px;   
+ top:200px;   
+ font-size:16px;  /*  padding: 10px 13px; */  
+ width: 631px !important;   
+ height:50px;   
+ background-color:#000;   
+ line-height:42px;   
+ filter: alpha(opacity=80); 
+ /* here you can set the opacity of box with text */  
+ -moz-opacity: 0.8; /* here you can set the opacity of box with text */   
+ -khtml-opacity: 0.8; /* here you can set the opacity of box with text */   
+ opacity: 0.8; /* here you can set the opacity of box with text */   
+ color: #efefef;  display: none;     
+ text-align:center !important;
+ 
+ }
+ 
+li.s3sliderImage {
+list-style:none !important;
+padding:0;
+margin:0;
+text-align:left;
+
+}
+
+/***********************/
+#main {
+float:left;
+width:641px;
+text-align:left;
+margin-top:35px;
+
+}
+
+/*********joomla style**************/
+ul.actions  {
+background:transparent;
+margin:0;
+
+}
+
+ul.actions  li{
+list-style:none;
+float:right;
+
+}
+
+.article-info {
+
+}
+
+dt.article-info-term {
+display:none;
+
+}
+
+dl.article-info dd{
+margin:0;
+font-size:12px;
+
+}
+
+.items-leading {
+width:100%;
+font-weight:normal;
+
+}
+
+.items-row {
+width:100%;
+font-weight:normal;
+
+}
+
+.items-page,.category-desc {
+width:100%;
+font-weight:normal;
+
+}
+
+.items-leading,.items-row .item, .item-page ,.category-desc {
+width:100%;
+background:#fff ;
+border:1px solid #ebebeb;
+padding:10px;
+margin-bottom:40px;
+padding-bottom:20px; 
+
+}
+
+.items-leading h2, 
+.items-row h2,
+.item-page h2 {
+font-size:17px;
+font-weight:bold;
+color:#2d2d2d ;
+background:#c0e6f8 url(../images/h3.jpg) 6px 6px no-repeat;
+text-transform:capitalize;
+padding:10px 18px;
+margin-top:0;
+
+} 
+
+.items-leading h2 a, 
+.items-row h2 a,
+.item-page h2 a {
+font-size:17px;
+font-weight:bold;
+color:#2d2d2d ;
+background:transparent;
+text-transform:capitalize;
+padding:10px 18px;
+margin-top:0;
+
+} 
+
+.items-leading h2 a:hover, 
+.items-row h2 a:hover,
+ .item-page h2 a:hover {
+color:#fff;
+
+} 
+
+.item-separator {
+width:100%;
+display:block;
+height:10px;
+
+}
+
+.readmore a {
+float:right;
+font-weight: normal;
+background: url(../images/puce.jpg) no-repeat 0 4px;
+padding-left:15px;
+margin-bottom:15px !important;
+text-decoration:underline;
+
+}
+
+categories-list li {
+list-style:none;
+
+}
+
+ul#archive-items li {
+list-style:none;
+
+}
+
+.items-more{
+padding:10px;
+background:#fff ;
+border:1px solid #e8e8e8;
+
+}
+
+ .items-more h3{
+font-weight:normal;
+margin:0;
+padding:10px 5px 10px 5px;
+font-size:1.4em;
+background: transparent;
+
+}
+
+ .items-more ol{
+line-height:1.3em;
+margin:0 ;
+padding:10px 0 5px 2px;
+
+}
+
+ .items-more ol li{
+padding:2px;
+background: url(../images/puce.jpg) no-repeat 0 6px;
+list-style:none;
+padding-left:15px;
+}
+
+ .items-more ol li a {
+display:inline;
+margin:0;
+font-weight:normal;
+ padding:5px;
+
+}
+
+ .items-more ol li a:hover,
+ .items-more ol li a:active,
+ .items-more ol li a:focus {
+font-weight:normal;
+padding:5px 5px 5px 5px;
+text-decoration:none
+
+} 
+
+/* Pagination ---*/
+
+ .counter {
+text-align:center;
+padding:10px 0;
+
+}
+
+.pagination {
+ float: left;
+ width: 100%;
+ padding:4px 0;
+ text-align:center;
+margin-bottom:25px;
+
+}
+
+.pagination li {
+background: none;
+display: inline;
+margin: 0;
+padding: 6px;
+margin:0 3px;
+overflow: hidden;
+
+}
+
+.pagination li span {
+padding: 6px; 
+line-height: 20px;
+ 
+}
+
+.pagination li a {
+color: #222;
+line-height: 20px;
+padding:7px;
+text-decoration: none;
+background:#c0e6f8;
+
+}
+
+.pagination li a:hover, .pagination li a:active, .pagination li a:focus {
+text-decoration: none;
+color:#fff;
+background:#27262c;
+
+} 
+
+/* ++++++++++++++  nav entre article  ++++++++++++++ */
+ ul.pagenav {
+ position:relative;
+ margin-top:25px;
+ 
+}
+ 
+ul.pagenav li {
+ list-style: none;
+ padding: 7px;
+ background:#27262c;
+ color:#fff;
+ 
+}
+
+ul.pagenav li a {
+list-style: none;
+padding: 7px;
+color:#fff;
+ 
+}
+ 
+ul.pagenav li:hover, ul.pagenav li:focus {
+background:#27262c;
+color:#fff;
+ 
+}
+ 
+ul.pagenav li a:hover, ul.pagenav li a:focus { 
+text-decoration:none;
+color:#fff;
+
+}
+ 
+ul.pagenav li.pagenav-prev {
+float: left;
+ 
+}
+ 
+ul.pagenav li.pagenav-next { 
+float:right;
+
+}
+
+/**********************/
+#footer {
+float:left;
+width:640px;
+background:#fff ;
+border:1px solid #ebebeb;
+padding:10px;
+margin-bottom:40px;
+
+}
+
+ .box {
+float:left;
+width:300px;
+background:transparent;
+margin-left:20px;
+text-align:left;
+margin-bottom:15px;
+
+} 
+
+.box .moduletable h3,
+.box .moduletable_menu  h3,
+.box h3 {
+font-size:20px;
+font-weight:bold;
+
+}
+
+.box .moduletable ,
+.box .moduletable_menu  ,
+.box  {
+
+
+}
+
+.box .moduletable a ,
+.box .moduletable_menu a  ,
+.box a  {
+
+font-style:italic;
+
+}
+
+.box .moduletable a:hover ,
+.box .moduletable_menu a:hover  ,
+.box a:hover  {
+
+font-style:italic;
+
+}
+
+/*********************/
+#ftb-f {
+float:left;
+width:100%;
+height:60px;
+background:#262626 ;
+color:#fff;
+margin-bottom:-5px;
+
+}
+
+.ftb {
+float:left;
+width:600px;
+height:30px;
+margin-top:20px;
+background:transparent;
+font-weight:bold;
+color:#fff;
+}
+
+.ftb a {
+font-weight:bold;
+color:#fff;
+}
+
+.ftb a :hover{
+font-weight:bold;
+color:#fff;
+
+}
+
+#topb {
+float:left;
+width:30px;
+height:30px;
+margin-top:10px;
+padding:0 !important;
+border:none !important;
+background:transparent;
+
+}
+
+.top_button {
+float:left;
+padding:0 !important;
+border:none !important;
+
+}

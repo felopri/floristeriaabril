@@ -1,0 +1,443 @@
+/**************************************************************************************/
+/*
+/*		Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		Email: info@asdesigning.com
+/*		License: ASDE Commercial
+/*
+/**************************************************************************************/
+
+/**************************************************************************************/
+/*   Column Left
+/**************************************************************************************/
+/**************************************************************************************/
+
+#colleft
+{
+	float: left;
+}
+
+#colleft h1, 
+#colleft h2, 
+#colleft h3
+{
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+#colleft h4
+{
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	font-size: 13px;
+}
+
+#colleft h4.alignright
+{
+	text-align: right;
+}
+
+#colleft p
+{
+    padding: 25px 0px 10px 0px;   
+}
+
+#colleft ul
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 10px;
+}
+
+#colleft ul li
+{
+	height: 16px;
+	margin: 0px 0px 0px 0px;
+	padding: 9px 0px 0px 25px;
+	text-align: left;
+	list-style: outside none;
+	list-style-image: none;
+	background-image: url('../images/listimg.side.png');
+	background-repeat: no-repeat;
+}
+
+#colleft .row4 ul li,
+#colleft .row5 ul li
+{
+	background-image: url('../images/listimg.side.png');
+}
+
+#colleft ul li:hover
+{
+	background-position: left top;
+}
+	
+#colleft ul li a
+{
+    margin: 0px 0px 0px 0px;
+	padding: 10px 0px 10px 0px;
+    text-align: left;
+}
+
+#colleft ul li a:hover,
+#colleft ul li.active a  
+{
+
+}
+
+#colleft ul ul
+{
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+}
+
+#colleft ul li.active ul li a,
+#colleft ul ul li a
+{ 
+	width: 190px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 15px;
+}
+
+#colleft ul li.active ul li a:hover,
+#colleft ul ul li a:hover  
+{
+	width: 200px;
+    margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 15px;
+
+}
+
+#colleft ul ul ul li a,
+#colleft ul ul ul li a:hover
+{
+	width: 175px;	
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 45px;
+}
+
+
+#colleft ul ul ul li a:hover
+{
+	width: 185px;	
+}
+
+#colleft a,
+#colright a
+{
+	outline-style: none;	
+}
+
+#colleft a:hover,
+#colright a:hover
+{
+}
+
+/**************************************************************************************/
+
+#colleft input,
+#colright input
+{
+	width: 214px;
+}
+
+#colleft .row4 input,
+#colleft .row5 input
+{
+	width: 164px;
+	border: 1px solid #C0C0C0;
+}
+
+/**************************************************************************************/
+
+#colleft button, 
+#colleft .button,
+#colleft .readmore
+{
+	float: right;
+}
+
+#colleft input.button
+{
+	width: 132px;
+	border: none;
+	background-color: transparent;
+	margin: 20px 0px 25px 0px;	
+}
+
+#colleft input[type="checkbox"],
+#colleft input[type="radio"]
+{
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin: 0px 5px 0px 0px;	
+	border: none;
+	background-color: transparent;
+}
+
+#colleft img
+{
+	float: left;
+	margin: 0px 18px 16px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#colleft .post img
+{
+	float: left;
+	margin: 4px 15px 10px 0px;
+	padding: 0px;
+	border: none;
+}
+
+#colleft .post p
+{
+	clear: both;
+}
+
+#colleft .testimonials
+{
+	text-align: left;
+	font-style: italic; 
+}
+
+#colleft .sign
+{
+	font-size: 11px;
+	text-align: right;
+	font-style: normal;
+	margin: 8px 0px 0px 0px;	
+}
+
+#colleft .testimonials img
+{
+	float: left;
+	padding: 0px;
+	margin: 0px 17px 6px 0px;	
+	border: none;
+	background-color: transparent;	
+}
+
+#colleft .item-separator
+{
+	height: 34px;	
+}
+
+#colleft #search,
+#colright #search
+{
+}
+
+#colleft #search input
+{
+	width: 200px;
+	padding: 4px 3px 4px 30px;
+}
+
+#colleft .post
+{
+    padding: 0px 0px 25px 0px;
+	overflow: hidden; 
+}
+
+#colleft .posttitle
+{
+	height: 18px;
+	float: left;
+    margin: 0px 0px 20px 0px;
+	padding: 3px 30px 0px 30px;
+	text-align: center;
+	font-size: 12px;
+}
+
+#colleft .more
+{
+	height: 15px;
+	float: right;
+}
+
+#colleft .news
+{
+	border-bottom: 1px dashed #C2B5AF;
+	padding: 0px 0px 20px 0px;
+	margin: 0px 0px 22px 0px;
+	overflow: hidden;
+}
+
+#colleft .tips
+{
+	border-bottom: 1px dashed #C2B5AF;
+	padding: 20px 0px 15px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+#colleft .tip_last
+{
+	padding: 20px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+#colleft .news h4
+{
+	padding: 0px 0px 10px 64px;
+	text-shadow: none;
+}
+
+
+/**************************************************************************************/
+
+#colleft .moduletable,
+#colleft .moduletable_text, 
+#colleft .moduletable_menu,
+#colleft .contentpaneopen
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 15px 0px;
+	overflow: hidden;
+}
+
+#colleft .moduletable #login-form ul
+{
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+
+#colleft #whosonline .moduletable p,
+#colleft .moduletable .custom p,
+#colleft .moduletable_menu .menu
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colleft .moduletable #login-form
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#colleft .moduletable_menu ul.menu,
+#colleft .moduletable ul.menu
+{
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+
+/**************************************************************************************/
+
+#colleft ul.whosonline,
+#colright ul.whosonline
+{
+	margin: 20px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#colleft ul.whosonline li,
+#colright ul.whosonline li
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	list-style: none;
+	background-image: none;
+}
+
+#colleft .inputbox,
+#colright .inputbox
+{
+	font-size: 11px;
+	text-align: left;
+}
+
+#colleft .banneritem_text,
+#colright .banneritem_text
+{
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#colleft .custom,
+#colright .custom
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: justify;
+}
+
+#colleft #form-login-username
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#colleft #form-login-password
+{
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
+}
+
+#colleft #form-login-remember
+{
+    margin: 0px 0px 5px 0px;
+	padding: 20px 0px 0px 0px;	
+	border: none;
+	overflow: hidden;
+}
+
+#colleft #form-login-remember label
+{
+	float: left;
+	margin-right: 10px;
+}
+
+#colleft #login-form fieldset
+{
+    margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#colleft .logout-button
+{
+	min-height: 45px;	
+}
+
+#colleft .search
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+/**************************************************************************************/
+/*   Rows 			   																  */
+
+#colleft .row0,
+#colleft .row1,
+#colleft .row2,
+#colleft .row3
+{
+	clear: both;
+    margin: 0px 0px 25px 0px;	
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#colleft .row0 h1,
+#colleft .row1 h1,
+#colleft .row2 h1,
+#colleft .row3 h1,
+#colleft .row0 h2,
+#colleft .row1 h2,
+#colleft .row2 h2,
+#colleft .row3 h2,
+#colleft .row0 h3,
+#colleft .row1 h3,
+#colleft .row2 h3,
+#colleft .row3 h3
+{
+    margin: 0px 0px 20px 0px;	
+}
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" method="upgrade" version="2.5">
+    <name>com_virtuemart - en-GB</name>
+    <version>2014-03-11-09-39-08</version>
+    <creationDate>11.03.2014</creationDate>
+    <author>VirtueMart language team</author>
+    <authorEmail>max@virtuemart.net</authorEmail>
+    <authorUrl>https://virtuemart.net</authorUrl>
+    <copyright>© 2008-2014 - compojoom-com. All rights reserved!</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <packager>CTransifex</packager>
+    <packagerurl>https://compojoom.com</packagerurl>
+    <description>
+        <![CDATA[This package was auto generated with CTransifex(https://compojoom.com). We've grabbed the latest language files for our extension from transifex.com.
+        Special thanks to our translation team at (https://www.transifex.com/projects/p/virtuemart/) for helping with this VirtueMart translation!]]>
+    </description>
+    <fileset>
+        <files folder="admin" target="administrator/language/en-GB"><filename>en-GB.com_virtuemart.ini</filename>
+<filename>en-GB.com_virtuemart.menu.ini</filename>
+<filename>en-GB.com_virtuemart.sys.ini</filename>
+<filename>en-GB.com_virtuemart_config.ini</filename>
+<filename>en-GB.com_virtuemart_countries.ini</filename>
+<filename>en-GB.com_virtuemart_help.ini</filename>
+<filename>en-GB.com_virtuemart_media.ini</filename>
+<filename>en-GB.plg_search_virtuemart.ini</filename>
+<filename>en-GB.plg_vmcustom_specification.ini</filename>
+<filename>en-GB.plg_vmcustom_specification.sys.ini</filename>
+<filename>en-GB.plg_vmcustom_stockable.ini</filename>
+<filename>en-GB.plg_vmcustom_stockable.sys.ini</filename>
+<filename>en-GB.plg_vmcustom_textinput.ini</filename>
+<filename>en-GB.plg_vmcustom_textinput.sys.ini</filename>
+<filename>en-GB.plg_vmpayment_standard.ini</filename>
+<filename>en-GB.plg_vmpayment_standard.sys.ini</filename>
+<filename>en-GB.plg_vmshipment_weight_countries.ini</filename>
+<filename>en-GB.plg_vmshipment_weight_countries.sys.ini</filename></files>
+        <files folder="frontend" target="language/en-GB"><filename>en-GB.com_virtuemart.ini</filename>
+<filename>en-GB.com_virtuemart.sef.ini</filename>
+<filename>en-GB.com_virtuemart.sys.ini</filename>
+<filename>en-GB.com_virtuemart_orders.ini</filename>
+<filename>en-GB.com_virtuemart_shoppers.ini</filename>
+<filename>en-GB.liveupdate.ini</filename>
+<filename>en-GB.mod_virtuemart_cart.ini</filename>
+<filename>en-GB.mod_virtuemart_cart.sys.ini</filename>
+<filename>en-GB.mod_virtuemart_category.ini</filename>
+<filename>en-GB.mod_virtuemart_category.sys.ini</filename>
+<filename>en-GB.mod_virtuemart_currencies.ini</filename>
+<filename>en-GB.mod_virtuemart_currencies.sys.ini</filename>
+<filename>en-GB.mod_virtuemart_manufacturer.ini</filename>
+<filename>en-GB.mod_virtuemart_manufacturer.sys.ini</filename>
+<filename>en-GB.mod_virtuemart_product.ini</filename>
+<filename>en-GB.mod_virtuemart_product.sys.ini</filename>
+<filename>en-GB.mod_virtuemart_search.ini</filename>
+<filename>en-GB.mod_virtuemart_search.sys.ini</filename></files>
+    </fileset>
+</extension>

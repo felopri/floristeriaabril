@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config addfieldpath="/administrator/components/com_virtuemart/elements">
+    <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+        <field name="rules" type="vmrules" label="" class="inputbox" filter="rules" component="com_virtuemart" section="component" />
+	</fieldset>
+    <fieldset name="permissions_category" label="COM_VIRTUEMART_CATEGORY_S" description="">
+        <field name="category_rules" type="vmrules" label="" class="inputbox" validate="rules" filter="rules" component="com_virtuemart" section="category" />
+	</fieldset>
+    <fieldset name="permissions_product" label="COM_VIRTUEMART_PRODUCT_S" description="">
+        <field name="product_rules" type="vmrules" label="" class="inputbox" validate="rules" filter="rules" component="com_virtuemart" section="product" />
+	</fieldset>
+    <fieldset name="permissions_manufacturer" label="COM_VIRTUEMART_MANUFACTURER_S" description="">
+        <field name="manufacturer_rules" type="vmrules" label="" class="inputbox" validate="rules" filter="rules" component="com_virtuemart" section="manufacturer" />
+	</fieldset>
+    <fieldset name="permissions_orders" label="COM_VIRTUEMART_ORDER_MOD" description="">
+        <field name="orders_rules" type="vmrules" label="" class="inputbox" validate="rules" filter="rules" component="com_virtuemart" section="orders" />
+    </fieldset>
+    <fieldset name="permissions_shop" label="COM_VIRTUEMART_STORE" description="">
+        <field name="orders_rules" type="vmrules" label="" class="inputbox" validate="rules" filter="rules" component="com_virtuemart" section="shop" />
+    </fieldset>
+    <fieldset name="permissions_other" label="COM_VIRTUEMART_CONFIGURATION" description="">
+        <field name="other_rules" type="vmrules" label="" class="inputbox" validate="rules" filter="rules" component="com_virtuemart" section="other" />
+	</fieldset>
+</config>
+                

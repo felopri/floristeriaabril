@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<extension version="2.5" type="template" method="upgrade" client="site">
+	<name>js_wright</name>
+	<creationDate>August 2012</creationDate>
+	<author>Joomlashack</author>
+	<authorEmail>support@joomlashack.com</authorEmail>
+	<authorUrl>http://www.joomlashack.com</authorUrl>
+	<copyright>Copyright Joomlashack 2012. All rights reserved</copyright>
+	<license>GNU GPLv2</license>
+	<version>3.0.4</version>
+    <description>TPL_JS_WRIGHT_XML_DESCRIPTION</description>
+
+	<languages folder="language">
+		<!-- en-GB -->
+		<language tag="en-GB">en-GB/en-GB.tpl_js_wright.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_js_wright.sys.ini</language>
+		<!-- es-ES -->
+		<language tag="es-ES">es-ES/es-ES.tpl_js_wright.ini</language>
+		<language tag="es-ES">es-ES/es-ES.tpl_js_wright.sys.ini</language>
+	</languages>
+	
+	<files>
+		<filename>component.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>functions.php</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>template.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>wright</folder>
+	</files>
+	
+	<positions>
+		<position>toolbar</position>
+		<position>logo</position>
+		<position>top</position>
+		<position>menu</position>
+		<position>featured</position>
+		<position>grid-top</position>
+		<position>grid-top2</position>
+		<position>above-content</position>
+		<position>breadcrumbs</position>
+		<position>sidebar1</position>
+		<position>sidebar2</position>
+		<position>below-content</position>
+		<position>grid-bottom</position>
+		<position>grid-bottom2</position>
+		<position>bottom-menu</position>
+		<position>footer</position>
+	</positions>
+	
+	<config>
+		<fields name="params" addfieldpath="/templates/js_wright/wright/parameters/joomla_2.5">
+			<fieldset name="basic">
+                <!-- Start of default Wright params -->
+				<field name="helper" type="help" label="TPL_JS_WRIGHT_FIELD_NEED_HELP_LABEL" description="TPL_JS_WRIGHT_FIELD_NEED_HELP_DESC"/>
+				<field name="rebrand" type="rebrand" default="no" label="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_LABEL" description="TPL_JS_WRIGHT_FIELD_REMOVE_BRANDING_DESC" />
+				<field name="style" type="styles" default="theme1" label="TPL_JS_WRIGHT_FIELD_STYLE_LABEL" description="TPL_JS_WRIGHT_FIELD_STYLE_DESC" />
+				<field name="mootools" type="list" default="1" label="TPL_JS_WRIGHT_FIELD_ENABLE_MOOTOOLS_LABEL" description="TPL_JS_WRIGHT_FIELD_ENABLE_MOOTOOLS_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="jquery" type="list" default="1" label="TPL_JS_WRIGHT_FIELD_LOAD_JQUERY_LABEL" description="TPL_JS_WRIGHT_FIELD_LOAD_JQUERY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">TPL_JS_WRIGHT_FIELD_LOAD_JQUERY_YES_LOCALLY</option>
+					<option value="2">TPL_JS_WRIGHT_FIELD_LOAD_JQUERY_YES_GOOGLE</option>
+				</field>
+				<field name="logo" type="logo" default="template" label="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_IMAGE_DESC" />
+				<field name="logowidth" type="grid" default="4" label="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_LABEL" description="TPL_JS_WRIGHT_FIELD_LOGO_WIDTH_DESC" />
+				<field name="body_font" type="typography" default="default" label="TPL_JS_WRIGHT_FIELD_BODY_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_BODY_FONT_DESC" />
+				<field name="header_font" type="typography" default="default" label="TPL_JS_WRIGHT_FIELD_HEADING_FONT_LABEL" description="TPL_JS_WRIGHT_FIELD_HEADING_FONT_DESC" />
+				<field name="columns" type="columns" default="sidebar1:3;main:6;sidebar2:3" sidebars="2" label="TPL_JS_WRIGHT_FIELD_COLUMNS_LABEL" description="TPL_JS_WRIGHT_FIELD_COLUMNS_DESC" />
+				<field name="doctype" type="list" default="html5" label="TPL_JS_WRIGHT_FIELD_DOCTYPE_LABEL" description="TPL_JS_WRIGHT_FIELD_DOCTYPE_DESC">
+					<option value="html5">TPL_JS_WRIGHT_FIELD_DOCTYPE_HTML5</option>
+					<option value="xhtml1transitional">TPL_JS_WRIGHT_FIELD_DOCTYPE_XHTML1_TRANSITIONAL</option>
+					<option value="xhtml1strict">TPL_JS_WRIGHT_FIELD_DOCTYPE_XHTML1_STRICT</option>
+				</field>
+				<field name="buttonspacer" label="TPL_JS_WRIGHT_BOOTSTRAP_TITLE_LABEL" description="TPL_JS_WRIGHT_BOOTSTRAP_TITLE_DESC" type="spacer" />
+				<field name="bs_rowmode" type="list" default="row-fluid" label="TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_LABEL" description="TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_DESC">
+					<option value="row-fluid">TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_FLUID</option>
+					<option value="row">TPL_JS_WRIGHT_FIELD_BOOTSTRAP_ROW_MODE_DEFAULT</option>
+				</field>
+				<field name="responsive" type="list" default="1" label="TPL_JS_WRIGHT_FIELD_ENABLE_RESPONSIVE" description="TPL_JS_WRIGHT_FIELD_ENABLE_RESPONSIVE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+                <!-- End of default Wright params -->
+			</fieldset>
+		</fields>
+	</config>
+</extension>

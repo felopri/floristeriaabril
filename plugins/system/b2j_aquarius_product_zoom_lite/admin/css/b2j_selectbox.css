@@ -1,0 +1,88 @@
+
+/* ---------------------------------------------------------------------------------------------------------------------
+ * Bang2Joom Aquarius Product Zoom Lite for Joomla! 2.5+
+ * ---------------------------------------------------------------------------------------------------------------------
+ * Copyright (C) 2011-2012 Bang2Joom. All Rights Reserved.
+ * @license - GNU/GPL, http://www.gnu.org/licenses/gpl.html
+ * Author: Bang2Joom
+ * Website: http://www.bang2joom.com
+  ----------------------------------------------------------------------------------------------------------------------
+ */
+
+.customSelect.open:after{
+	background-position: 0px -31px;
+}
+.customSelect:after{
+	display: block;
+	right: 0;
+	top: 0;
+	height: 28px;
+	width: 30px;
+	position: absolute;
+	content: "";
+	background: #ea734f url(../images/selectbox_arrows.png) no-repeat;
+	cursor: pointer;
+	background-position: 0px -1px;
+}
+.customSelect ::selection{
+	background: transparent;
+	color: inherit;
+}
+.customSelect{
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	border-top: solid 1px #cdcdcd;
+	min-width: 50px;
+	display: inline-block;
+	position: relative;
+	background: #fff;
+}
+.customSelect .options > div:hover{
+	background: #ea734f;
+	color: #fff;
+}
+.customSelect .first{
+	padding: 0 40px 0 10px;
+	height: 28px;
+	border: solid 1px #cdcdcd;
+	border-top: none;
+	display: block;
+	background: #fff;
+	cursor: pointer;
+	visibility: hidden;
+}
+.customSelect .options{
+	position: absolute;
+	left: 0;
+	visibility: hidden;
+	z-index: -1;
+	border-top: solid 1px #d9dada;
+    white-space: nowrap;
+}
+.customSelect .options > div{
+	padding: 0 40px 0 10px;
+	height: 28px;
+	border: solid 1px #cdcdcd;
+	border-top: none;
+	display: block;
+	background: #fff;
+	cursor: pointer;
+
+}
+.customSelect > div.first{
+	visibility: visible!important;
+	z-index: 10;
+	position: relative;
+	background: transparent;
+}
+.customSelect.open > div.options{
+	visibility: visible!important;
+	z-index: 100;
+}
+ul.adminformlist:after , ul.adminformlist li:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}

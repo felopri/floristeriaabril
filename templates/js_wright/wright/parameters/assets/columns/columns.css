@@ -1,0 +1,8 @@
+div.columns { width: 100%; }
+div.columns select.columns { float: none; }
+#column_sidebar1 { background-color: #eee; }
+#column_sidebar2 { background-color: #ccc; }
+#column_sidebar3 { background-color: #ccc; }
+#column_sidebar4 { background-color: #bbb; }
+#column_main { background-color: #ddd; }
+.column a { cursor: pointer; }

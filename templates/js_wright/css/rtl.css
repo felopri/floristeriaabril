@@ -1,0 +1,76 @@
+/* CSS Document Copyright © ********************/
+
+/* ***************************************************************************************************** */
+/* DEFAULT HTML *****************************/
+body{
+direction:rtl;
+}
+ul{
+margin-right:20px;
+}
+/* ***************************************************************************************************** */
+/* TEMPLATE SPECIFIC CSS CODE */
+#topmenu{
+float:right;
+text-align:right;
+}
+#syndicate{
+float:left;
+text-align:left;
+}
+#logocontainer{
+float:right;
+}
+#search{
+float:left;
+text-align:left;
+}
+#mainmenu ul{
+float:right;
+}
+#mainmenu ul li{
+float:right;
+}
+#copy{
+float:right;
+text-align:right;
+}
+#link{
+float:left;
+text-align:left;
+}
+.designer{
+
+}
+.designer a{
+float:right;
+text-decoration:none;
+margin-left:10px;
+}
+/* ***************************************************************************************************** */
+/* MENU MODULE STYLES */
+.moduletable_menu li a,
+.module_menu li a {
+display:block;
+padding:5px 20px 5px 0;
+}
+.module_menu li ul a,
+.moduletable_menu li ul a {
+padding:5px 35px 5px 0;
+}
+.module_menu li ul ul a,
+.moduletable_menu li ul ul a {
+padding:5px 55px 5px 0;
+}
+/* ***************************************************************************************************** */
+/* LATEST NEWS MODULE */
+#container ul.latestnews li a,
+.elements ul.latestnews li a{
+padding:5px 25px 5px 10px;
+}
+/* ***************************************************************************************************** */
+/* POPULAR MODULE */
+#container ul.mostread li a,
+.elements ul.mostread li a{
+padding:5px 25px 5px 10px;
+}

@@ -1,0 +1,111 @@
+/*
+#------------------------------------------------------------------------
+# yourshop.com - June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+.gkCol { float: left; margin-top: 0!important; }
+#gkTop1,
+#gkTop2,
+#gkUser1,
+#gkUser2,
+#gkBottom1,
+#gkBottom2,
+#gkMainBlock,
+#gkLeftMiddle,
+#gkRightMiddle,
+#gkHeader { padding: 0; }
+#gkLeft,
+#gkContent,
+#gkRight { margin-top: 0!important; }
+#gkComponentWrap {width:100%}
+
+#gkHeader #gkHeaderModule1 { padding-right: 0!important; }
+#gkHeader #gkHeaderModule1 .box,
+#gkHeader #gkHeaderModule1  .box_text,
+#gkHeader #gkHeaderModule1  .box_menu { margin-right:10px!important; }
+
+.box.login .content { padding-bottom: 0!important; }
+
+.box.login #login-form label,
+.box.login #login-form #modlgn_remember { display:block; float:left; }
+.mod_login span.modlgn-passwd input, 
+.mod_login span.modlgn-username input {width: 89%;}
+
+.box.login #login-form p#form-login-username label,
+.box.login #login-form p#form-login-password label { height:28px; line-height:28px; }
+.box.login #login-form .user-links { padding-top:2px; width:100% }
+.box.login #login-form .buttons {}
+
+.box.login .mod_login ul.user-links { margin: 0 -10px 0 -10px !important; }
+#form-login-remember label{float:left;}
+
+input[type=radio],
+input[type=checkbox] { background: none!important; border: none!important; }
+
+div.gk-menu > ul.level0 > li:hover > .childcontent a { display: block; }
+div.gk-menu > ul.level0 > li:hover > .childcontent .childcontent { margin-left: 150px!important; } /* submenu width - (left padding of item * 4) */ 
+div.gk-menu > ul.level0 > li > .childcontent .childcontent { margin-top: -32px!important; }
+
+div#gkDropSub > ul > li > ul,
+div#gkDropSub > ul > li > ul ul { position: absolute; display: block; left: -999%; width: 200px; z-index: 999; }
+
+div#gkDropSub > ul > li:hover > ul,
+div#gkDropSub > ul > li:hover > ul li:hover > ul { left: auto; }
+
+ul.gkTabs { display: inline; }
+#gkSocialAPI .google-buzz-button { margin-top: 1px; }
+
+.items-row.cols-1 .item{ width:100%!important;  }
+.items-row.cols-2 .item{ width:48.5%!important; }
+.items-row.cols-3 .item{ width: 32.5%!important; }
+.items-row.cols-4 .item{ width: 24.5%!important; }
+
+.style1 input[type="submit"]:hover,
+.style1 input[type="submit"]:focus,
+.style1 input[type="button"]:hover,
+.style1 input[type="button"]:focus {  border:1px solid transparent!important; background-color:#46660b; height:28px!important; }
+
+.style2 input[type="submit"]:hover,
+.style2 input[type="submit"]:focus,
+.style2 input[type="button"]:hover,
+.style2 input[type="button"]:focus {  border:1px solid transparent!important; background-color:#cb1010; height:28px!important; }
+
+.style3 input[type="submit"]:hover,
+.style3 input[type="submit"]:focus,
+.style3 input[type="button"]:hover,
+.style3 input[type="button"]:focus {  border:1px solid transparent!important; background-color:#00a4da; height:28px!important; }
+
+input[type=text],
+input#modlgn_passwd,
+input#modlgn_username { height:21px!important; padding-top:5px!important; }
+#shop_search_field { float:left!important; }
+#mod_search_searchword { display:block; float:left; }
+#mod_search_button { background-position: -5px -30px;border:1px solid red !important;  }
+#gkCartBtn h2 {top:-24px !important;left:0;}
+
+#article-index ul li a, #article-index ul li span, div.pagination ul li, div#bottom-pagination ul li,
+.k2Pagination ul li a, .k2Pagination ul li span, .k2Pagination ul li {float:left;display:inline-block;}
+#article-index ul, div.pagination ul, div#bottom-pagination ul {clear:both;margin-left:30%;margin-bottom:30px;}
+.k2Pagination ul {clear:both;margin-left:10%;margin-bottom:30px;}
+.orderlistcontainer div.activeOrder,
+.orderlistcontainer {width:auto !important;float:left;}
+.ask-a-question,
+.product-price {width:100%;display:block;clear:both;}
+#gkContent {overflow:hidden !important;}
+.k2LatestCommentsBlock ul li a.lcAvatar img {float:left !important;}
+#k2Container.itemListView,
+#k2Container.userView ,
+#k2Container.itemView{width:98%}
+.itemRatingBlock {display:inline-block;}
+.commentLink {clear:both;}
+#adminForm .button,
+button.default {display:inline-block !important;float:none !important;margin:0;}
+#adminForm div {text-align:left !important;}
+#ui-tabs ul#tabs {clear:both;margin-bottom:10px;}
+input.vm2-add_quantity_cart, input.vm2-add_quantity_cart:hover {margin:0px;}
+.cart-summary .inputbox {float:left;}
+.vm-button-correct:hover {color:#fff !important;}

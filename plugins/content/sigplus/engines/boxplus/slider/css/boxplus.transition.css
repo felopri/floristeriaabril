@@ -1,0 +1,163 @@
+/*!
+* @file
+* @brief    boxplus image transition stylesheet
+* @author   Levente Hunyadi
+* @version  1.4.2
+* @remarks  Copyright (C) 2009-2010 Levente Hunyadi
+* @remarks  Licensed under GNU/GPLv3, see http://www.gnu.org/licenses/gpl-3.0.html
+* @see      http://hunyadi.info.hu/projects/boxplus
+*/
+
+.boxplus-wrapper {
+margin:6px;
+border:0 none transparent !important;
+padding:0 !important;
+}
+
+.boxplus-transition {
+position:relative !important;
+}
+
+.boxplus-transition,
+.boxplus-transition > div,
+.boxplus-transition > ul {
+margin:0 !important;
+border:0 none transparent !important;
+padding:0 !important;
+}
+
+.boxplus-transition > a {
+display:block !important;
+position:absolute !important;
+height:100% !important;
+width:100% !important;
+}
+
+/* slices */
+.boxplus-transition > div {
+position:absolute !important;
+}
+
+.boxplus-transition,
+.boxplus-transition > div {
+background-color:#000 !important;
+background-repeat:no-repeat !important;
+background-attachment:scroll !important;
+}
+
+.boxplus-transition > ul {
+visibility:hidden !important;
+position:relative !important;  /* rules below for page aesthetics only */
+}
+
+.boxplus-transition > ul > li {
+position:absolute !important;  /* rules below for page aesthetics only */
+top:0 !important;
+left:0 !important;
+}
+
+/* overlay navigation buttons */
+.boxplus-transition > div.boxplus-prev,
+.boxplus-transition > div.boxplus-next {
+background:transparent url(transparent.gif) no-repeat scroll center center !important;
+z-index:2 !important;
+}
+
+.boxplus-transition > div.boxplus-prev.boxplus-disabled,
+.boxplus-transition > div.boxplus-next.boxplus-disabled {
+display:none !important;
+}
+
+.boxplus-transition.boxplus-horizontal > div.boxplus-prev,
+.boxplus-transition.boxplus-horizontal > div.boxplus-next {
+height:100% !important;
+}
+
+.boxplus-transition.boxplus-vertical > div.boxplus-prev,
+.boxplus-transition.boxplus-vertical > div.boxplus-next {
+width:100% !important;
+}
+
+.boxplus-transition.boxplus-horizontal > div.boxplus-prev {
+left:0 !important;
+background-position:left center !important;
+}
+
+.boxplus-transition.boxplus-horizontal > div.boxplus-prev.boxplus-large {
+width:57px !important;
+}
+
+.boxplus-transition.boxplus-horizontal > div.boxplus-prev.boxplus-large:hover {
+background-image:url(btnLeftLarge.png) !important;
+}
+
+.boxplus-transition.boxplus-horizontal > div.boxplus-prev.boxplus-small {
+width:29px !important;
+}
+
+.boxplus-transition.boxplus-horizontal > div.boxplus-prev.boxplus-small:hover {
+background-image:url(btnLeftSmall.png) !important;
+}
+
+.boxplus-transition.boxplus-horizontal > div.boxplus-next {
+right:0 !important;
+background-position:right center !important;
+}
+
+.boxplus-transition.boxplus-horizontal > div.boxplus-next.boxplus-large {
+width:57px !important;
+}
+
+.boxplus-transition.boxplus-horizontal > div.boxplus-next.boxplus-large:hover {
+background-image:url(btnRightLarge.png) !important;
+}
+
+.boxplus-transition.boxplus-horizontal > div.boxplus-next.boxplus-small {
+width:29px !important;
+}
+
+.boxplus-transition.boxplus-horizontal > div.boxplus-next.boxplus-small:hover {
+background-image:url(btnRightSmall.png) !important;
+}
+
+.boxplus-transition.boxplus-vertical > div.boxplus-prev {
+top:0 !important;
+background-position:center top !important;
+}
+
+.boxplus-transition.boxplus-vertical > div.boxplus-prev.boxplus-large {
+height:57px !important;
+}
+
+.boxplus-transition.boxplus-vertical > div.boxplus-prev.boxplus-large:hover {
+background-image:url(btnUpLarge.png) !important;
+}
+
+.boxplus-transition.boxplus-vertical > div.boxplus-prev.boxplus-small {
+height:29px !important;
+}
+
+.boxplus-transition.boxplus-vertical > div.boxplus-prev.boxplus-small:hover {
+background-image:url(btnUpSmall.png) !important;
+}
+
+.boxplus-transition.boxplus-vertical > div.boxplus-next {
+bottom:0 !important;
+background-position:center bottom !important;
+}
+
+.boxplus-transition.boxplus-vertical > div.boxplus-next.boxplus-large {
+height:57px !important;
+}
+
+.boxplus-transition.boxplus-vertical > div.boxplus-next.boxplus-large:hover {
+background-image:url(btnDownLarge.png) !important;
+}
+
+.boxplus-transition.boxplus-vertical > div.boxplus-next.boxplus-small {
+height:29px !important;
+}
+
+.boxplus-transition.boxplus-vertical > div.boxplus-next.boxplus-small:hover {
+background-image:url(btnDownSmall.png) !important;
+}

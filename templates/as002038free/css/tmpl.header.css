@@ -1,0 +1,227 @@
+/**************************************************************************************/
+/*
+/*		Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		Email: info@asdesigning.com
+/*		License: ASDE Commercial
+/*
+/**************************************************************************************/
+
+
+/**************************************************************************************/
+/*   Header
+/**************************************************************************************/
+/**************************************************************************************/
+
+
+#header
+{
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	background-image: url(../images/bg.header.png);
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+
+#header .content
+{
+	margin: 0px auto 0px auto;
+	overflow: visible;	
+}
+
+
+/**************************************************************************************/
+/*   Header Row 0			  														  */
+
+#header .row0
+{
+	height: 69px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	text-align: right;
+}
+
+#header .row0 .search input
+{
+	float: right;
+	width: 150px;
+	height: 18px;
+	margin: 5px 0px 0px 8px;
+	padding: 0px 40px 6px 3px;
+	background-color: transparent;
+	background-image: url('../images/bg.search.png');
+	background-repeat: no-repeat;
+	background-position: top right;	
+}
+
+/**************************************************************************************/
+/*   Header Row 1			  														  */
+
+#header.home #companyname
+{
+	float: right;
+	padding: 0px 50px 0px 0px;
+	text-align: center;
+}
+
+#header.home .companyname
+{
+	width: 300px;
+	padding: 0px 0px 15px 0px;
+}
+
+#header .row1
+{
+	min-height: 105px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	text-align: left;
+}
+
+#header .row1 .content
+{
+	min-height: 90px;
+	background-image: url(../images/bg.header.row1.png);
+	background-repeat: no-repeat;
+}
+
+#header .row1 img
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#header .row1 .row1col1,
+#header .row1 .row1col2
+{
+	float: left;
+	min-height: 0%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background-color: transparent;
+}
+
+#header .row1 .row1col2
+{
+	float: right;
+}
+
+#header .row1 #companyname
+{
+	width: 250px;
+	margin: 12px 0px 0px 55px;	
+}
+
+#header .row1 .companyname
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+    font-weight: normal;
+	border: none;
+	text-align: center;
+}
+
+#header .row1 #companyname a
+{
+	border: none;
+	text-shadow: 1px 1px #614B42;
+}
+
+#header .row1 .slogan
+{
+	border: none;
+	font-size: 10px;
+	font-weight: normal;
+	text-shadow: 1px 1px #614B42;	
+}
+
+/********** Top Menu ***************************************************************/
+
+#header .row1 #topmenu
+{
+	height: 40px;
+	margin: 40px 15px 0px auto;
+	padding: 0px 0px 0px 0px;
+	position: relative;		
+	z-index: 20;
+	text-align: center;
+}
+
+#header .row1 #topmenu ul.menu
+{
+	float: right;
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+	text-align: center;
+	list-style-type: none;
+	overflow: visible;
+}
+
+#header .row1 #topmenu ul.menu li 
+{  
+	float: left;
+	margin: 0px 0px 0px 0px;	
+	padding: 0px 15px 0px 15px;
+	position: relative; 
+	list-style: none; 
+	background: none;
+	z-index: 100;
+	overflow: visible;
+	display: none;
+}
+
+#header .row1 #topmenu ul.menu li.toplevel
+{
+	background-image: url(../images/sep.menu.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 35px;	
+}
+
+#header .row1 #topmenu ul.menu li a 
+{
+	display: block;	
+	padding: 0px 6px 0px 6px; 
+	text-decoration: none;  
+	border: none;
+	border-style: none;
+	outline-style: none;
+	position: relative; 
+}
+
+#header .row1 #topmenu ul.menu li.current a,
+#header .row1 #topmenu ul.menu li.active a,
+#header .row1 #topmenu ul.menu li.actives a,
+#header .row1 #topmenu ul.menu li:hover a
+{
+	display: block;
+}
+
+#header .row1 #topmenu ul.menu li span
+{
+	display: block;
+}
+
+/**************************************************************************************/
+/*  Header Row 3 			  														  */
+
+#header .row3
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px 0px 35px 0px;	
+	text-align: center;
+	background-color: transparent;
+}
+
+#header .row3 .content
+{
+	margin: 0px auto 0px auto;	
+}
+
+#header .row3 p
+{
+	padding: 0px 0px 15px 0px;	
+}
+

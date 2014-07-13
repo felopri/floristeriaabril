@@ -1,0 +1,34 @@
+/*!
+* @file
+* @brief    boxplus carousel stylesheet
+* @author   Levente Hunyadi
+* @version  1.4.2
+* @remarks  Copyright (C) 2009-2010 Levente Hunyadi
+* @remarks  Licensed under GNU/GPLv3, see http://www.gnu.org/licenses/gpl-3.0.html
+* @see      http://hunyadi.info.hu/projects/boxplus
+*/
+
+/* outside navigation */
+.boxplus-carousel .boxplus-paging {
+direction:rtl !important;
+}
+
+.boxplus-carousel .boxplus-paging > div.boxplus-prev {
+background:url(paging.png) -19px 0px !important;
+left:auto !important;
+right:0 !important;
+}
+
+.boxplus-carousel .boxplus-paging > div.boxplus-next {
+background:url(paging.png) -11px 0px !important;
+left:0 !important;
+right:auto !important;
+}
+
+.boxplus-carousel .boxplus-paging > div.boxplus-prev:hover {
+background-position:-19px -14px !important;
+}
+
+.boxplus-carousel .boxplus-paging > div.boxplus-next:hover {
+background-position:-11px -14px !important;
+}

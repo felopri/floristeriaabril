@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5">
+	<name>French Language Pack</name>
+	<packagename>fr-FR</packagename>
+	<version>2.5.19.1</version>
+	<creationDate>01-03-2014</creationDate>
+	<author>French translation team : joomla.fr</author>
+	<authorEmail>traduction@joomla.fr</authorEmail>
+	<authorUrl>www.joomla.fr</authorUrl>
+    <copyright>Copyright (C) 2005 - 2014 joomla.fr et Open Source Matters. Tous droits réservés</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<url></url>
+	<packager>Joomla! French</packager>
+	<packagerurl>www.joomla.fr</packagerurl>
+	<description>
+		<![CDATA[
+		<h3>Joomla! Full French (fr-FR) Language Package version 2.5.19v1</h3>
+		<h3>Paquet de langue français complet Joomla! fr-FR version 2.5.19v1</h3>
+		<div>Installation incluse du pack de langue fr-FR de TinyMCE 3.5.4 pour Joomla 2.5.19</div><br>
+		<div style="font-weight: normal; padding-bottom:15px;">N'oubliez pas de sélectionner la langue FR dans les <a href="index.php?option=com_plugins&amp;view=plugins&amp;filter_search=TinyMCE"><strong>paramètres du plug-in 'Éditeur - TinyMCE'</strong></a> (paramètre  'Langue de l'éditeur' = fr).<br>
+ 		Si vous utilisez la <strong>détection automatique</strong>, veillez à ce que soient installés les différents packs de langue de TinyMCE correspondants aux packs de langue installés pour Joomla!</div>
+		]]>
+	</description>
+	<files>
+		<file type="language" client="site" id="fr-FR">site_fr-FR.zip</file>
+		<file type="language" client="administrator" id="fr-FR">admin_fr-FR.zip</file>
+		<file type="file" client="site" id="TinyMCE_fr-FR">fr-FR_TinyMCE_3.5.4.1.zip</file>
+	</files>
+    <updateservers>
+        <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist.xml</server>
+    </updateservers>
+</extension>

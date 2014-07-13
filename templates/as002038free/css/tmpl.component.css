@@ -1,0 +1,120 @@
+/**************************************************************************************/
+/*
+/*		Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		Email: info@asdesigning.com
+/*		License: ASDE Commercial
+/*
+/**************************************************************************************/
+
+#content
+{
+	width: 850px;
+}
+
+#colmain
+{
+	width: 815px;
+	float: none;
+	margin: 20px;
+}
+
+#colmain #component
+{
+	width: 765px;
+}
+
+fieldset.filter .left
+{
+	width: 100%;
+	margin: 0px 0px 35px 0px;
+	overflow: hidden;	
+}
+
+#colmain .inputbox
+{
+	margin: 0px 2px 0px 0px;	
+}
+
+#colmain table.adminlist
+{
+	width: 100%;
+}
+
+#colmain #adminForm img
+{
+	border: none;
+}
+
+#colmain #adminForm .list-footer div.limit select#limit
+{
+	float: none;
+	margin: 0px 0px 0px 10px;
+}
+
+#colmain #adminForm li
+{
+	background-image: none;
+}
+
+#colmain #imageForm fieldset, 
+#colmain #uploadform, #upload-noflash
+{
+	border: none;
+	padding: 0px 0px 30px 0px !important;	
+}
+
+#colmain #imageForm .fltlft
+{
+	width: 100%;
+}
+
+#colmain #imageForm .fltrt
+{
+	width: 100%;	
+	clear: both;
+	float: left;
+}
+
+#colmain #imageForm .fltlft .button
+{
+	clear: none;
+	float: right;
+	margin: 0px;
+}
+
+#colmain .button
+{
+	clear: none !important;
+	float: right;	
+	height: 40px;
+	padding: 0px 0px 10px 0px;
+	margin: 25px 0px 0px 10px;	
+}
+
+#colmain #uploadform fieldset.actions,
+#colmain .properties
+{
+	margin: 20px 0px 0px 0px;	
+}
+
+#colmain .properties td
+{
+	width: 20%;
+}
+
+#colmain .properties label
+{
+	width: auto;
+	float: right;
+	padding: 0px 15px;
+	text-align: right;	
+}
+
+#colmain .properties input
+{
+	width: auto;	
+}
+
+
+

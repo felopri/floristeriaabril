@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_virtuemart">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+	</section>
+	<section name="product">
+        <action name="vm.product" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+        <action name="vm.product.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+        <action name="vm.product.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+        <action name="vm.product.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="vm.product.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+        <action name="vm.custom" title="COM_VIRTUEMART_PRODUCT_CUSTOM_FIELD_S" description="" />
+        <action name="vm.custom.edit" title="COM_VIRTUEMART_PRODUCT_CUSTOM_FIELD_EDIT" description="" />
+        <action name="vm.inventory" title="COM_VIRTUEMART_PRODUCT_INVENTORY" description="" />
+        <action name="vm.calc" title="COM_VIRTUEMART_CALC_S" description="" />
+        <action name="vm.calc.edit" title="COM_VIRTUEMART_CALC_EDIT" description="" />
+        <action name="vm.ratings" title="COM_VIRTUEMART_REVIEW_RATE_S" description="" />
+	</section>
+	<section name="category">
+        <action name="vm.category" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+        <action name="vm.category.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+        <action name="vm.category.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+        <action name="vm.category.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="vm.category.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+	</section>
+    <section name="manufacturer">
+        <action name="vm.manufacturer" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+        <action name="vm.manufacturer.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+        <action name="vm.manufacturer.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+        <action name="vm.manufacturer.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+        <action name="vm.manufacturer.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+        <action name="vm.manufacturercategories" title="COM_VIRTUEMART_MANUFACTURER_CATEGORY_S" description="" />
+    </section>
+    <section name="shop">
+        <action name="vm.user.editshop" title="COM_VIRTUEMART_STORE" description="" />
+        <action name="vm.media" title="COM_VIRTUEMART_MEDIA_S" description="" />
+        <action name="vm.shipmentmethod" title="COM_VIRTUEMART_SHIPMENTMETHOD_S" description="" />
+        <action name="vm.paymentmethod" title="COM_VIRTUEMART_PAYMENTMETHOD_S" description="" />
+    </section>
+	<section name="orders">
+        <action name="vm.orders" title="COM_VIRTUEMART_ORDER_S" description="" />
+        <action name="vm.report" title="COM_VIRTUEMART_REPORT" description="" />
+        <action name="vm.user" title="COM_VIRTUEMART_USER_S" description="" />
+        <action name="vm.user.edit" title="COM_VIRTUEMART_USERS_EDIT" description="" />
+        <action name="vm.shoppergroup" title="COM_VIRTUEMART_SHOPPERGROUP_S" description="" />
+        <action name="vm.shoppergroup.edit" title="COM_VIRTUEMART_SHOPPERGROUP_EDIT" description="" />
+        <action name="vm.coupon" title="COM_VIRTUEMART_COUPON_S" description="" />
+	</section>
+	<section name="other">
+        <action name="vm.config" title="COM_VIRTUEMART_CONFIGURATION" description="" />
+        <action name="vm.userfields" title="COM_VIRTUEMART_USERFIELD_S" description="" />
+        <action name="vm.orderstatus" title="COM_VIRTUEMART_ORDERSTATUS_S" description="" />
+        <action name="vm.currency" title="COM_VIRTUEMART_CURRENCY_S" description="" />
+        <action name="vm.country" title="COM_VIRTUEMART_COUNTRY_S" description="" />
+        <action name="vm.updatesmigration" title="COM_VIRTUEMART_MIGRATION_UPDATE" description="" />
+        <action name="vm.about" title="COM_VIRTUEMART_ABOUT" description="" />
+        <action name="vm.liveupdate" title="Live Update" description="" />
+	</section>
+</access>
+

@@ -1,0 +1,2368 @@
+/**************************************************************************************/
+/*
+/*		Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		Email: info@asdesigning.com
+/*		License: ASDE Commercial
+/*
+/**************************************************************************************/
+
+/**************************************************************************************/
+/**************************************************************************************/
+/*   Elements
+/**************************************************************************************/
+/**************************************************************************************/
+
+* {padding:0; margin:0; border: 0px;}
+
+html 
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;	
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	vertical-align: top;
+}
+
+table
+{
+	width: 100%;
+}
+
+img
+{
+	margin: 0px 0px 7px 0px;
+    border: 0;
+    vertical-align: top;     
+}
+
+p
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 25px 0px;
+	overflow: hidden;
+}
+
+p img
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;		
+}
+
+p.imgframe
+{
+}
+
+img.left,
+p img.left
+{
+	float: left;
+	margin: 0px 25px 12px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;	
+}
+
+img.right,
+p img.right
+{
+	float: right;
+	margin: 0px 0px 12px 25px;
+	padding: 0px 0px 0px 0px;		
+}
+
+.center img.center
+{
+	float: none;
+	text-align: center;
+	margin: 3px 0px 20px 0px;
+	padding: 0px 0px 20px 0px;		
+}
+
+img.imgframe
+{
+	padding: 0px 0px 0px 0px;
+	border: 7px solid #d6d3d3;	
+}
+
+a img.imgframe:hover
+{
+	border: 7px solid #9ab526;	
+}
+
+h1,
+h2,
+h3
+{
+	font-size: 16px;
+	text-align: left;
+	clear: both;
+}
+
+h4
+{
+	clear: both;
+	padding: 0px 0px 10px 0px;		
+	font-size: 14px
+}
+
+a
+{
+	text-decoration: none;
+	outline-style: none;
+}
+
+a:hover
+{
+	cursor: pointer;
+	outline-style: none;	
+}
+
+ul
+{
+	clear: both;
+	list-style: inside;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 20px 0px;
+	overflow: hidden;	
+}
+
+li
+{
+	background-image: url('../images/listimg.bg.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+ul li a
+{
+	margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+ul ul
+{
+	margin: 0px 0px 0px 25px;
+}
+
+form
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+fieldset 
+{
+	margin: 5px 0px 5px 0px;
+	padding: 2px 0px 2px 0px;
+}
+
+input
+{
+	width: 235px;
+	margin: 0px 0px 0px 0px;
+	padding: 4px;
+	font-size: 12px;
+	border: 1px #C2B5AF solid;
+	vertical-align: bottom;
+	background-color: #FFFFFF;
+	outline-style: none;
+    background-image: url("../images/bg.input.png");
+    background-position: left top;
+    background-repeat: repeat-x;		
+}
+
+.search input 
+{
+    background-image: url("../images/bg.search.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin: 7px 0 0;
+    padding: 4px;
+}
+
+select
+{
+	width: 249px;
+	margin: 2px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 11px;
+	border: 1px;
+	border-style: solid;
+	vertical-align: bottom;
+	background-color: #FFFBDF;	
+}
+
+textarea
+{
+	width: 98%;
+	height: 116px;
+	margin: 0px;
+	padding: 6px;
+	font-size: 12px;
+	border: 1px #C2B5AF solid;
+	vertical-align: bottom;
+	background-color: #FFFFFF;
+    background-image: url("../images/bg.input.png");
+    background-position: left top;
+    background-repeat: repeat-x;	
+}
+
+label
+{
+	line-height: 18px;
+    font-weight: normal;
+}
+
+.sign
+{
+	font-size: 12px;
+	text-align: right;
+	font-style: normal;
+	font-weight: bold;
+	overflow: hidden;
+	margin: 4px 0px 20px 0px;	
+}
+
+.note
+{
+    padding: 0px 0px 10px 35px;
+    font-style: italic;	
+	background-image: url('../images/bg.note.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+	text-align: left;
+	text-align: justify;
+}
+
+.address
+{
+	margin-left: 5px;
+    padding: 0px 0px 12px 35px !important;
+	background-image: url('../images/contacts/con_address.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+	text-align: left;
+}
+
+/**************************************************************************************/
+/*   Content
+/**************************************************************************************/
+/**************************************************************************************/
+
+#content
+{
+	width: 1002px;
+	margin: 0px auto 0px auto;
+	padding: 10px 0px 0px 0px;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+}
+
+.wrapper
+{
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+
+#system-message
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 20px 0px;
+	font-weight: normal;
+}
+
+#system-message dd.error
+{
+}
+
+#system-message dd.error ul, 
+#system-message dd.warning ul, 
+#system-message dd.notice ul
+{
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 12px 0px;
+	background-color: #E6C0C0;
+}
+
+#system-message ul li
+{
+	margin: 0px 20px 0px 20px;
+	list-style-image: none;
+	background-image: none;
+}
+
+
+/**************************************************************************************/
+/*   Breadcrumbs
+/**************************************************************************************/
+
+.breadrow
+{
+	width: 100%;
+	padding: 3px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	text-align: right;
+	overflow: hidden;
+}
+
+.breadrow .content
+{
+	overflow: hidden;
+	margin: 0 auto;		
+}
+
+#breadcrumb
+{
+	height: 39px;	
+	float: right;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.breadcrumbs
+{
+	padding: 13px 0px 0px 0px;
+}
+
+.breadcrumbs .showHere
+{
+	margin: 0px 0px 0px 0px;	
+}
+
+#breadcrumb a
+{
+	border: none;
+}
+
+#breadcrumb a:hover
+{
+}
+
+/**************************************************************************************/
+/*   General Element IDs and classes
+/**************************************************************************************/
+
+.none
+{
+	display: none;	
+}
+
+.alignleft
+{
+	text-align: left;
+}
+
+.alignright
+{
+	text-align: right;
+}
+
+.center
+{
+    text-align: center !important;    
+}
+
+.justify
+{
+	text-align: justify !important;	
+}
+
+.uppercase
+{
+	text-transform: uppercase;	
+}
+
+.left
+{
+	float: left !important;
+}
+
+.right
+{
+	float: right !important;
+}
+
+.clear
+{
+	clear: both;
+}
+
+.half
+{
+	width: 45%;
+}
+
+.separator
+{
+	width: 1px;
+	height: 20px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_5
+{
+	clear: both;
+	width: 5px;
+	height: 5px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_7
+{
+	clear: both;	
+	width: 7px;
+	height: 7px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_8
+{
+	clear: both;	
+	width: 8px;
+	height: 8px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_10
+{
+	clear: both;	
+	width: 10px;
+	height: 10px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_15
+{
+	clear: both;	
+	width: 15px;
+	height: 15px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.sepleft_15
+{
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.separator_20
+{
+	clear: both;	
+	width: 20px;
+	height: 20px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.sepleft_20
+{
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.separator_25
+{
+	clear: both;	
+	width: 25px;
+	height: 25px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.sepleft_25
+{
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.separator_30
+{
+	clear: both;	
+	width: 30px;
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.sepleft_30
+{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.separator_50
+{
+	clear: both;	
+	width: 50px;
+	height: 50px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+.border_bottom
+{
+	margin-bottom: 35px;
+}
+
+.label
+{
+    font-weight: bold;
+}
+
+.asterisk
+{
+	float: left;
+	width: 10px;
+	padding: 0px 0px 0px 3px;
+}
+
+/**************************************************************************************/
+/*   Column Main 
+/**************************************************************************************/
+
+.blog-featured,
+.item-page,
+.registration,
+.reset,
+.remind,
+.profile,
+.edit,
+.login,
+.logout,
+.contact,
+#searchForm,
+.search-results,
+.categories-list,
+.profile-edit,
+.formelm-area,
+.custom
+{
+	clear: both;
+	width: auto;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	overflow: hidden;	
+}
+
+.blog-featured
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;		
+}
+
+.formelm-area
+{
+	margin: 7px 0px 0px 0px;
+}
+
+/**************************************************************************************/
+
+.moduletable,
+.moduletable_text, 
+.moduletable_menu
+{
+	padding: 0px 0px 15px 0px;
+}
+
+#adsense .moduletable
+{
+	padding: 0px 0px 0px 0px;
+}
+
+.moduletable p,
+.moduletable_menu .menu
+{
+	margin: 0px 0px 0px 0px;
+	padding: 25px 0px 10px 0px;	
+}
+
+.contentpane
+{
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px 10px 10px;	
+}
+
+.contentpane img
+{		
+    margin: 0px 0px 0px 0px;
+    padding: 15px 15px 15px 15px;	
+}
+
+.contentpane ul
+{		
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;	
+}
+
+.contentpane ul li p img,
+.contentpane ul li div img,
+.contentpane ul li h2 img
+{			
+	margin: 15px;
+}
+
+.contentpane p
+{		
+    margin: 15px 15px 0px 0px;
+    padding: 0px 0px 0px 0px;	
+}
+
+.contentpaneopen
+{		
+    margin: 0px 0px 0px 0px;
+    padding: 5px 20px 10px 5px;	
+}
+
+.item-page .services ul
+{
+	padding-left: 30px;
+}
+
+.item-page .services li  
+{
+	list-style-position: outside;
+}
+
+#component ul 
+{
+	padding: 20px 0px 20px 35px;
+	text-align: left;
+}
+
+.item-page .left img
+{
+	margin: 3px 25px 0px 0px;
+}
+
+.item-page .right img
+{
+	margin: 3px 0px 0px 25px;
+}
+
+.items-row
+{
+	margin: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+.item 
+{
+    display: block;
+}
+
+/**************************************************************************************/
+
+.item .readmore
+{
+	margin: 0px 0px 0px 0px;
+}
+
+.readmore
+{
+	height: 25px;
+	float: right;
+	margin: 0px 0px 0px 0px;
+	padding: 6px 25px 6px 0px;	
+	text-align: right;
+	overflow: hidden;
+}
+
+.readmore a
+{
+}
+
+.readmore a:hover
+{
+	border: none;	
+}
+
+.blog-featured .readmore,
+.blog .readmore
+{
+	float: right;
+    margin: 3px 0px 3px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: center;
+}
+
+.blog-featured .readmore a:hover,
+.blog-featured .readmore:hover a,
+.blog .readmore a:hover,
+.blog .readmore:hover a
+{
+	text-shadow: none;	
+}
+
+.blog-featured .item img
+{
+	margin: 0px 0px 20px 0px;
+}
+
+.button2-left a,
+.button2-left .readmore a
+{
+	height: 22px !important;
+	padding: 0px 35px 0px 20px !important;	
+	margin: 0px !important;
+	background-image: none !important;
+	font-size: 11px !important;
+	font-weight: normal !important;
+	text-shadow: none !important;
+	color: #000000 !important;
+}
+
+#editor-xtd-buttons .button2-left .readmore
+{
+	height: inherit;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	border: none;
+	text-transform: none !important;
+	text-align: center;	
+}
+
+#editor-xtd-buttons .button2-left .readmore a:hover,
+#editor-xtd-buttons .button2-left .readmore:hover
+{
+	background-position: top right !important;
+	text-shadow: none !important;
+	color: #696969;
+}
+
+#editor-xtd-buttons .button2-left
+{
+	margin: 0px 5px 0px 0px;
+}
+
+.item .readmore
+{
+	margin: 0px 0px 0px 0px;
+}
+
+button,
+.button,
+.validate,
+.readmore,
+#component p.readmore
+{
+	float: right;
+	height: 13px;
+	margin: 20px 0px 0px 0px;
+	padding: 6px 25px 7px 25px;
+	font-size: 10px;
+	text-align: center;
+	vertical-align: text-top;
+	background-image: url('../images/bg.btn.general.png');
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	font-weight: normal;
+	background-color: transparent !important;
+	overflow: hidden;
+}
+
+#adminForm button,
+#member-registration button,
+#user-registration button
+{
+	height: 26px;
+	padding: 6px 25px 7px 25px;	
+}
+
+button.button
+{
+	height: 26px;	
+	padding: 0px 25px 5px 25px;	
+}
+
+
+input.button
+{
+	height: 26px;
+	border: none;
+	background-color: transparent;
+	margin: 20px 0px 25px 0px;
+    padding: 0px 25px 6px 25px;	
+}
+
+.calendar .button
+{
+	width: 30px;
+	min-width: 30px;
+	height: 15px;
+	float: none;
+	background-image: none !important;
+	margin: 0px !important;
+	padding: 0px !important;	
+}
+
+.clearfix button
+{
+	background-image: url('../images/bg.btn.general.png') !important;	
+}
+
+.readmore:hover,
+.readmore a:hover,
+input.button,
+button.button,
+button.validate,
+button
+{
+}
+
+input.button:hover,
+button.button:hover,
+button.validate:hover,
+button:hover
+{
+}
+
+.button,
+.button a,
+.validate,
+.readmore,
+.readmore a,
+.readmore button,
+.readmore .button,
+.readmore button a,
+.readmore .button a,
+input.button,
+input.button a,
+button.button,
+button.button a,
+button.validate,
+button
+{
+	color: #FFFFFF !important;
+}
+
+.button a:hover,
+.readmore:hover,
+.readmore:hover a,
+.readmore a:hover,
+.readmore button:hover,
+.readmore .button:hover,
+.readmore button a:hover,
+.readmore .button a:hover,
+#component p.readmore:hover,
+input.button:hover,
+input.button a:hover,
+button.validate:hover,
+button:hover,
+button.button:hover,
+button.button a:hover
+{
+	color: #333333 !important;
+	text-shadow:  none;	
+	background-position: top left;	
+}
+
+#colmain .readmore button,
+#colmain .readmore .button
+{
+	margin: 0px 0px 10px 0px;
+	background-image: none;
+	font-weight: normal;
+}
+
+#colmain .readmore button:hover, 
+#colmain .readmore .button:hover
+{
+	margin: 0px 0px 10px 0px;
+	background-image: none;
+	font-weight: normal;
+}
+
+#colmain button:hover, 
+#colmain .button:hover
+{
+	cursor: pointer;
+}
+
+
+/**************************************************************************************/
+
+.mailto-close
+{
+	margin: 0px 0px 20px 0px;
+	text-align: right;
+	text-transform: uppercase;	
+}
+
+.inputbox,
+#jform_name,
+#jform_username,
+#jform_password1,
+#jform_password2,
+#jform_email,
+#jform_email1,
+#jform_email2,
+#jform_title,
+#jform_url,
+#jform_catid,
+#jform_state,
+#jform_params_editor,
+#jform_params_timezone,
+#jform_params_language,
+#jform_params_admin_style,
+#jform_params_admin_language,
+#jform_params_helpsite,
+#username,
+#password
+{
+	float: left;	
+	margin: 0px;
+	padding: 4px;
+	border: 1px solid #C2B5AF;
+	font-size: 12px;
+	text-align: left;
+}
+
+.counter
+{
+	margin: 10px 0px 10px 0px;
+}
+
+.item-separator
+{
+	clear: both;
+}
+
+.layouts-separator
+{
+	clear: both;
+    background-image: url("../images/bg.heading.png");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    margin: 0px 0px 50px;
+    padding: 0px 0px 40px;	
+}
+
+.paragraphs-separator
+{
+	clear: both;
+    background-image: url("../images/bg.heading.png");
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    margin: 0px 0px 30px;
+    padding: 0px 0px 8px;	
+}
+
+.row-separator,
+.product-separator
+{
+	clear: both;
+	height: 2px;
+	margin: 10px 0px 20px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+
+.actions,
+#component .actions
+{
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;	
+	text-align: right;
+}
+
+#component .item-page ul
+{
+	clear: none;
+	margin: 0px 0px 0px 35px;
+	padding: 0px 0px 15px 0px;
+}
+
+#component .content-links ul
+{
+	clear: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.item-page ul ul
+{
+    margin: 0px 0px 0px 0px;
+    padding: 3px 0px 0px 0px;
+}
+
+.item-page .pagination ul,
+.item-page .pagenav,
+.pagination ul,
+.pagenav
+{
+	font-weight: bold;
+	margin: 20px 0px 10px 0px;	
+	padding: 0px 0px 0px 0px;	
+}
+
+.actions li,
+.actions li:hover,
+.pagination li,
+.pagination li:hover,
+.pagenav li,
+.pagenav li:hover,
+#colmain .actions li,
+#colmain .actions li:hover,
+#colmain .pagination li,
+#colmain .pagination li:hover,
+#colmain .pagenav li,
+#colmain .pagenav li:hover
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	display: inline;
+	background-image: none;
+	list-style-image: none;	
+}
+
+li.pagenav-prev
+{
+	margin: 0px 5px 0px 0px;	
+}
+
+li.pagenav-next
+{
+	margin: 0px 0px 0px 5px;	
+}
+
+.pagination li .pagenav
+{
+	margin: 0px 10px 0px 0px;	
+}
+
+.newsfeed li
+{
+	list-style: none;		
+}
+
+.menu,
+.bannergroup,
+.form-note
+{
+	clear: both;	
+}
+
+.formelm,
+.formelm select
+{
+	margin: 3px 0px 0px 0px;
+	padding: 2px !important;	
+}
+
+#jform_spacer-lbl
+{
+	float: left;
+	width: auto;
+	font-weight: normal;
+	font-style: italic;
+	display: none;
+}
+
+ .article-info
+{
+	clear: both;
+	margin: 0px 0px 25px 0px;
+}
+
+.edit,
+.profile
+{
+	margin: 0px 0px 30px;
+}
+
+.CodeMirror-wrapping
+{
+	margin: 0px 0px 15px 0px;
+	border-left: none;
+	border-right: none;	
+}
+
+#adminForm .CodeMirror-wrapping
+{
+	background-color: #F3F3F3;
+}
+
+/**************************************************************************************/
+/*   Column Main - Blog
+/**************************************************************************************/
+
+#colmain .cols-4 .item-separator,
+#colmain .cols-4 .row-separator,
+#colmain .cols-3 .item-separator,
+#colmain .cols-3 .row-separator,
+#colmain .cols-2 .item-separator,
+#colmain .cols-2 .row-separator,
+#colmain .cols-1 .item-separator,
+#colmain .cols-1 .row-separator
+{
+	background-image: none;	
+}
+
+#colmain .cols-2 .column-1,
+#colmain .cols-2 .column-2,
+#colmain .cols-3 .column-1,
+#colmain .cols-3 .column-2,
+#colmain .cols-3 .column-3,
+#colmain .cols-4 .column-1,
+#colmain .cols-4 .column-2,
+#colmain .cols-4 .column-3,
+#colmain .cols-4 .column-4
+{
+    float: left;
+    padding: 0px;
+}
+
+
+/**************************************************************************************/
+/*   Column Main - Registration Form & Profile
+/**************************************************************************************/
+
+.registration,
+.profile,
+.formelm,
+.formelm-buttons,
+#jform_description,
+#editor-xtd-buttons,
+#user-registration,
+#user-registration fieldset
+{
+	clear: both;
+	overflow: hidden;		
+}
+
+#editor-xtd-buttons
+{
+	padding: 5px 0px 5px 0px;	
+}
+
+.formelm-buttons
+{
+	clear: both;	
+	margin: 5px 0px 25px 0px;	
+}
+
+.formelm-buttons button
+{
+	margin: 20px 10px 0px 0px;	
+}
+
+#member-registration
+{
+	padding: 0px;
+}
+
+#member-registration fieldset,
+#member-profile fieldset,
+#adminForm fieldset,
+.registration fieldset,
+.profile fieldset
+{
+	margin: 3px 0 15px 0;
+	padding: 15px 0px 20px 0px;
+}
+
+form fieldset dt
+{
+	clear: both;
+	float: left;
+	width: 180px;
+	padding: 3px 0;
+}
+
+form fieldset dd
+{
+	float: left;
+	padding: 3px 0px;
+	margin: 0px 0px 5px;
+}
+
+.profile-edit form#member-profile fieldset dd,
+.registration form#member-registration fieldset dd
+{ 
+	padding: 0px;
+}
+
+.profile-edit form#member-profile fieldset dd input,
+.registration form#member-registration fieldset dd input
+{
+	width: 220px;
+	left: 0px;
+}
+
+.profile-edit form#member-profile fieldset dd select
+{
+	width: 226px;
+}
+
+#users-profile-core dd, 
+#users-profile-custom dd 
+{
+    padding: 3px 0;
+}
+
+.profile-edit form#member-profile fieldset dt,
+.registration form#member-registration fieldset dt
+{
+	padding: 5px 5px 5px 0; 
+	width: 200px;
+}
+
+#users-profile-core dt, 
+#users-profile-custom dt 
+{
+    float: left;
+    padding: 3px 0;
+    width: 180px;
+}
+
+#users-profile-core legend,
+#users-profile-custom legend,
+#adminForm legend,
+.profile-edit legend,
+.registration legend
+{
+	font-weight: bold;
+	font-size: 13px;	
+	padding: 0px 5px 20px 0px;
+	text-transform: uppercase;
+}
+
+span.spacer > span.text label 
+{
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+.red,
+.star
+{
+	font-weight: bold;
+}
+
+
+/**************************************************************************************/
+/*   Login
+/**************************************************************************************/
+
+.login-box
+{
+	padding: 0px;
+}
+
+.login fieldset
+{
+	margin: 10px 0px 10px 0px;
+}
+
+.login-fields
+{
+	float: left;
+	margin: 0px 0px 5px 0px;
+}
+
+.moduletable #modlgn-username.inputbox,
+.moduletable #modlgn-passwd.inputbox
+{
+	margin: 5px 0px 0px 0px;
+}
+
+/**************************************************************************************/
+/*   Column Main - Search
+/**************************************************************************************/
+
+#searchForm
+{
+}
+
+#searchForm .phrases,
+#searchForm .only
+{
+	border: 1px;
+	border-style: solid;	
+}
+
+#searchForm #limit
+{
+	margin: 0px 20px 0px 20px;
+}
+
+.search
+{
+	width: auto;	
+}
+
+.searchintro
+{
+	font-weight: normal;
+	margin: 20px 0px 0px 0px;
+}
+
+.form-limit
+{
+	margin: 20px 0 0;
+	text-align: right;
+	padding: 0 10px 0 20px;
+}
+
+.ordering-box label
+{
+	width: auto;
+	padding: 0px 5px 0px 0px;	
+}
+
+.form-limit label
+{
+	width: auto;
+	padding: 3px 0px 0px 0px;	
+}
+
+.inputbox:focus
+{
+}
+
+.highlight
+{
+	font-weight:bold;
+}
+
+.ordering-box
+{
+	width: 90%;
+	float: left;
+	margin: 20px 0px 0px;
+}
+
+#ordering
+{
+	width: 150px;
+	padding: 1px;	
+}
+
+#ordering option
+{
+	padding: 1px;	
+}
+
+.phrases-box,
+.searchonly-box
+{
+	float: left;
+	width: 250px;
+	margin: 0px 0px 0px;
+}
+
+.phrases-box input,
+.only input
+{
+	clear: both;	
+}
+
+.phrases,
+.only
+{
+	padding: 0px 25px 20px 25px;
+	margin: 0px 0px 25px 0px;	
+	line-height: 20px;
+}
+
+.only legend,
+.phrases legend
+{
+	height: 20px;
+	margin: 25px 0px 25px 0px;	
+}
+
+.only label
+{
+	width: 350px;	
+	line-height: 21px;	
+}
+
+.only input
+{
+	margin: 0px 10px 0px 0px;	
+}
+
+.word
+{
+	padding: 10px 0px 10px 0px;
+}
+
+.word input
+{
+	float: none;
+	margin: 0px 10px 0px 10px !important;
+	padding: 4px;
+	font-weight: normal;
+}
+
+.word input:focus
+{
+}
+
+.word label
+{
+}
+
+fieldset.only label,
+fieldset.phrases label
+{
+    margin: 0 10px 0 0px;
+}
+
+.search legend
+{
+	padding: 0px 5px 0px 5px;
+	font-weight: bold;
+}
+
+.result-category
+{
+    margin: 10px 0px 0px 0px;
+}
+
+.result-title
+{
+	font-weight: bold;	
+    margin: 20px 0px 0px 0px;	
+}
+
+/**************************************************************************************/
+/*   Column Main - Contact
+/**************************************************************************************/
+
+.contact
+{
+	width: 100%;
+	padding: 0px;
+	background-image: url(../images/bg.contact.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+.contact h1,
+.contact h2,
+.contact h3
+{
+	clear: both;
+}
+
+.contact h1 a,
+.contact h2 a,
+.contact h3 a
+{
+    display: block;
+    width: 100%;	
+}
+
+.contact-contactinfo p
+{
+	margin: 0px;
+	padding: 0px;	
+}
+
+#emailForm input,
+#contact-text
+{
+	margin: 5px 10px 0px 0px;	
+}
+
+.contact-links ul
+{
+	margin: 0px 0px 30px 0px;
+	padding: 0px;		
+}
+
+
+#contact-form,
+.contact-form
+{
+	width: 100%;
+}
+
+#contact-form legend
+{
+	margin: 0px;
+	padding: 0px 0px 20px 0px;			
+	float: left;
+	font-style: italic;
+}
+
+#contact-form fieldset dt
+{
+	width: 30%;
+	clear: both;
+	padding: 5px 0px 0px 0px;	
+}
+
+#contact-form fieldset dd,
+#contact-form fieldset textarea
+{
+	width: 68%;
+	float: left;
+	overflow: hidden;	
+}
+
+#contact-form fieldset dd textarea
+{
+	width: 97%;
+}
+
+#contact-form fieldset dt label,
+#contact-form fieldset dd input
+{
+	float: none;	
+}
+
+.contact-address p,
+.contact-form p,
+.contact-links p,
+.contact-contactinfo p,
+.contact-contactinfo
+{
+	overflow: hidden;
+}
+
+.contact .panel
+{
+	clear: both;
+	overflow: hidden;
+}
+
+.contact-address
+{
+	margin: 0px 0px 15px 0px;
+	overflow: hidden;	
+}
+
+address span
+{
+	display: block;
+	margin: 0px 0px 5px 0px;	
+}
+
+.jicons-icons
+{
+	width: 40px;
+}
+
+.jicons-icons img
+{
+	margin: 0 15px 15px 0;
+    padding: 0;	
+}
+
+.contact-address .jicons-icons,
+.contact-miscinfo .jicons-icons,
+.contact-contactinfo .jicons-icons,
+.contact-address address,
+.contact-form,
+.contact-links
+{
+	float: left;
+	font-style: normal;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+/**************************************************************************************/
+/*   Column Main - Component
+/**************************************************************************************/
+
+#colmain
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: justify;
+	overflow: hidden;	
+}
+
+#colmain #component
+{
+	margin: 0px 0px 25px 0px;
+	float:left;
+	overflow: hidden;	
+}
+
+
+#colmain #component h1,
+#colmain #component h2,
+#colmain #component h3
+{
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 10px 0px;
+}
+
+#colmain h1, 
+#colmain h2, 
+#colmain h3
+{
+	margin: 0px 0px 25px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#colmain h4, 
+#colmain h5
+{
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 0px 0px;		
+}
+
+#colmain h5
+{
+	clear:both;
+	font-size: 19px;
+	font-weight: normal;
+}
+
+#colmain .item h1,
+#colmain .item h2,
+#colmain .item h3
+{
+}
+
+#colmain .item h1 a, 
+#colmain .item h2 a, 
+#colmain .item h3 a
+{
+	display: block;
+	width: 100%;
+}
+
+#colmain p
+{
+	text-align: justify;
+	padding: 0px 0px 5px 0px;
+	overflow: hidden;
+}
+
+#colmain ul 
+{
+	padding: 0px 0px 20px 35px;
+	text-align: left;
+}
+
+#colmain ul li  
+{
+    padding: 0px 0px 0px 30px;
+	list-style: outside none;
+	list-style-image: none;
+	line-height: 17px;
+}
+
+#colmain ul.menu
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#colmain ul.menu li  
+{
+	height: 28px;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 55px;
+	text-align: left;
+	list-style: outside none;
+	list-style-image: none;
+	background-image: url('../images/bg.toggle.open.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+#colmain ul.menu li:hover
+{
+	background-image: url('../images/bg.toggle.open.hover.png');
+}
+
+#colmain ul ul
+{
+    margin: 0px 0px 0px 0px;
+    padding: 3px 0px 0px 0px;
+}
+	
+#colmain ul ul li
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 30px;
+}
+
+#colmain input[type="checkbox"],
+#colmain input[type="radio"]
+{
+	float: left;
+	width: 16px;
+	height: 16px;
+	border: none;
+	background-image: none;
+}
+
+#colmain input[type="radio"]
+{
+	margin-right: 10px;
+}
+
+#colmain label
+{
+	float: left;
+	width: 160px;
+	position: relative;
+	text-align: left;
+}
+
+#colmain .imgright
+{
+	float: right;
+	margin: 0px 0px 10px 20px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#colmain .imgleft
+{
+	float: left;
+	margin: 0px 20px 10px 0px;
+	padding: 0px 0px 0px 0px;		
+}
+
+#colmain .banner
+{
+	margin: 20px 0px 10px 0px;
+}
+
+#colmain #adsense
+{
+	clear: both;
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 11px 0px 10px 0px;	
+	text-align: center;
+	overflow: hidden;
+}
+
+#colmain #adsense .innerborder
+{
+	padding: 1px 0px 25px 0px;
+	margin: 0px 0px 0px 0px;	
+	text-align: center;
+}
+
+#colmain .left
+{
+	float: left;
+}
+
+#colmain .right
+{
+	float: right;
+}
+
+#colmain .center
+{
+	float: none;	
+	margin: 0px auto 0px auto;
+}
+
+#colmain #component #editor-xtd-buttons .button2-left .readmore:hover,
+#colmain #component #editor-xtd-buttons .button2-left .readmore a:hover
+{
+	background-color: transparent;
+}
+
+.black
+{
+	color: #000 !important;
+	font-size: 22px !important;
+}
+
+
+
+/***************************************************************************************/
+/*
+/* Designed by 'AS Designing'
+/* Web: http://www.asdesigning.com
+/* Email: info@asdesigning.com
+/* License: ASDE Commercial
+/*
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/* Elements
+/**************************************************************************************/
+/**************************************************************************************/
+
+body
+{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+background-color: #FEFCED;
+color: #614B42;
+}
+.wrapper
+{
+}
+h1
+{
+font-size: 14px;
+}
+h2
+{
+font-size: 14px;
+}
+h3
+{
+font-size: 14px;
+}
+h4
+{
+font-size: 12px;
+}
+h5
+{
+font-size: 12px;
+}
+h1,
+h2,
+h3,
+h4,
+h5
+{
+color: #614B42;
+font-weight: bold;
+}
+a
+{
+color: #614B42;
+}
+a:hover
+{
+color: #5E7318;
+}
+input
+{
+}
+select
+{
+}
+textarea,
+.CodeMirror-wrapping
+{
+}
+/**************************************************************************************/
+/* Header
+/**************************************************************************************/
+/**************************************************************************************/
+#header
+{
+font-size: 12px;
+font-weight: normal;
+font-style: normal;
+font-family: Arial, Helvetica, sans-serif;
+}
+#header .content
+{
+width: 940px;
+}
+#header h1,
+#header h2,
+#header h3
+{
+color: #614B42;
+}
+#header a
+{
+color: #614B42;
+}
+#header a:hover
+{
+color: #614B42;
+}
+/**************************************************************************************/
+/* Header Row 0 */
+#header .row0 .search input
+{
+color: #614B42;
+}
+/**************************************************************************************/
+/* Header Row 1 */
+#header .row1
+{
+color: #FFFFFF;
+}
+#header .row1 .content
+{
+width: 960px;
+}
+#header .row1 #companyname
+{
+}
+#header.home #companyname a,
+#header .row1 #companyname,
+#header .row1 #companyname a
+{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 26px;
+font-style: normal;
+font-weight: normal;
+color: #FFFFFF;
+}
+#header.home #companyname a:hover,
+#header .row1 #companyname a:hover
+{
+color: #FFFFFF;
+}
+#header.home .slogan,
+#header .row1 .slogan
+{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-weight: normal;
+color: #FFFFFF;
+}
+
+/**************************************************************************************/
+/* Header Row 1 - Top menu */
+
+#header .row1 .row1col2
+{
+float: right;
+}
+#header.home #topmenu_home ul.menu li a,
+#header .row1 #topmenu ul.menu li a
+{
+color: #FFFFFF;
+text-shadow: 1px 1px #614B42;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-weight: bold;
+}
+#header.home #topmenu_home ul.menu li.current a,
+#header.home #topmenu_home ul.menu li.active a,
+#header.home #topmenu_home ul.menu li a:hover,
+#header .row1 #topmenu ul.menu li.current a,
+#header .row1 #topmenu ul.menu li.active a,
+#header .row1 #topmenu ul.menu li a:hover
+{
+color: #CEF35A;
+text-shadow: 1px 1px #614B42;
+}
+
+
+/**************************************************************************************/
+/**************************************************************************************/
+/* Content
+/**************************************************************************************/
+/**************************************************************************************/
+#content
+{
+width: 940px;
+}
+/**************************************************************************************/
+/* Column Left
+/**************************************************************************************/
+/**************************************************************************************/
+#colleft
+{
+width: 212px;
+margin: 0px 30px 0px 0px;
+}
+#colleft h1
+{
+font-size: 18px;
+}
+#colleft h2
+{
+font-size: 16px;
+}
+#colleft h3
+{
+font-size: 14px;
+}
+#colleft h4
+{
+font-size: 12px;
+}
+#colleft h5
+{
+font-size: 12px;
+}
+#colleft h1,
+#colleft h2,
+#colleft h3,
+#colleft h4,
+#colleft h5
+{
+font-weight: bold;
+text-transform: uppercase;
+}
+#colleft a
+{
+color: #614B42;
+}
+#colleft a:hover
+{
+color: #79941F;
+}
+#colleft ul li a,
+#colleft ul li.active ul li a
+{
+color: #614B42;
+font-size: 12px;
+text-transform: none;
+}
+#colleft ul li a:hover,
+#colleft ul ul li a:hover
+{
+color: #79941F;
+}
+#colleft .moduletable ul.menu li a,
+#colleft .moduletable_menu ul.menu li a,
+#colleft .moduletable #login-form ul li a
+{
+color: #614B42;
+}
+#colleft .moduletable ul.menu li a:hover,
+#colleft .moduletable_menu ul.menu li a:hover,
+#colleft .moduletable #login-form ul li a:hover
+{
+color: #79941F;
+}
+#colleft img
+{
+background-color: transparent;
+}
+#colleft input
+{
+width: 202px;
+font-family: Arial, Helvetica, sans-serif;
+color: #614B42;
+}
+#colleft .more a
+{
+color: #614B42;
+}
+#colleft .more a:hover
+{
+color: #79941F;
+}
+/**************************************************************************************/
+/* Rows */
+#colleft .row0,
+#colleft .row1,
+#colleft .row2,
+#colleft .row3
+{
+color: #614B42;
+}
+#colleft .row0 h1,
+#colleft .row0 h2,
+#colleft .row0 h3,
+#colleft .row0 h4,
+#colleft .row0 h5,
+#colleft .row1 h1,
+#colleft .row1 h2,
+#colleft .row1 h3,
+#colleft .row1 h4,
+#colleft .row1 h5,
+#colleft .row2 h1,
+#colleft .row2 h2,
+#colleft .row2 h3,
+#colleft .row2 h4,
+#colleft .row2 h5,
+#colleft .row3 h1,
+#colleft .row3 h2,
+#colleft .row3 h3,
+#colleft .row3 h4,
+#colleft .row3 h5
+{
+color: #614B42;
+text-shadow: 1px 1px #FFFFFF;
+}
+#colleft .row0 h1,
+#colleft .row0 h2,
+#colleft .row0 h3,
+#colleft .row1 h1,
+#colleft .row1 h2,
+#colleft .row1 h3,
+#colleft .row2 h1,
+#colleft .row2 h2,
+#colleft .row2 h3,
+#colleft .row3 h1,
+#colleft .row3 h2,
+#colleft .row3 h3
+{
+border-bottom: 1px dashed #C2B5AF;
+}
+
+/**************************************************************************************/
+/* Column Main
+/**************************************************************************************/
+/**************************************************************************************/
+#colmain
+{
+float: left;
+}
+#colmain #component
+{
+width: 456px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+color: #614B42;
+}
+#colmain #component .innerborder
+{
+border: 1px solid none;
+}
+#colmain #component h1,
+#colmain #component h2,
+#colmain #component h3
+{
+border-bottom: 1px dashed #C2B5AF;
+}
+#colmain h1
+{
+font-size: 14px;
+}
+#colmain h2
+{
+font-size: 14px;
+}
+#colmain h3
+{
+font-size: 14px;
+}
+#colmain h4
+{
+font-size: 12px;
+}
+#colmain h5
+{
+font-size: 12px;
+}
+#colmain h1,
+#colmain h2,
+#colmain h3,
+#colmain h4,
+#colmain h5
+{
+color: #614B42;
+text-shadow: 1px 1px #FFFFFF;
+font-weight: bold;
+text-transform: uppercase;
+}
+#colmain h1 a,
+#colmain h2 a,
+#colmain h3 a
+{
+color: #614B42;
+}
+#colmain h1 a:hover,
+#colmain h2 a:hover,
+#colmain h3 a:hover
+{
+color: #5E7318;
+}
+#colmain h4
+#colmain h5
+{
+color: #614B42;
+}
+#colmain a
+{
+color: #614B42;
+}
+#colmain a:hover
+{
+color: #5E7318;
+}
+#colmain input,
+#colmain textarea
+{
+font-family: Arial, Helvetica, sans-serif;
+}
+#colmain input[type="checkbox"],
+#colmain input[type="radio"]
+{
+background-color: transparent !important!
+}
+#colmain p
+{
+color: #614B42;
+}
+#colmain .item-separator
+{
+height: 25px;
+}
+#colmain span.spacer > span.text label
+{
+color: #614B42;
+}
+#colmain #jform_spacer-lbl,
+#colmain label.invalid,
+#colmain .red,
+#colmain .star,
+#colmain .asterisk
+{
+color: #AD2B11;
+}
+#colmain .cols-2 .column-1,
+#colmain .cols-3 .column-1,
+#colmain .cols-3 .column-2,
+#colmain .cols-4 .column-1,
+#colmain .cols-4 .column-2,
+#colmain .cols-4 .column-3
+{
+margin: 0px 30px 0px 0px;
+}
+#colmain .cols-2 .column-2,
+#colmain .cols-3 .column-3,
+#colmain .cols-4 .column-4
+{
+margin: 0px 0px 0px 0px;
+}
+.border_bottom
+{
+border-bottom: 1px #614B42 dotted;
+}
+/**************************************************************************************/
+#system-message dd.error ul,
+#system-message dd.warning ul,
+#system-message dd.notice ul
+{
+border: 3px solid #AD2B11;
+}
+#system-message ul li
+{
+color: #AD2B11;
+}
+
+/**************************************************************************************/
+/* Footer
+/**************************************************************************************/
+/**************************************************************************************/
+#footer
+{
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+overflow: hidden;
+}
+/**************************************************************************************/
+/* Breadcrums */
+.breadrow
+{
+background-color: #;
+}
+.breadrow .content
+{
+font-size: 10px;
+width: 940px;
+}
+#breadcrumb
+{
+width: 940px;
+text-transform: uppercase;
+font-size: 10px;
+color: #614B42;
+}
+#breadcrumb a
+{
+color: #5E7318;
+}
+#breadcrumb a:hover
+{
+color: #614B42;
+}
+.breadrow #search input
+{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: normal;
+color: #614B42;
+}
+
+/**************************************************************************************/
+/* Footer Row 3 */
+#footer .row3
+{
+color: #CFCFCF;
+font-size: 11px;
+font-weight: normal;
+text-transform: uppercase;
+}
+#footer .row3 .content
+{
+width: 940px;
+}
+#footer .row3 a
+{
+color: #CFCFCF;
+}
+#footer .row3 a:hover
+{
+color: #B1D92D;
+}
+/**************************************************************************************/
+/**************************************************************************************/
+/* General Element IDs and classes
+/**************************************************************************************/
+/**************************************************************************************/
+button,
+.button,
+.readmore
+{
+text-transform: uppercase;
+}
+.moduletable_menu li a:hover
+{
+color: #5E7318;
+}
+.hword
+{
+color: #AD2B11;
+}
+.separatordotted_hor
+{
+margin: 0px 0px 25px 0px;
+border-bottom: 1px dotted #614B42;
+}
+.separatordotted_ver
+{
+}
+.product-separator
+{
+margin: 25px 0px 35px 0px;
+border-bottom: 1px dotted #614B42;
+}
+

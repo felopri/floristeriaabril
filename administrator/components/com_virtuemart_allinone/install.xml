@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install method="upgrade" type="component" version="1.5.0">
+    <name>VirtueMart_allinone</name>
+     <creationDate>January 09 2013</creationDate>
+    <copyright>Copyright (C) 2004-2012 Virtuemart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+   <author>The VirtueMart Development Team</author>
+    <authorUrl>http://www.virtuemart.net</authorUrl>
+    <version>2.0.18a</version>
+        <!-- Custom un/installer for 1.6 -->
+   <scriptfile>script.vmallinone.php</scriptfile>
+	<!-- Custom installer for 1.5 -->
+	<installfile>script.vmallinone.php</installfile>
+	<!-- Custom uninstaller for 1.5 -->
+	<uninstallfile>script.vmallinone.php</uninstallfile>
+	
+    <administration>
+	 <menu>VirtueMart AIO</menu>
+        <files folder="admin">
+            <filename>index.html</filename>
+			<filename>admin.virtuemart_allinone.php</filename>
+			<filename>config.php</filename>
+			<folder>assets</folder>
+			<folder>classes</folder>
+			<folder>language</folder>
+			<folder>languageBE</folder>
+			<folder>languageFE</folder>
+			<folder>libraries</folder>
+      <folder>plugins</folder>
+      <folder>modules</folder>
+        </files>
+    </administration>
+	
+</install>

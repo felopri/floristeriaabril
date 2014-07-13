@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension version="1.7" type="plugin" group="system">
+
+	<name>plg_system_jquery_update</name>
+
+	<author>RuposTel s.r.o.</author>
+
+	<creationDate>December 2011</creationDate>
+
+	<copyright>RuposTel s.r.o.</copyright>
+
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+
+	<authorEmail>admin@rupostel.com</authorEmail>
+
+	<authorUrl>www.rupostel.com</authorUrl>
+
+	<version>2.5.0</version>
+
+	<description>JQuery 1.6 to 1.9 update plugin for Virtuemart</description>
+
+	<files>
+
+		<filename plugin="jquery_update">jquery_update.php</filename>
+
+		<filename>index.html</filename>
+
+	</files>
+
+</extension>
+

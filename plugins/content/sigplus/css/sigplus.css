@@ -1,0 +1,146 @@
+/**
+* @file
+* @brief    sigplus Image Gallery Plus image gallery stylesheet
+* @author   Levente Hunyadi
+* @version  1.4.2
+* @remarks  Copyright (C) 2009-2010 Levente Hunyadi
+* @remarks  Licensed under GNU/GPLv3, see http://www.gnu.org/licenses/gpl-3.0.html
+* @see      http://hunyadi.info.hu/projects/sigplus
+*/
+
+/*
+* User-definable image gallery stylesheet rules.
+* Rules in this section should be changed as needed.
+*/
+
+/* items */
+div.sigplus-gallery ul > li {
+margin:0 !important;
+border:0 none transparent !important;
+padding:0 !important;
+}
+
+/* items with caption below */
+div.sigplus-gallery.sigplus-captionsbelow ul > li {
+padding-bottom:60px !important;
+}
+
+div.sigplus-gallery.sigplus-captionsabove ul > li {
+padding-top:60px !important;
+}
+
+/* images */
+div.sigplus-gallery ul > li > img,
+div.sigplus-gallery ul > li > a > img {
+margin:2px !important;
+border:0 none transparent !important;
+padding:0 !important;
+}
+
+/* An example with margin, border and padding, and special instructions
+ * for mouse over.
+
+div.example div.sigplus-gallery ul > li {
+margin:4px !important;
+border:1px solid blue !important;
+padding:2px !important;
+}
+
+div.example div.sigplus-gallery ul > li > img,
+div.example div.sigplus-gallery ul > li > a > img {
+margin:4px !important;
+border:thin solid gray !important;
+padding:2px !important;
+}
+
+div.example div.sigplus-gallery ul > li > a:hover > img {
+margin:4px !important;
+border:thin solid red !important;
+padding:2px !important;
+}
+*/
+
+/*
+* Generic image gallery stylesheet rules.
+* Rules in this section should normally be left as they are.
+*/
+
+/* image gallery alignment */
+div.sigplus-center > * {
+float:none !important;
+clear:both !important;
+margin:0 auto !important;
+text-align:center !important;  /* for flow layout */
+}
+
+div.sigplus-left {
+text-align:left !important;  /* for flow layout */
+}
+
+div.sigplus-right {
+text-align:right !important;  /* for flow layout */
+}
+
+div.sigplus-left.sigplus-float > * {
+float:left !important;
+}
+
+div.sigplus-left.sigplus-clear > * {
+margin:0 auto 0 0 !important;
+}
+
+div.sigplus-right.sigplus-float > * {
+float:right !important;
+}
+
+div.sigplus-right.sigplus-clear > * {
+margin: 0 0 0 auto !important;
+}
+
+/* flow layout */
+div.sigplus-gallery > ul {
+display:block !important;
+position:relative !important;
+margin:0 !important;
+padding:0 !important;
+list-style-type:none !important;
+list-style-image:none !important;
+line-height:normal;  /* override absolute value set by some responsive templates */
+}
+
+div.sigplus-gallery > ul > li {
+display:inline-block !important;
+margin:0 !important;
+padding:0 !important;
+background:transparent none no-repeat scroll 0 0 !important;
+text-align:center !important;
+vertical-align:middle !important;
+line-height:normal;  /* override absolute value set by some responsive templates */
+}
+
+div.sigplus-gallery ul > li:before {
+content:none !important;  /* remove list bullet images inserted by some templates */
+}
+
+div.sigplus-gallery ul > li > a {
+display:inline-block;
+}
+
+/* A more complex example: solid background color around images covering
+ * the gallery fixed layout slot size even if cropping is disabled and
+ * the image width or height does not span the entire slot area.
+ * The example features a trick to get around margin collapse rules in CSS.
+
+div.sigplus-gallery ul > li > a {
+margin:2px !important;
+border:1px solid hsl(0, 0%, 20%) !important;
+background-color:hsl(0, 0%, 13%) !important;
+padding:0 !important;
+}
+
+div.sigplus-gallery ul > li {
+margin:0 !important;
+border:4px solid transparent !important;
+padding:0 !important;
+}
+*/

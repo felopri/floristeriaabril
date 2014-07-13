@@ -1,0 +1,27 @@
+body.msie-7 #menu ul li a {line-height: 46px;}
+body.msie-7 #menu ul li a {line-height: 46px;}
+body.msie-7 #menu ul ul a {height:24px;line-height: 24px;}
+#breadcrumbs {line-height: 24px;border-radius:4px;behavior: url('templates/js_onyx/css/PIE.php');}
+#search .inputbox {border-radius:20px;behavior: url('templates/js_onyx/css/PIE.php');position: absolute;top: -4px;right: 0px;}
+
+.moduleS1,.moduleS2,.moduleS3,.moduleS4 {box-shadow:0px 4px 4px #161616;border-radius:4px;behavior: url('templates/js_onyx/css/PIE.php');position: relative;}
+
+
+.nivoSlider {box-shadow:0px 4px 8px #121212;behavior: url('templates/js_onyx/css/PIE.php');}
+
+a.saleButton.,a.readon {text-shadow: 0px 1px 2px #121212;border-radius:8px;behavior: url('templates/js_onyx/css/PIE.php');}
+
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+moz-border-radius: 11px;
+behavior: url('templates/js_onyx/css/PIE.php');
+background: #000 url(../images/button.png) repeat-x;
+background: gradient(linear, left top, left bottom, color-stop(0, #333), color-stop(1, #000));
+border: 1px solid #000;
+cursor: pointer;
+color: #fff;
+}
+
+div.note,div.caption {border: 4px solid;border-radius:8px;behavior: url('templates/js_onyx/css/PIE.php');}

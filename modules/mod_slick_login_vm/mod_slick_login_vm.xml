@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" method="upgrade">
+	<name>Slick Login plus VirtueMart</name>
+	<author>Pixel Point Creative</author>
+	<creationDate>March 2013</creationDate>
+     <copyright>Copyright (c) Pixel Point Creative LLC.</copyright>
+     <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+     <authorEmail>info@pixelpointcreative.com</authorEmail>
+     <authorUrl>www.pixelpointcreative.com</authorUrl>
+     <version>1.3</version>
+   	<description>     
+    	<![CDATA[
+	<style type="text/css">
+		.panel {background: #ddd;
+		background-image: -moz-linear-gradient(100% 100% 90deg, rgba(225,225,225,1), rgba(255,255,255,1));
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,1)), to(rgba(225,225,225,1)));
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e1e1e1');
+		-moz-border-radius: 2px 2px 2px 2px;
+		-webkit-border-radius: 2px 2px 2px 2px;
+		border-radius: 2px 2px 2px 2px;
+		-moz-box-shadow: 1px 1px 2px #ddd;
+		-webkit-box-shadow: 1px 1px 2px #ddd;
+		border-box-shadow: 1px 1px 2px #ddd;
+		border: 1px solid #ccc;
+		padding: 6px 10px;		
+		color: #444;		
+		text-decoration: none;}
+		.pane-sliders .title {padding: 4px; }
+		.pane-sliders .panel h3 {border-bottom:none;}
+		.panelform a {color:#828627;}
+		table.admintable td.paramlist_key {font-weight:normal;text-transform:uppercase;text-align:left;}
+		table.admintable td.paramlist_value label {text-transform:none;}
+		table.admintable td.key, table.admintable td.paramlist_key,.pane-sliders .content,.pane-sliders .panel h3, div.panel fieldset {background:none;}
+		div.panel fieldset {margin-bottom:0;padding-bottom:0;}
+		table.admintable td.key, table.admintable td.paramlist_key {border:none;}
+		form label, form span.faux-label {color:#394a12;}
+		.panelform input, .panelform select{padding:5px;border-radius:3px; }
+		.panelform input[type="radio"]{margin: 10px 5px 0 0;}
+		#jform_params_target { width: 110px;}	
+		fieldset.panelform label, fieldset.panelform div.paramrow label, fieldset.panelform span.faux-label { padding: 5px 5px 0 0;}
+  .pane-toggler-down span {
+    background: url("../modules/mod_slick_login_vm/images/arrows_ext.png") no-repeat scroll bottom left transparent !important;
+    padding: 7px 0px 7px 40px;
+    padding-left:34px!important;
+    font-size: 15px;
+    font-weight:normal;
+   color:#394a12;
+}
+.pane-toggler span {
+    background: url("../modules/mod_slick_login_vm/images/arrows_ext.png") no-repeat top left transparent !important;
+    padding: 7px 0px 7px 40px;
+    padding-left:34px!important;
+    font-size: 15px;
+    font-weight:normal;
+    color:#394a12;
+   }
+	</style>
+	Slick login module plus Virtuemart adds Virtuemart account maintenance to a slick and stylish login module.
+	]]></description>
+	
+   <languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.mod_slick_login_vm.ini</language>
+	</languages>
+
+
+		<files>
+		<filename module="mod_slick_login_vm">mod_slick_login_vm.php</filename>
+		<filename>mod_slick_login_vm.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+                <folder>images</folder>
+		<folder>elements</folder>
+	</files>
+	
+	<config>
+	 <fields name="params" addfieldpath="/modules/mod_slick_login_vm/elements/">
+			
+            			
+     <fieldset name="basic" label="Basic Settings" >
+<field label="Version Check" type="upgradecheck" />
+ <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Suffix" />
+		<field name="sl_view" type="radio" class="btn-group" default="horizontal" label="Style" description="Slick Login Layout">
+			<option value="horizontal">Horizontal</option>
+			<option value="vertical">Vertical</option>
+			</field>
+                <field name="account" type="radio" class="btn-group"  default="0" label="Virtuemart Account Button" description="Show/Hide VM info">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+</field>
+	
+<field name="registermode" type="radio" default="joomla" class="btn-group"  label="Registration Setting" description="VM or Joomla Registration">
+			<option value="vm">VirtueMart</option>
+			<option value="joomla">Joomla</option>
+		</field>
+		<field name="pretext" type="textarea" cols="30" rows="5" default="" label="Pre-text" description="fieldPRETEXT" />
+		<field name="posttext" type="textarea" cols="30" rows="5" label="Post-text" description="fieldPOSTTEXT" />
+		<field name="login" type="menuitem" default="" disable="separator" label="Login Redirection URL" description="fieldLOGINREDIRECTURL" />
+		<field name="logout" type="menuitem" default="" disable="separator" label="Logout Redirection URL" description="fieldLOGOUTREDIRECTURL" />
+		<field name="greeting" type="radio" class="btn-group" default="1" label="Greeting" description="Show/Hide the simple greeting text">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="auto_remember" type="radio" class="btn-group" default="1" label="Remember Automatically" description="Disable/Enable to remember automatically">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="lost_password" type="radio" class="btn-group" default="1" label="Lost Password Link" description="Show/Hide lost password link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="lost_username" type="radio" class="btn-group" default="1" label="Lost Username Link" description="Show/Hide lost username link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="registration" type="radio" class="btn-group" default="1" label="Registration Link" description="Show/Hide registration link">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		
+	</fieldset>
+	<fieldset name="advanced">
+		<field name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</field>
+		<field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</fieldset>
+	</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="Slick Login Module Auto Updater">http://www.pixelpointcreative.com/autoupdates/slicklogin.xml</server>
+	</updateservers>
+</extension>

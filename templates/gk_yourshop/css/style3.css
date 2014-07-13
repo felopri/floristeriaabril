@@ -1,0 +1,159 @@
+/*
+#------------------------------------------------------------------------
+# yourshop.com - June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+
+/* template.css */
+a,
+#gkItems,
+a.k2ReadMore,
+a:hover.k2ReadMore { color: #007399; }
+a:hover, a:active, a:focus { color: #007399; }
+h1, h2, h3, h4, h5 { color:#0098ca; }
+h1#gkLogo a.cssLogo  { background: url("../images/style3/logo.png") no-repeat scroll 0 0 transparent;}
+.box_menu ul.menu>li.parent>a { background: transparent url('../images/style3/menu_plus.png') no-repeat 12px 11px; }
+.box_menu ul.menu>li:hover>a{ color:#0098ca; }
+.box_menu ul.menu>li.active { background:#008fbe; border:1px solid #0e7093; border-bottom:none; }
+.box .content>div>ul li:hover>a,
+.box .content>ul li:hover>a{ color:#0098ca; }
+.box.color1 > h3 { background: transparent url('../images/style3/moduletable_header_color.png') repeat-x 0 0; border: 1px solid #0079A1; }
+.box.color3 > h3 { background: transparent url('../images/style3/moduletable_color3_left.png') no-repeat left 0; }
+.box.color3 > h3 span { background: transparent url('../images/style3/moduletable_color3_right.png') no-repeat right 0; }
+/* menu.css */
+div.gk-menu,
+div#gkDropMain {background: transparent url('../images/style3/menu_right.png') no-repeat right 0; }
+div.gk-menu > ul.level0,
+div#gkDropMain > ul { background: transparent url('../images/style3/menu_bg.png') no-repeat left bottom;}
+div.gk-menu > ul > li > a > span,
+div#gkDropMain  > ul > li > a > span {background: transparent url('../images/style3/menu_separator.png') no-repeat right bottom;}
+div.gk-menu > ul > li.active > a,
+div.gk-menu > ul > li:hover > a,
+div#gkDropMain  > ul > li.active > a,
+div#gkDropMain  > ul > li:hover > a  { background: transparent url('../images/style3/menu_bg.png') no-repeat -459px top;}
+div.gk-menu > ul > li.active:first-child > a,
+div.gk-menu > ul > li:hover:first-child > a,
+div#gkDropMain  > ul > li.active:first-child > a,
+div#gkDropMain  > ul > li:hover:first-child > a { background: transparent url('../images/style3/menu_bg.png') no-repeat left top;}
+div.gk-menu > ul > li.last:hover > a > span,
+div.gk-menu > ul > li.last.active > a > span,
+div.gk-menu > ul > li.active > a > span,
+div.gk-menu > ul > li:hover > a > span,
+div#gkDropMain  > ul > li.last:hover > a > span,
+div#gkDropMain  > ul > li.last.active > a > span,
+div#gkDropMain  > ul > li.active > a > span,
+div#gkDropMain  > ul > li:hover > a > span { background: transparent url('../images/style3/menu_separator.png') no-repeat right top; }
+/* a little bit of CSS magic to avoid doubled separators ;) */
+div.gk-menu li:hover + li.active > a,
+div.gk-menu li.active + li:hover > a,
+div#gkDropMain li:hover + li.active > a,
+div#gkDropMain li.active + li:hover > a { background: transparent url('../images/style3/menu_bg.png') no-repeat -460px top!important; }
+.gk-menu ul.level0 div.childcontent { background: #006b8f; }
+div.gk-menu > ul.level0 > li .childcontent ul li {border-top: 1px solid #0079a1;}
+div.gk-menu > ul.level0 > li .childcontent ul li:hover,
+div.gk-menu > ul.level0 > li .childcontent ul li:hover>a {background: #0079a1;}
+div.gk-menu > ul.level0 > li li.group .group-title {border:1px solid #0079a1;}
+div#gkSubmenu {background:#37b5de}
+div#gkDropSub > ul li:hover>a,
+div#gkDropSub > ul li:hover>a span { background: #006b8f;}
+div#gkDropSub > ul ul { background:#006b8f;}
+div#gkDropSub > ul ul li{border-top: 1px solid #0079a1;}
+div#gkDropSub > ul ul li:hover>a,
+div#gkDropSub > ul ul li:hover>a span { background: #0079a1;}
+
+/* joomla.css */
+.adminform button,
+#adminForm button,
+.button,
+button,
+a.readon,
+.pagenav-next a,
+.pagenav-prev a,
+input[type="submit"],
+input[type="button"],
+.show_cart a,
+button.default,
+#facebox .popup > div > div > a { background:transparent url('../images/style3/btn.png') repeat-x 0 bottom; }
+.adminform button:hover,
+.adminform button:focus,
+#adminForm button:hover,
+#adminForm button:focus,
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+a.readon:hover,
+a.readon:focus,
+.pagenav-next a:hover,
+.pagenav-prev a:hover,
+.pagenav-next a:focus,
+.pagenav-prev a:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+.show_cart a:hover,
+button.default:hover,
+#facebox .popup > div > div > a:hover {background:transparent url('../images/style3/btn.png') repeat-x;background-position: 0 top; border-color: #0098ca; }
+.weblink-category h2,
+.search h1 {  color: #0098ca;}
+#article-index ul li:hover,
+div.pagination ul li:hover,
+div#bottom-pagination ul li:hover {background:#0098ca; border:1px solid #0079a1;  }
+.pagenavcounter,
+div.pagination p.counter {background:#0098ca;}
+#mod_search_button { background: transparent url('../images/style3/search_btn.png') no-repeat center -28px;}
+#mod_search_button:hover { background-position: center top; border: 1px solid #0098ca;  }
+.tip-title { background:#0098ca;}
+
+/*gkstuff*/
+ul.gkTabs li.active span, 
+ul.gkTabs li.active:hover span,
+ul.gkTabs li:hover span { background: #37b5de !important; border-color: #37b5de!important;}
+.gkIsWrapper-gk_yourshop .gkIsPrev,
+.gkIsWrapper-gk_yourshop .gkIsNext { background-color: #00a4da; background-image: url('../images/style3/is_bg.png'); border-color: #0079a1; }
+.gkIsWrapper-gk_yourshop .readon { color: #00a2d7; }
+.gkIsWrapper-gk_yourshop .gkIsPrev span,
+.gkIsWrapper-gk_yourshop .gkIsNext span { background-image: url('../images/style3/is_arrows.png'); }
+.gkIsWrapper-gk_yourshop .gkIsNext span { background-image: url('../images/style3/is_arrows.png'); }
+
+/* k2.css */
+.itemHeader .itemTitle { color:#0098ca; }
+.itemComments ul.itemCommentsList li span.commentAuthorName { color:#0098ca; }
+.itemComments h3 { color:#0098ca; }
+.k2LatestCommentsBlock ul li span.lcUsername { color:#0098ca; }
+.k2ItemsBlock .moduleItemTitle { color:#0098ca!important; }
+.k2CategoriesListBlock ul.level0>li:hover>a{ color:#0098ca; }
+.k2CategoriesListBlock ul.level0>li.active { background:#0098ca url('../images/style3/active_menu.png') repeat-x 0 top; border:1px solid #0079a1; }
+.k2Pagination ul li:hover { background:#0098CA;border: 1px solid #0079A1;}
+table.calendar tr td.calendarToday { background-color: #0098ca; }
+table.calendar tr td.calendarTodayLinked { background-color:#0098ca; }
+table.calendar tr td.calendarTodayLinked a:hover { background-color: #f8fcfe; color: #0098ca; }
+a:hover.k2ReadMore {background:none !important;}
+
+/* vm */ 
+.addtocart-area {background:transparent url('../images/style3/product_box_left.png') no-repeat left bottom!important;}
+.addtocart-area .product.js-recalculate {background: url("../images/style3/product_box_right.png") no-repeat scroll right bottom transparent !important;}
+.browse-view .row .product .spacer a.product-details {color:#007399 !important;}
+span.addtocart-button input.addtocart-button {background: url("../images/style3/cart_btn.png") no-repeat scroll left -1px transparent !important;}
+span.addtocart-button input.addtocart-button:hover {border-color: #0098ca;}
+#gkProductTabs li:hover,
+#ui-tabs ul#tabs li:hover, 
+#gkProductTabs li.gkProductTabActive,
+#ui-tabs ul#tabs li.current {background:#37B5DE !important;border-color: #37B5DE;}
+.vm-button-correct, 
+.vm-button-correct:link, 
+.vm-button-correct:visited  {background:transparent url('../images/style3/btn.png') repeat-x 0 bottom !important;}
+.vm-button-correct:hover {background-position: 0 top !important; border-color: #0098ca; }
+.VMmenu li a {color:#007399 !important;}
+button.default { background:transparent url('../images/style3/btn.png') repeat-x 0 bottom !important; }
+button.default:hover {background-position: 0 top !important; border-color: #0098ca !important; }
+span.addtocart-button input.addtocart-button:hover, 
+span.addtocart-button input.notify-button:hover {border-color: #0098ca !important;}
+
+/*CSS3*/

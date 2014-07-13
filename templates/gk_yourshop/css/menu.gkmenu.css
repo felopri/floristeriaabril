@@ -1,0 +1,27 @@
+/*
+#------------------------------------------------------------------------
+# yourshop.com - June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+div.gk-menu { height: 40px; }
+div.gk-menu > ul.level0 { height: 40px; }
+div.gk-menu > ul.level0 > li { float: left; width: auto; }
+
+div.gk-menu > ul.level0 > li > a { display: block; }
+div.gk-menu > ul.level0 > li > a > span.menu-title { display: block; }
+div.gk-menu > ul.level0 > li > a > span.menu-desc { display: block; }
+
+div.gk-menu > ul.level0 > li > .childcontent,
+div.gk-menu > ul.level0 > li > .childcontent .childcontent { position: absolute; left: -999em; z-index: 999; }
+
+div.gk-menu > ul.level0 > li > .childcontent .gkcol { float: left; }
+
+div.gk-menu > ul.level0 > li:hover > .childcontent,
+div.gk-menu > ul.level0 > li:hover > .childcontent li:hover > .childcontent  { left: inherit; } 
+
+div.gk-menu > ul.level0 > li:hover > .childcontent .childcontent { margin-left: 190px; } /* submenu width - left padding of item */

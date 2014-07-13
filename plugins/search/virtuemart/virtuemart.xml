@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="search">
+	<name>plg_search_virtuemart</name>
+    <creationDate>January 09 2013</creationDate>
+    <author>The VirtueMart Development Team</author>
+    <authorUrl>http://www.virtuemart.net</authorUrl>
+    <copyright>Copyright (C) 2004-2012 Virtuemart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>2.0.18a</version>
+	<description>Allows Searching of VirtueMart Component</description>
+	<languages>
+		<language tag="en-GB">en-GB.plg_search_virtuemart.ini</language>
+		<language tag="fr-FR">fr-FR.plg_search_virtuemart.ini</language>
+	</languages>
+	<files>
+		<filename plugin="virtuemart">virtuemart.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="search_limit" type="text"
+					size="5"
+					default="50"
+					label="Search Limit"
+					description="Number of Search items to return"
+				/>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

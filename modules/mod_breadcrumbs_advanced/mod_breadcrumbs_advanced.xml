@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.7"
+	client="site"
+	method="upgrade">
+	<name>Breadcrumbs Advanced</name>
+	<author>UWiX</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>Copyright (C) 2011 UWiX. All rights reserved.</copyright>
+	<license>GPL v3</license>
+	<authorEmail>meerinfo@uwix.nl</authorEmail>
+	<authorUrl>www.uwix.nl</authorUrl>
+	<version>1.7.0</version>
+	<description>This module displays the breadcrumbs but has more advanced options than the original module from Joomla! 1.6. </description>
+	<files>
+		<filename module="mod_breadcrumbs_advanced">mod_breadcrumbs_advanced.php</filename>
+      <filename>index.html</filename>
+      <filename>helper.php</filename>
+      <folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_breadcrumbs_advanced.ini</language>
+		<language tag="nl-NL">nl-NL.mod_breadcrumbs_advanced.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field name="showHere" type="radio" default="1" label="BREADCRUMBSADV_SHOWHERE_LABEL" description="BREADCRUMBSADV_SHOWHERE_DESC">
+					<option	value="0">JNO</option>
+					<option	value="1">JYES</option>
+				</field>
+
+    		<field name="showHome" type="radio" default="1" label="SHOWHOME_LBL" description="SHOWHOME_DESC">
+    			<option value="0">UWX_NO</option>
+    			<option value="1">UWX_YES</option>
+    		</field>
+
+    		<field name="clickHome" type="radio" default="0" label="CLICKHOME_LBL" description="CLICKHOME_DESC">
+    			<option value="0">UWX_NO</option>
+    			<option value="1">UWX_YES</option>
+    		</field>
+
+    		<field name="homeText" type="text" default="Home" label="HOMETEXT_LBL" description="HOMETEXT_DESC" />
+
+    		<field name="homepath" type="text" default="" size="50" label="HOMEPATH_LBL" description="HOMEPATH_DESC" />
+
+    		<field name="showLast" type="radio" default="1" label="SHOWLAST_LBL" description="SHOWLAST_DESC">
+    			<option value="0">UWX_NO</option>
+    			<option value="1">UWX_YES</option>
+    		</field>
+
+    		<field name="cutLast" type="radio" default="0" label="CUTLAST_LBL" description="CUTLAST_DESC">
+    			<option value="0">UWX_NO</option>
+    			<option value="1">UWX_YES</option>
+    		</field>
+
+    		<field name="cutAt" type="text" default="20" label="CUTAT_LBL" description="CUTAT_DESC" />
+
+    		<field name="cutChar" type="text" default="..." label="CUTCHAR_LBL" description="CUTCHAR_DESC" />
+
+    		<field name="separator" type="text" default="" label="SEP_LBL" description="SEP_DESC" />
+
+      </fieldset>
+
+    	<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+ 			</fieldset>
+		</fields>
+  </config>
+</extension>

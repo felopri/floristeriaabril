@@ -1,0 +1,23 @@
+/**************************************************************************************/
+/*
+/*		Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		Email: info@asdesigning.com
+/*		License: ASDE Commercial
+/*
+/**************************************************************************************/
+
+fieldset.panelform label, 
+fieldset.panelform div.paramrow label, 
+fieldset.panelform span.faux-label 
+{ 
+	max-width: 300px; 
+	min-width: 220px; 
+	padding: 0 5px 0 0;
+} 
+
+.asnote
+{
+	color: #F29021;
+	font-style: italic;
+}

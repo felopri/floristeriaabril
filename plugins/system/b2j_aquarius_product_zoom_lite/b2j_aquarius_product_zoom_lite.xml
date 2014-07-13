@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+    <name>B2J Aquarius Product Zoom Lite</name>
+    <creationDate>May 2013</creationDate>
+    <author>Bang2Joom</author>
+    <copyright>Copyright 2013 Bang2Joom. All rights reserved.</copyright>
+    <license>GPL License</license>
+    <authorEmail>info@bang2joom.com</authorEmail>
+    <authorUrl>http://www.bang2joom.com</authorUrl>
+    <version>1.4</version>
+    <updateservers>
+		<server type="extension"><![CDATA[http://repos.bang2joom.com/plugins/b2j_aquarius_product_zoom_lite.xml]]></server>
+	</updateservers>
+	<description>
+<![CDATA[
+    <div style="width:100%;background:#f0f0f0;position:relative;">
+    <div style="width:131px;height:131px;display:block;position:absolute;float:left;border-right:3px solid white;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAYAAACunahmAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2MDcxMURGMTczNjgxMUUyODY1Q0JENzUzRjIwOEVBNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2MDcxMURGMjczNjgxMUUyODY1Q0JENzUzRjIwOEVBNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjYwNzExREVGNzM2ODExRTI4NjVDQkQ3NTNGMjA4RUE2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjYwNzExREYwNzM2ODExRTI4NjVDQkQ3NTNGMjA4RUE2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+6vEshAAALb5JREFUeNrsXQl8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) no-repeat center #e0e0e0;"></div>
+        <div style="height:131px;" id="b2j_update_spot">
+        <span style="position:relative;display:block;font-size:32px;line-height:32px;padding-top:10px;padding-left:141px;font-family:Arial;color:#5c5c5c;">B2J Aquarius Product Zoom Lite</span>
+        <span style="position:relative;display:block;font-size:20px;padding:10px;padding-left:141px;font-family:Arial;color:#5c5c5c"><a style="color:#5c5c5c;" target="_blank" href="http://www.bang2joom.com">www.bang2joom.com</a></span>
+        
+        <div class="b2j-donation" style="position: relative;
+                                            display: block;
+                                            padding-left: 136px;
+                                            font-family: Arial;
+                                            color: #5C5C5C;
+                                            float: left;">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LALM7FWPENP3N" target="_blank">
+            <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="PayPal - The safer, easier way to pay online!" /></a>
+        </div>
+        <div class="b2j-fb" style="position: relative;
+                                            display: block;
+                                            padding-left: 10px;
+                                            font-family: Arial;
+                                            color: #5C5C5C;
+                                            float: left;">
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=229840827051457";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like-box" data-href="http://www.facebook.com/bang2joom" data-width="205" data-height="60" data-show-faces="false" data-stream="false" data-header="true"></div>
+        </div>
+
+        <span style="position: relative;
+        display: block;
+        float:left;
+        font-size: 32px;
+        padding-top: 10px;
+        font-family: Arial;
+        color: #5C5C5C;
+        padding-left:10px;
+        white-space: nowrap;"> <a href="https://twitter.com/bang2joom" class="twitter-follow-button" data-show-count="false">Follow @bang2joom</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></span>
+    </div>
+    <div style="clear:both;background:#e0e0e0;border-top: 3px solid white; color:#777777; padding:20px;">   
+        <div style="font-size:24px; font-weight: bold;">B2J Aquarius Product Zoom Lite has limited functionality, the PRO version can be downloaded from <a target="_blank" style="color:#ff5656" href="http://www.bang2joom.com/Commercial-Plugins/B2J-Aquarius-Product-Zoom-PRO">here</a></div></br>
+    </div>
+    <div style="clear:both;background:#e0e0e0;border-top: 3px solid white; color:#777777; padding:20px;">
+        <div style="font-size:24px; font-weight: bold;">B2J jQuery based plugin for Virtuemart and redSHOP gives Joomla! users an ability to magnify an image to have a more detailed view of the image.</div></br>B2J Aquarius Product Zoom Plugin inherits redSHOP images plus additional images and shows them in a nice gallery mode.It does also inherit VM images and shows them in a neat gallery mode. What’s great about this plugin is that it automatically detects installed VM or redSHOP and it replaces image with this plugin on product page.
+    </div>
+    <div style="clear:both;background:#e0e0e0;border-top: 3px solid white; color:#777777; padding:20px;">   
+         <div style="font-size:24px; font-weight: bold;">Super responsive B2JAquarius Product Zoom Plugin has two modes: Container mode and Fullscreen mode.</div></br>
+         When you hover the image on product page, the box appears with the zoomed variant of the selected product image in Container mode. The zoom box can be displayed wherever you want it to be: left, right, bottom or top. When you hover on images in Fullscreen mode, the fullscreen icon appears and on mouse click, it opens the zoomed variant in fullscreen. In this mode, you can also see the additional images with nice sliding effects, again, wherever you choose them to be located.
+    </div>
+    <div style="clear:both;background:#e0e0e0;border-top: 3px solid white; color:#777777; padding:20px;">   
+       <div style="font-size:24px; font-weight: bold;">B2J Aquarius Product Zoom for VM and redSHOP is super customizable plugin. It has many useful features</div></br>
+        •	Zoom box on the left, right, top, bottom, inside original image</br>
+        •	Responsive layout for mobile</br>
+        •	iPad/iPhone touch</br>
+        •	Compatibility with Joomla 2.5+
+    </div>
+    </div>
+    ]]>
+    </description>
+	<files>
+		<filename plugin="b2j_aquarius_product_zoom_lite">b2j_aquarius_product_zoom_lite.php</filename>
+        <filename>browser.php</filename>
+		<filename>index.html</filename>
+        <folder>admin</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>cache</folder>
+        <folder>images</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_b2j_aquarius_product_zoom_lite.ini</language>
+		<language tag="en-GB">en-GB.plg_system_b2j_aquarius_product_zoom_lite.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+            <fieldset name="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_SETTINGS">
+                <field type="b2jupdate" addfieldpath="/plugins/system/b2j_aquarius_product_zoom_lite/admin/elements/"></field>
+                <field name="image_width" type="text" class="pxinput" default="480" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_WIDTH" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_WIDTH_DESC"></field>
+                <field name="image_height" type="text" class="pxinput" default="320" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_HEIGHT" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_HEIGHT_DESC"></field>
+                <field name="image_background_color" type="text" default="#ffffff" class="color" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_BACKGROUND_COLOR" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_BACKGROUND_COLOR_DESC"></field>
+                <field name="image_border" type="text" class="pxinput" default="0" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_BORDER" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_BORDER_DESC"></field>
+                <field name="image_border_color" type="text" default="#000000" class="color" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_BORDER_COLOR" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_BORDER_COLOR_DESC"></field>
+                <field name="image_border_radius" type="text" class="pxinput" default="0" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_BORDER_RADIUS" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_BORDER_RADIUS_DESC"></field>
+
+                <field name="image_margin_editor" addfieldpath="/plugin/system/b2j_aquarius_product_zoom_lite/admin/elements" type="b2jimgmargin" default="" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_MARGIN_EDITOR" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_MARGIN_EDITOR_DESC"/>
+                <field name="image_margin_top" type="text" class="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_MARGIN_TOP" default="0" label=""/>
+                <field name="image_margin_left" type="text" class="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_MARGIN_LEFT" default="0" label=""/>
+                <field name="image_margin_right" type="text" class="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_MARGIN_RIGHT" default="0" label=""/>
+                <field name="image_margin_bottom" type="text" class="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_IMAGE_MARGIN_BOTTOM" default="0" label=""/>
+            </fieldset>
+            <fieldset name="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_SETTINGS">
+                <field name="no_columns" type="text" class="pro" default="3" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_NO_COLUMNS" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_NO_COLUMNS_DESC"></field>
+                <field name="column_per_slide" type="text" class="pro" default="1" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_COLUMN_PER_SLIDE" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_COLUMN_PER_SLIDE_DESC"></field>
+                <field name="thumbnail_padding" type="text" default="0" class="pxinput pro" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_PADDING" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_PADDING_DESC"></field>
+                <field name="thumbnail_border" type="text" class="pxinput pro" default="0" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_BORDER" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_BORDER_DESC"></field>
+                <field name="thumbnail_border_color" type="text" default="#000000" class="color pro" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_BORDER_COLOR" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_BORDER_COLOR_DESC"></field>
+                <field name="thumbnail_border_radius" type="text" class="pxinput pro" default="0" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_BORDER_RADIUS" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_BORDER_RADIUS_DESC"></field>
+                
+                <field name="thumbnail_margin_editor"  class="pro" addfieldpath="/plugin/system/b2j_aquarius_product_zoom_lite/admin/elements" type="b2jimgmargin" default="" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_MARGIN_EDITOR" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_MARGIN_EDITOR_DESC"/>
+                <field name="thumbnail_margin_top" type="text" class="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_MARGIN_TOP" default="0" label=""/>
+                <field name="thumbnail_margin_left" type="text" class="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_MARGIN_LEFT" default="0" label=""/>
+                <field name="thumbnail_margin_right" type="text" class="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_MARGIN_RIGHT" default="0" label=""/>
+                <field name="thumbnail_margin_bottom" type="text" class="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_MARGIN_BOTTOM" default="0" label=""/>
+                
+                <field name="ignore_left_margin" type="radio" class="pro" default="1" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_LEFT_MARGIN_IGNORE" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_LEFT_MARGIN_IGNORE_DESC">
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ON</option>
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_OFF</option>
+                </field>
+                <field name="ignore_right_margin" type="radio" class="pro" default="1" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_RIGHT_MARGIN_IGNORE" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMBNAIL_RIGHT_MARGIN_IGNORE_DESC">
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ON</option>
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_OFF</option>
+                </field>
+                <field type="spacer" name="redshop_section" class="text" label="MOD_B2J_K2_NEWS_LOADER_ITEM_PRIORITY" description="MOD_B2J_K2_NEWS_LOADER_ITEM_PRIORITY_DESC" />
+                <field type="spacer" name="redshop_section_hr"  hr="true"/>
+                <field name="thumb_images" type="radio" class="pro" default="1" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMB_IMAGES" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_THUMB_IMAGES_DESC">
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ON</option>
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_OFF</option>
+                </field>
+                <field name="preview_images" type="radio" class="pro" default="1" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_PREVIEW_IMAGES" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_PREVIEW_IMAGES_DESC">
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ON</option>
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_OFF</option>
+                </field>
+                <field name="full_images" type="radio" class="pro" default="1" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULL_IMAGES" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULL_IMAGES_DESC">
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ON</option>
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_OFF</option>
+                </field>
+                <field name="additional_images" type="radio" class="pro" default="1" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ADDITIONAL_IMAGES" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ADDITIONAL_IMAGES_DESC">
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ON</option>
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_OFF</option>
+                </field>
+            </fieldset>
+            <fieldset name="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_SETTINGS">
+                <field name="zoom_mode" type="list" default="1" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_ON_OFF" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_ON_OFF_DESC">
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_NONE</option>
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_CONTAINER</option>
+                    <option value="2">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULLSCREEN</option>
+                </field>
+                <field name="magnifier_background_color" type="text" class="color" default="#ffffff" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_MAGNIFIER_BACKGROUND_COLOR" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_MAGNIFIER_BACKGROUND_COLOR_DESC"></field>
+                <field name="magnifier_border" type="text" class="pxinput" default="0" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_MAGNIFIER_BORDER" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_MAGNIFIER_BORDER_DESC"></field>
+                <field name="magnifier_border_color" type="text" default="#000000" class="color" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_MAGNIFIER_BORDER_COLOR" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_MAGNIFIER_BORDER_COLOR_DESC"></field>
+                <field name="magnifier_border_radius" type="text" class="pxinput" default="0" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_MAGNIFIER_BORDER_RADIUS" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_MAGNIFIER_BORDER_RADIUS_DESC"></field>
+                <field name="zoom_percent" type="list" class="pro" default="100" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_PERCENT" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_PERCENT_DESC">
+                    <option value="50">50%</option>
+                    <option value="80">80%</option>
+                    <option value="100">100%</option>
+                    <option value="120">120%</option>
+                    <option value="150">150%</option>
+                    <option value="200">200%</option>
+                </field>
+                <field name="zoom_width" type="text" class="pxinput pro" default="480" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_WIDTH" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_WIDTH_DESC"></field>
+                <field name="zoom_height" type="text" class="pxinput pro" default="320" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_HEIGHT" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_HEIGHT_DESC"></field>
+                <field name="zoom_position" type="list" default="1" class="pro" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_POSITION" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_POSITION_DESC">
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_POSITION_LEFT</option>
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_POSITION_RIGHT</option>
+                    <option value="2">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_POSITION_TOP</option>
+                    <option value="3">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_POSITION_BOTTOM</option>
+                </field>
+                <field name="zoom_border" type="text" class="pxinput" default="0" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_BORDER" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_BORDER_DESC"></field>
+                <field name="zoom_border_color" type="text" default="#000000" class="color" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_BORDER_COLOR" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_BORDER_COLOR_DESC"></field>
+                <field name="zoom_border_radius" type="text" class="pxinput" default="0" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_BORDER_RADIUS" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_BORDER_RADIUS_DESC"></field>
+                <field name="zoom_movement" type="list" default="0" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_MOVEMENT" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ZOOM_MOVEMENT_DESC">
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_DEFAULT</option>
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_EASING</option>
+                </field>
+                
+                <field name="fullscreen_background_color" type="text" default="#000000" class="color" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULLSCREEN_BACKGROUND_COLOR" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULLSCREEN_BACKGROUND_COLOR_DESC"></field>
+                <field name="fullscreen_background_opacity" type="list" default="0.8" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULLSCREEN_BACKGROUND_OPACITY" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULLSCREEN_BACKGROUND_OPACITY_DESC">
+                    <option value="0.2">20%</option>
+                    <option value="0.4">40%</option>
+                    <option value="0.6">60%</option>
+                    <option value="0.8">80%</option>
+                    <option value="1">100%</option>
+                </field>
+                <field name="fullscreen_thumbnail_position" type="list" class="pro" default="0" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULLSCREEN_THUMBNAIL_POSITIONS" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULLSCREEN_THUMBNAIL_POSITIONS_DESC">
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULLSCREEN_THUMBNAIL_POSITION_LEFT</option>
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULLSCREEN_THUMBNAIL_POSITION_RIGHT</option>
+                    <option value="2">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULLSCREEN_THUMBNAIL_POSITION_TOP</option>
+                    <option value="3">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_FULLSCREEN_THUMBNAIL_POSITION_BOTTOM</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field type="b2jhidden" addfieldpath="/plugins/system/b2j_aquarius_product_zoom_lite/admin/elements/"></field>
+                <field name="exclude_product" type="textarea" class="pro" default="" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_EXCLUDE_PRODUCT" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_EXCLUDE_PRODUCT_DESC"></field>
+                <field name="exclude_category" type="textarea" class="pro" default="" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_EXCLUDE_CATEGORY" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_EXCLUDE_CATEGORY_DESC"></field>
+                <field name="include_product" type="textarea" class="pro" default="" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_INCLUDE_PRODUCT" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_INCLUDE_PRODUCT_DESC"></field>
+                <field name="jquery_setting" type="radio" default="1" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_JQUERY_SETTING" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_JQUERY_SETTING_DESC">
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ON</option>
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_OFF</option>
+                </field>
+                <field name="css_setting" type="radio" default="1" label="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_CSS_SETTING" description="PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_CSS_SETTING_DESC">
+                    <option value="1">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_ON</option>
+                    <option value="0">PLG_SYSTEM_B2J_AQUARIUS_PRODUCT_ZOOM_OFF</option>
+                </field>
+            </fieldset>
+		</fields>
+	</config>
+</extension>

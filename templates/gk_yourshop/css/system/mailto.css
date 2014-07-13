@@ -1,0 +1,23 @@
+/*
+#------------------------------------------------------------------------
+# yourshop.com - June 2011 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+
+body { background: #fbfbfb; color:#444; font:13px/1.8 Verdana,Geneva,sans-serif; }
+h2 { text-align:center; font-size:150%; color: #222; }
+a { text-decoration: none; color: #456004; }
+a:hover, a:active, a:focus { color: #222 }
+p { margin: 0.8em 0 }
+a > img { display: none!important; }
+#mailto-window { padding: 0 20px; }
+form div label { display: block; width:100%; font-size:90%; }
+form div input { width:96%; background:#fff; height: 26px; border:1px solid #9b9b9b; border-bottom:1px solid #d8d8d8; border-right:1px solid #d8d8d8; color:#383838; padding:0 5px; font-family: Arial, Helvetica, sans-serif; border-radius: 4px 4px 4px 4px;box-shadow: 0 0 4px #BBBBBB inset; }
+.button {  background: url("../../images/style1/btn.png") repeat-x scroll 0 bottom transparent;border: 1px solid #D1D1D1;color: #383838;display: block;float: right;font-family: Arial,Verdana,sans-serif;font-size: 11px;font-weight: bold;height: 26px !important;line-height: 26px;margin: 0;padding: 0 8px; border-radius: 4px 4px 4px 4px;}
+.button:first-child { float: left; }
+.button:hover,
+.button:focus {background-position: 0 top;border-color: #466A11;color: #FFFFFF;cursor: pointer;text-decoration: none;}

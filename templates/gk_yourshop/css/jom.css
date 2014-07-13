@@ -1,0 +1,221 @@
+/* common */
+div.contentpane{}
+div.categories-list{}
+
+.adminForm{}
+.filters{}
+.hidelabeltxt{}
+.display-limit{}
+.category-desc{}
+.item-title{}
+
+table.category{}
+table.category th{}
+table.category tr.cat-list-row0{}
+table.category tr.cat-list-row1{}
+
+.system-unpublished {}
+
+.small{}
+button,
+.button {}
+button,
+.button:hover {}
+.readon {}
+.readon:hover {}
+
+div.cat-children{}
+div.cat-children h3{}
+/* Components */
+
+/*com_contact*/
+div.contact-address{}
+div.contact-address > span {}
+div.contact-address address {}
+div.contact-address address span {}
+div.contact-contactinfo p {}
+div.contact-contactinfo p span{}
+.contact-articles ol {}
+.contact-articles ol li {}
+div.contact-error {}
+div.contact-form {}
+div.contact-form p.form-required {}
+div.contact-email div{}
+div.contact-email div label{}
+div.contact-email div input{}
+.contact-profile dl {}
+.contact-profile dl dd {}
+.contact-profile dl dt {}
+h2 span.contact-name {}
+h3 span.contact-category {}
+div.contact-image {}
+p.contact-position {}
+div.contact-miscinfo {}
+div.contact-miscinfo div{}
+div.contact-miscinfo div.contact-misc{}
+/* com_content */
+	/*archive*/
+	.filter-search {}
+	.filter-search input {}
+	.filter-search label {}
+	.filter-search .button {}
+	.filter-search select {}
+	#archive-items li {}
+	#archive-items li.row0 {}
+	#archive-items li.row1 {}
+	#archive-items li h2 {}
+	#archive-items li dl {}
+	#archive-items li dt {}
+	#archive-items li dd {}
+	#archive-items li .intro {}
+	/*article*/
+	ul.actions {}
+	ul.actions li {}
+	ul.actions li.print-icon {}
+	ul.actions li.mail-icon {}
+	ul.actions li.edit-icon {}
+	dl.article-info {}
+	dl.article-info dt {}
+	dl.article-info dd {}
+	.item-separator {}
+	p.readmore {}
+	/*edit*/
+	.item-page.edit fieldset {}
+	.item-page.edit fieldset legend {}
+	.item-page.edit fieldset div {}
+	/*featured*/
+	.items-leading {}
+	.leading {}
+	.items-row .item { float:left; }
+	.items-row.cols-1 .item{ width:100%;  }
+	.items-row.cols-2 .item{ width:50%; }
+	.items-row.cols-3 .item{ width: 33.3%; }
+	.items-row.cols-4 .item{ width: 25%; }
+	.row-separator {}
+	/* categories */
+	.subheading-category {}
+	.category-desc img {}
+	.cat-items {}
+	.cat-children {}
+	.cat-children h3 {}
+	.cat-children ul dl {}
+	.cat-children ul dt {}
+	.cat-children ul dd {}
+	/*more-items*/
+	.items-more h3 {}
+	.items-more ol {}
+	.items-more ol li {}
+/* com_newsfeeds & com_weblinks */
+	/*categories for newsfeeds, weblinks and contacts */
+	dl.contact-count,
+	dl.weblink-count,
+	dl.newsfeed-count {}
+	dl.contact-count dt,
+	dl.weblink-count dt,
+	dl.newsfeed-count dt {}
+	dl.contact-count dd,
+	dl.weblink-count dd,
+	dl.newsfeed-count dd {}
+	/*feed*/
+	.newsfeed .feed-description {}
+	.newsfeed > div > img {}
+	.newsfeed ol {}
+	.newsfeed ol li {}
+	.newsfeed ol li .feed-item-description{}
+/* com_search */
+	/*error*/
+	.search .error{}
+	/*results*/
+	dl.search-results{}
+	dt.result-title{}
+	dd.result-category{}
+	dd.result-text{}
+	dd.result-created{}
+	/*form*/
+	#searchForm .word {}
+	#searchForm .word #search-searchword{}
+	#searchForm .searchintro{}
+	#searchForm .phrases{}
+	#searchForm .phrases legend{}
+	#searchForm .phrases .phrases-box{}
+	#searchForm .phrases .ordering-box{}
+	#searchForm .only {}
+	#searchForm .only legend{}
+	#searchForm .only input[type="checkbox"]{}
+	#searchForm .only label{}
+	#searchForm .form-limit {}
+/* com_users */
+	/*login and logout*/
+	.login-description,
+	.logout-description{}
+	.login-description img{}
+	.login fieldset .login-fields {}
+	/*remind & reset*/
+	.remind dl,
+	.reset-complete dl,
+	.reset-confirm dl,
+	.reset dl{}
+	.remind dt,
+	.reset-complete dt,
+	.reset-confirm dt,
+	.reset dt{}
+	.remind dd,
+	.reset-complete dd,
+	.reset-confirm dd,
+	.reset dd{}
+	/*register*/
+	.registration dl{}
+	.registration dd{}
+	.registration dt{}
+	/*profile*/
+	.profile-edit legend,
+	#users-profile-core legend,
+	#users-profile-custom legend{}
+	.profile-edit dl,
+	#users-profile-core dl,
+	#users-profile-custom dl {}
+	.profile-edit dd,
+	#users-profile-core dd,
+	#users-profile-custom dd {}
+	.profile-edit dt,
+	#users-profile-core dt,
+	#users-profile-custom dt {}
+/* com_wrapper */
+div.contentpane iframe{}
+/* modules */
+/* mod_banners */
+.bannergroup {}
+.banneritem {}
+.bannerfooter {}
+/* mod_footer */
+.footer1{}
+.footer2{}
+/* mod_languages */
+.mod-languages {}
+.mod-languages .pretext {}
+.mod-languages .posttext {}
+.mod-languages ul {}
+.mod-languages ul li {}
+/* mod_login */
+#login-form{}
+#login-form .login-greeting {}
+#login-form .logout-button{}
+#login-form ul {}
+#login-form ul li {}
+#login-form ul li a {}
+#login-form .pretext {}
+#login-form .posttext {}
+#login-form .userdata p {}
+#login-form .userdata p label {}
+#login-form .userdata p input {}
+#login-form .userdata p input[type="checkbox"] {}
+/* mod_random_image */
+.random-image {}
+.random-image a {}
+.random-image a img {}
+/* mod_stats */
+dl.stats-module {}
+dl.stats-module dt {}
+dl.stats-module dd {}
+/* mod_wrapper */
+iframe#blockrandom {}

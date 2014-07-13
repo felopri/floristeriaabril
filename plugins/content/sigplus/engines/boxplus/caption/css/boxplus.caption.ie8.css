@@ -1,0 +1,15 @@
+/*!
+* @file
+* @brief    boxplus image slider stylesheet for Internet Explorer
+* @author   Levente Hunyadi
+* @version  1.4.2
+* @remarks  Copyright (C) 2009-2010 Levente Hunyadi
+* @remarks  Licensed under GNU/GPLv3, see http://www.gnu.org/licenses/gpl-3.0.html
+* @see      http://hunyadi.info.hu/projects/boxplus
+*/
+
+div.boxplus-imagecaption.boxplus-overlaycaption {
+background-color:transparent !important;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000) !important; /*AARRGGBB*/
+zoom: 1 !important;
+}

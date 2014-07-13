@@ -1,0 +1,347 @@
+/**************************************************************************************/
+/*
+/*		Designed by 'AS Designing'
+/*		Web: http://www.asdesigning.com
+/*		Email: info@asdesigning.com
+/*		License: ASDE Commercial
+/*
+/**************************************************************************************/
+
+/**************************************************************************************/
+/*   Footer
+/**************************************************************************************/
+/**************************************************************************************/
+
+#footer
+{
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#footer h1, 
+#footer h2, 
+#footer h3
+{
+	margin: 0px 0px 30px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#footer p
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;	
+}
+
+#footer a
+{
+	text-decoration: none;
+	outline-style: none;	
+}
+
+#footer a:hover
+{
+	border: none;
+}
+
+#footer ul 
+{
+	margin: 0px 0px 0px 0px;
+	text-align: left;
+	list-style: outside none;
+}
+
+#footer li
+{
+	margin: 0px 0px 0px 0px;
+    padding: 0px 0px 8px 17px;
+}
+
+#footer .menu li
+{
+    padding: 0px 0px 0px 0px;
+}
+
+#footer .menu li a
+{
+}
+
+/**************************************************************************************/
+
+#footer .moduletable,
+#footer .moduletable_text, 
+#footer .moduletable_menu,
+#footer .contentpaneopen
+{
+	clear: both;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	overflow: visible;
+}
+
+#footer .inputbox
+{
+	float: left;
+	font-size: 11px;
+	text-align: left;
+}
+
+/**************************************************************************************/
+/*   Footer Row 1 			  														  */
+
+#footer .row1
+{
+	width: auto;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 30px 0px;	
+}
+
+#footer .row1 p
+{
+	text-align: justify;
+	padding: 3px 0px 1px 0px;	
+}
+
+#footer .row1 .content
+{
+	margin: 0px auto 0px auto;
+	overflow: hidden;
+}
+
+#footer .row1 .row1col1,
+#footer .row1 .row1col2,
+#footer .row1 .row1col3,
+#footer .row1 .row1col4
+{
+	float: left;
+	margin: 0px 0px 0px 0px;
+}
+
+#footer .row1 h1,
+#footer .row1 h2,
+#footer .row1 h3
+{
+	margin: 0px 0px 15px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#footer .row1 h4
+{
+	text-shadow: none;
+}
+
+#footer .row1 h1 a, 
+#footer .row1 h2 a, 
+#footer .row1 h3 a
+{
+}
+
+#footer .row1 ul
+{
+	margin: 0px 0px 0px 0px;
+}
+
+#footer .row1 li,
+#footer .row1 .menu li
+{
+	margin: 0px 0px 0px 0px;
+    padding: 0px 0px 6px 27px;
+}
+
+#footer .row1 .menu li a
+{
+    padding: 0px 0px 0px 18px;	
+}
+
+
+/**************************************************************************************/
+/*  Footer Row 2 																	  */
+
+#footer .row2
+{
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	overflow: hidden;
+	background-image: url(../images/bg.footer.png);
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+
+#footer .row2 .wrapper
+{
+}
+
+#footer .row2 .content
+{
+	margin: 0px auto 0px auto;
+	overflow: hidden;	
+	padding: 40px 0px 25px 0px;
+}
+	
+#footer .row2 h1, 
+#footer .row2 h2, 
+#footer .row2 h3
+{
+    margin: 0px 0px 25px 0px;
+    padding: 0px 0px 10px 0px;	
+	text-align: left;
+	font-weight: bold;
+	background-image: url(../images/bg.heading.png);
+	background-position: bottom;
+	background-repeat: repeat-x;	
+}
+
+#footer .row2 .row2col1,
+#footer .row2 .row2col2,
+#footer .row2 .row2col3,
+#footer .row2 .row2col4
+{
+	float: left;
+	min-height: 0%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#footer .row2 ul
+{
+	text-align: left;
+	list-style: inside;
+	padding: 0px 0px 10px 10px;
+}
+
+#footer .row2 li
+{
+    padding: 0px 0px 4px 20px;
+	margin: 3px 0px 0px 0px;
+	display: list-item;
+	list-style: outside none;
+	list-style-image: none;
+	background-image: url('../images/listimg.footer.png');
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#footer .row2 #search
+{
+	width: 100%;
+	clear: both;
+	float: left;
+	margin: 0px 0px 0px 0px;
+}
+
+#footer .row2 #search input
+{
+}
+
+#footer .row2 #social
+{
+	width: 100%;	
+	clear: both;
+	float: right;
+	text-align: right;
+	margin: 0px 0px 0px 0px;
+}
+
+#footer .row2 #social p img
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#footer .row2 #contactus .custom
+{
+	padding: 0px 0px 15px 0px;
+	line-height: 21px;
+	text-align: right;	
+}
+
+#footer .row2 #whosonline
+{
+	width: 100%;	
+	clear: both;
+	float: left;
+	text-align: left;
+	margin: 40px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#footer .row2 .sepline
+{
+	float: left;
+	width: 2px;
+    margin: 0px 24px 0px 24px;
+	padding: 0px 0px 0px 0px;	
+}
+
+
+/**************************************************************************************/
+/*  Footer Row 3 																	  */
+
+
+#footer .row3
+{
+	padding: 10px 0px 0px 0px;
+	background-image: url(../images/bg.footer.png);
+	background-position: left top;
+	background-repeat: repeat-x;	
+	overflow: hidden;	
+}
+
+#footer .row3 .wrapper
+{
+	padding: 20px 0px 30px 0px;
+	background-image: none;
+}
+	
+#footer .row3 .content
+{	
+	margin: 0px auto 0px auto;
+	overflow: hidden;	
+}
+
+#footer .row3 #trademark
+{
+	text-align: right;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: uppercase;
+}
+
+#footer .row3 ul
+{
+	list-style: none;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;	
+}
+
+#footer .row3 li
+{
+	display: inline;
+	background-image: none;
+	padding: 0px 20px 0px 0px;
+	margin: 0px;
+	line-height: 14px;	
+}
+
+#footer .row3 .row3col1
+{
+	float: left;
+	width: 650px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#footer .row3 .row3col2
+{
+	float: right;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align: right;
+	font-size: 11px;
+	font-weight: bold;
+}

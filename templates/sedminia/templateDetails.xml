@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension	version="2.5" type="template" client="site">	
+<name>sedminia</name>	
+<creationDate>juin 2012</creationDate>	
+<author>globbers</author>	
+<authorEmail>globbers@hotmail.fr</authorEmail>	
+<authorUrl>http://www.globbersthemes.com</authorUrl>	
+<copyright>Copyright (C) 2008 - 2012 globbersthemes, Inc. All rights reserved.</copyright>	
+<license>globbersthemes LICENSE</license>	
+<version>2.5.0</version>
+	
+<description>		   
+<![CDATA[<h1> sedminia joomla template </h1>
+	    <span style="font-size: 15px;font-weight:bold;">
+			SEDMINIA template ,design by globbers.
+			<span style="color:red; font-weight: bold; ">!Not for commercial!!! for commercial use, you must pay a special license (5 EURO) .</span> <br />			
+			<br />Visit globbersthemes: <a href="http://www.globbersthemes.com" target="_blank">http://www.globbersthemes.com</a>.<br />
+			</span>
+			<hr />
+
+			<h3><b>OTHER FREE TEMPLATES </b></h3>
+			<table>
+			<td width="200px">
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/carligian" target="_blank"><b>template carligian</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/hyuster" target="_blank"><b>template hyuster</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/encholia" target="_blank"><b>template encholia</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/ennifall" target="_blank"><b>template ennifall</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/veniyard" target="_blank"><b>template veniyard</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/entreprise" target="_blank"><b>template entreprise</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/garrioness" target="_blank"><b>template garrioness</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/officeten" target="_blank"><b>template officeten</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/archange" target="_blank"><b>template archange</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/amadeon" target="_blank"><b>template amadeon</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/boowne" target="_blank"><b>template bowwne</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/stylusson" target="_blank"><b>template stylusson</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/qualister" target="_blank"><b>template qualister</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/storyofglory" target="_blank"><b>template story of glory</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/platine45" target="_blank"><b>template platine45</b></a>.</span><br />
+			</td>
+
+			<td width="200px">
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/arlqueens" target="_blank"><b>template arlqueens</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/brander" target="_blank"><b>template brander</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/cartion" target="_blank"><b>template cartion</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/findario" target="_blank"><b>template findario</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/naturalis" target="_blank"><b>template naturalis</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/morit" target="_blank"><b>template morit</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/camenian" target="_blank"><b>template comenian</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/edelmen" target="_blank"><b>template edelmen</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/antesate" target="_blank"><b>template antesate</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/via-granitti" target="_blank"><b>template via granitti</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/larrens" target="_blank"><b>template larrens</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/profile" target="_blank"><b>template profile</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/hoefgiles" target="_blank"><b>template hoefgiles</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/limpidium" target="_blank"><b>template limpidium</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/asturias" target="_blank"><b>template asturias</b></a>.</span><br />
+			</td>
+
+			<td width="200px">
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/vanenborg" target="_blank"><b>template vanenborg</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/cerniqua" target="_blank"><b>template cerniqua</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/blogana" target="_blank"><b>template blogana</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/addaman" target="_blank"><b>template addaman</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/foregges" target="_blank"><b>template foregges</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/upsilum" target="_blank"><b>template upsilum</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/marhance" target="_blank"><b>template marhance</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/everhest" target="_blank"><b>template everhest</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/dolmatia" target="_blank"><b>template dolmatia</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/slumbyn" target="_blank"><b>template slumbyn</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/barbarican" target="_blank"><b>template barbarican</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/baakminster" target="_blank"><b>template baakminster</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/dupliscity" target="_blank"><b>template dupliscity</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/maillers" target="_blank"><b>template maillers</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/demo/notebook" target="_blank"><b>template notebook</b></a>.</span><br />
+			</td>
+			</table>
+			<br /><br />]]>
+</description>	
+
+<files>		
+<folder>html</folder>		
+<folder>css</folder>		
+<folder>images</folder>		
+<folder>js</folder>		
+<filename>index.php</filename>		
+<filename>favicon.ico</filename>		
+<filename>templateDetails.xml</filename>		
+<filename>template_thumbnail.png</filename>		
+<filename>template.php</filename>		
+<filename>slideshow.php</filename>	
+</files>	
+
+<positions>		
+<position>position-0</position>		
+<position>position-1</position>		
+<position>position-2</position>		
+<position>position-3</position>		
+<position>position-4</position>		
+<position>position-5</position>		
+<position>position-6</position>		
+<position>position-7</position>		
+<position>position-8</position>		
+<position>position-9</position>		
+<position>position-10</position>		
+<position>position-11</position>		
+<position>position-12</position>		
+<position>position-13</position>		
+<position>position-14</position>		
+<position>position-15</position>		
+<position>login</position>	
+</positions>	
+
+<config>	
+<fields name="params" >	
+<fieldset name="advanced">	
+<field name="slidedisable" type="radio" default="1" label="Show slideshow" description="Show slideshow">	  
+<option value="0">Hide</option>	  
+<option value="1">Show</option>    
+</field>  			
+
+<field name="caption1" type="textarea" default="Every time we embrace, i go to that away place..." label="caption image slide1" description="enter a text"  rows="6" cols="20"  />        
+<field name="caption2" type="textarea" default="Whenever i look into your eyes.." label="caption image slide2" description="enter a text"  rows="6" cols="20"  />		
+<field name="caption3" type="textarea" default="You are always on my mind..." label="caption image slide3" description="enter a text"  rows="6" cols="20"  />	
+</fieldset>		
+</fields>	
+</config>
+</extension>
+

@@ -1,0 +1,78 @@
+/**************************************************************************************/
+/*
+/*	  Designed by 'AS Designing'
+/*	  http://www.asdesigning.com
+/*
+/**************************************************************************************/
+
+.googlemap
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 5px 0px;
+	overflow: hidden;
+}
+
+.googlemap .mapdirform
+{
+	width: 265px;
+	height: 180px;
+	line-height: 20px;
+	float: left;
+	text-align: left;
+	padding: 0px 20px 0px 0px;
+}
+
+.googlemap .maparea
+{
+	float: right;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.googlemap label
+{
+	width: 80px;
+	clear: both;
+	float: left;
+	font-weight: bold;
+}
+
+.googlemap input
+{
+	width: 175px;
+	float: right;
+	margin: 1px 0px 7px 0px;
+}
+
+.googlemap input.button
+{
+	width: 133px;
+	float: right;
+	top: 10px;
+	cursor: pointer;
+	border: none;
+	vertical-align: top;
+	margin: 24px 0px 5px 0px !important;
+}
+
+.googlemap br
+{
+	clear: both;
+}
+
+.googlemap .directions
+{
+	width: 884px;
+	line-height: 20px;
+	margin: 10px 0px 0px 0px !important;
+	float: left;
+	text-align: left;	
+	position: relative;
+	top: 0px;	
+}
+
+.googlemap .companyaddress
+{
+	overflow: hidden;
+	font-size: 12px;
+}

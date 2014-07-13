@@ -1,0 +1,33 @@
+/*
+#------------------------------------------------------------------------
+# penguinMail - December 2010 (for Joomla 1.6)
+#
+# Copyright (C) 2007-2011 Gavick.com. All Rights Reserved.
+# License: Copyrighted Commercial Software
+# Website: http://www.gavick.com
+# Support: support@gavick.com 
+*/
+body { background: #fff; font:normal 12px/14px Verdana, Arial, sans-serif; color:#444; }
+a { text-decoration: none; color: #000; }
+#gkPrintTop { border-bottom: 1px solid #222; padding: 20px 0; margin: 0 0 10px 0; }
+#gkPrintBottom { border-top: 1px solid #222; padding: 10px 0 20px 0; font: italic 11px/14px Veradna, Arial, sans-serif; margin: 10px 0 0 0; }
+#gkComponent h1{ margin-bottom: 32px; font: normal 250%/120% "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+dt.article-info-term,
+ul.actions { display: none; }
+.articleContent img { display: block; margin: 20px auto; }
+dd {display: inline; margin: 0 5px 0 0; padding: 0 5px 0 0; border-right: 1px solid #E0E0E0}
+dd:last-child {border-right: none}
+dl.article-info {width: 100%; clear: both; display: block; margin: 10px 0}
+.articleContent img { float: left; margin: 0 10px 10px 0; display: block; padding: 0; background: #fff }
+img.caption { margin-top:5px; }
+.img_caption { margin-bottom:10px; background: #fff; padding:3px; border: 1px solid #e0e0e0; }
+.article-content img { margin:5px; }
+.img_caption img { margin:0; }
+p.img_caption { margin:0 10px; padding:6px 6px 0; text-align:center; border: none; }
+.img_caption.left { float:left; margin-right: 1.5em; }
+.img_caption.right { float:right; margin-left: 1.5em; }
+#printBtn { -moz-box-shadow:inset 0px 1px 0px 0px #ffffff; -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff; box-shadow:inset 0px 1px 0px 0px #ffffff; background-color:#ededed; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px;
+border:1px solid #dcdcdc; display:inline-block; color:#777777; font-family:Arial; font-size:21px; font-weight:bold; padding:6px 24px; text-decoration:none; text-shadow:1px 1px 0px #ffffff; margin: 0 auto;}
+#printBtn:hover { background-color:#dfdfdf; }
+#printBtn:active { position:relative; top:1px; }
+div#btnWrapper {margin: 0 auto; text-align: center}

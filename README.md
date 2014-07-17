@@ -1,13 +1,11 @@
 Floristería virtual
 ===================
+Autor: Fernando López Prieto
+Tutor: José Luis Bernier Villamor
 
 Proyecto Fin de Carrera.
-
+Aruquitectura y Tecnología de Computadores.
 Universidad de Granada.
-
-Autor: Fernando López Prieto
-
-Tutor: José Luis Bernier Villamor
 
 ------
 
